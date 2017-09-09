@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="background">@android:color/white</color>
+  <color name="title">@android:color/black</color>
+  <color name="hint">#A4A4A4</color>
+  <color name="create_account">#00baff</color>
+</resources>
