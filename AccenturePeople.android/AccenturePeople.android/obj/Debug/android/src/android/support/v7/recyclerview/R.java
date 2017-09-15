@@ -393,6 +393,61 @@ containing a value of this type.
 </table>
          */
         public static int buttonTintMode=0x7f01009a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cardBackgroundColor=0x7f01011a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cardCornerRadius=0x7f01011b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cardElevation=0x7f01011c;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cardMaxElevation=0x7f01011d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cardPreventCornerOverlap=0x7f01011f;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int cardUseCompatPadding=0x7f01011e;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -401,6 +456,42 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static int checkedTextViewStyle=0x7f01008f;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int civ_border_color=0x7f010126;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int civ_border_overlay=0x7f010127;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int civ_border_width=0x7f010125;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int civ_fill_color=0x7f010128;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -569,6 +660,56 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static int contentInsetStart=0x7f01001a;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int contentPadding=0x7f010120;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int contentPaddingBottom=0x7f010124;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int contentPaddingLeft=0x7f010121;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int contentPaddingRight=0x7f010122;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static int contentPaddingTop=0x7f010123;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -1997,23 +2138,23 @@ containing a value of this type.
         public static int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f080007;
     }
     public static final class color {
-        public static int abc_background_cache_hint_selector_material_dark=0x7f0b0048;
-        public static int abc_background_cache_hint_selector_material_light=0x7f0b0049;
-        public static int abc_color_highlight_material=0x7f0b004a;
+        public static int abc_background_cache_hint_selector_material_dark=0x7f0b004c;
+        public static int abc_background_cache_hint_selector_material_light=0x7f0b004d;
+        public static int abc_color_highlight_material=0x7f0b004e;
         public static int abc_input_method_navigation_guard=0x7f0b0000;
-        public static int abc_primary_text_disable_only_material_dark=0x7f0b004b;
-        public static int abc_primary_text_disable_only_material_light=0x7f0b004c;
-        public static int abc_primary_text_material_dark=0x7f0b004d;
-        public static int abc_primary_text_material_light=0x7f0b004e;
-        public static int abc_search_url_text=0x7f0b004f;
+        public static int abc_primary_text_disable_only_material_dark=0x7f0b004f;
+        public static int abc_primary_text_disable_only_material_light=0x7f0b0050;
+        public static int abc_primary_text_material_dark=0x7f0b0051;
+        public static int abc_primary_text_material_light=0x7f0b0052;
+        public static int abc_search_url_text=0x7f0b0053;
         public static int abc_search_url_text_normal=0x7f0b0001;
         public static int abc_search_url_text_pressed=0x7f0b0002;
         public static int abc_search_url_text_selected=0x7f0b0003;
-        public static int abc_secondary_text_material_dark=0x7f0b0050;
-        public static int abc_secondary_text_material_light=0x7f0b0051;
+        public static int abc_secondary_text_material_dark=0x7f0b0054;
+        public static int abc_secondary_text_material_light=0x7f0b0055;
         public static int accent_material_dark=0x7f0b0004;
         public static int accent_material_light=0x7f0b0005;
-        public static int background=0x7f0b0044;
+        public static int background=0x7f0b0048;
         public static int background_floating_material_dark=0x7f0b0006;
         public static int background_floating_material_light=0x7f0b0007;
         public static int background_material_dark=0x7f0b0008;
@@ -2026,7 +2167,11 @@ containing a value of this type.
         public static int bright_foreground_material_light=0x7f0b000f;
         public static int button_material_dark=0x7f0b0010;
         public static int button_material_light=0x7f0b0011;
-        public static int create_account=0x7f0b0047;
+        public static int cardview_dark_background=0x7f0b0044;
+        public static int cardview_light_background=0x7f0b0045;
+        public static int cardview_shadow_end_color=0x7f0b0046;
+        public static int cardview_shadow_start_color=0x7f0b0047;
+        public static int create_account=0x7f0b004b;
         public static int design_fab_shadow_end_color=0x7f0b003a;
         public static int design_fab_shadow_mid_color=0x7f0b003b;
         public static int design_fab_shadow_start_color=0x7f0b003c;
@@ -2045,7 +2190,7 @@ containing a value of this type.
         public static int foreground_material_light=0x7f0b0017;
         public static int highlighted_text_material_dark=0x7f0b0018;
         public static int highlighted_text_material_light=0x7f0b0019;
-        public static int hint=0x7f0b0046;
+        public static int hint=0x7f0b004a;
         public static int hint_foreground_material_dark=0x7f0b001a;
         public static int hint_foreground_material_light=0x7f0b001b;
         public static int material_blue_grey_800=0x7f0b001c;
@@ -2076,11 +2221,11 @@ containing a value of this type.
         public static int secondary_text_disabled_material_light=0x7f0b0035;
         public static int switch_thumb_disabled_material_dark=0x7f0b0036;
         public static int switch_thumb_disabled_material_light=0x7f0b0037;
-        public static int switch_thumb_material_dark=0x7f0b0052;
-        public static int switch_thumb_material_light=0x7f0b0053;
+        public static int switch_thumb_material_dark=0x7f0b0056;
+        public static int switch_thumb_material_light=0x7f0b0057;
         public static int switch_thumb_normal_material_dark=0x7f0b0038;
         public static int switch_thumb_normal_material_light=0x7f0b0039;
-        public static int title=0x7f0b0045;
+        public static int title=0x7f0b0049;
     }
     public static final class dimen {
         public static int abc_action_bar_content_inset_material=0x7f050010;
@@ -2150,6 +2295,9 @@ containing a value of this type.
         public static int abc_text_size_subtitle_material_toolbar=0x7f050006;
         public static int abc_text_size_title_material=0x7f050045;
         public static int abc_text_size_title_material_toolbar=0x7f050007;
+        public static int cardview_compat_inset_shadow=0x7f05006b;
+        public static int cardview_default_elevation=0x7f05006c;
+        public static int cardview_default_radius=0x7f05006d;
         public static int design_appbar_elevation=0x7f050056;
         public static int design_bottom_sheet_modal_elevation=0x7f050057;
         public static int design_bottom_sheet_modal_peek_height=0x7f050058;
@@ -2267,18 +2415,32 @@ containing a value of this type.
         public static int abc_textfield_search_activated_mtrl_alpha=0x7f020048;
         public static int abc_textfield_search_default_mtrl_alpha=0x7f020049;
         public static int abc_textfield_search_material=0x7f02004a;
-        public static int accenture_logo=0x7f02004b;
-        public static int accenture_logo_title=0x7f02004c;
-        public static int border_button=0x7f02004d;
-        public static int border_linear_layout=0x7f02004e;
-        public static int border_text_edit=0x7f02004f;
-        public static int design_fab_background=0x7f020050;
-        public static int design_snackbar_background=0x7f020051;
-        public static int notification_template_icon_bg=0x7f020053;
-        public static int shadow_linear=0x7f020052;
+        public static int accenture_background=0x7f02004b;
+        public static int accenture_logo=0x7f02004c;
+        public static int accenture_logo_title=0x7f02004d;
+        public static int aristoteles=0x7f02004e;
+        public static int border_button=0x7f02004f;
+        public static int border_linear_layout=0x7f020050;
+        public static int border_text_edit=0x7f020051;
+        public static int default_image=0x7f020052;
+        public static int design_fab_background=0x7f020053;
+        public static int design_snackbar_background=0x7f020054;
+        public static int email=0x7f020055;
+        public static int ic_account_circle_white_48dp=0x7f020056;
+        public static int ic_contacts_grey_900_24dp=0x7f020057;
+        public static int icon=0x7f020058;
+        public static int key=0x7f020059;
+        public static int notification_template_icon_bg=0x7f02005d;
+        public static int platon=0x7f02005a;
+        public static int profile=0x7f02005b;
+        public static int shadow_linear=0x7f02005c;
     }
     public static final class id {
-        public static int action0=0x7f06007d;
+        public static int ContentFrameLayout=0x7f06008a;
+        public static int Name=0x7f060079;
+        public static int Thumbnail=0x7f060078;
+        public static int Username=0x7f06007a;
+        public static int action0=0x7f06008c;
         public static int action_bar=0x7f06005a;
         public static int action_bar_activity_content=0x7f060001;
         public static int action_bar_container=0x7f060059;
@@ -2287,7 +2449,7 @@ containing a value of this type.
         public static int action_bar_subtitle=0x7f06003b;
         public static int action_bar_title=0x7f06003a;
         public static int action_context_bar=0x7f06005b;
-        public static int action_divider=0x7f060081;
+        public static int action_divider=0x7f060090;
         public static int action_menu_divider=0x7f060003;
         public static int action_menu_presenter=0x7f060004;
         public static int action_mode_bar=0x7f060057;
@@ -2298,17 +2460,18 @@ containing a value of this type.
         public static int always=0x7f06001e;
         public static int beginning=0x7f06001b;
         public static int bottom=0x7f06002a;
-        public static int buttonAccept=0x7f06007a;
-        public static int buttonLogin=0x7f06008b;
+        public static int buttonAccept=0x7f060083;
+        public static int buttonLogin=0x7f06009a;
         public static int buttonPanel=0x7f060044;
-        public static int buttonRegister=0x7f06007c;
-        public static int cancel_action=0x7f06007e;
+        public static int buttonRegister=0x7f060086;
+        public static int buttonReturn=0x7f06006e;
+        public static int cancel_action=0x7f06008d;
         public static int center=0x7f06002b;
         public static int center_horizontal=0x7f06002c;
         public static int center_vertical=0x7f06002d;
-        public static int checkBox1=0x7f060079;
+        public static int checkBox1=0x7f060082;
         public static int checkbox=0x7f060052;
-        public static int chronometer=0x7f060084;
+        public static int chronometer=0x7f060093;
         public static int clip_horizontal=0x7f060033;
         public static int clip_vertical=0x7f060034;
         public static int collapseActionView=0x7f06001f;
@@ -2317,18 +2480,21 @@ containing a value of this type.
         public static int customPanel=0x7f06004f;
         public static int decor_content_parent=0x7f060058;
         public static int default_activity_button=0x7f060040;
-        public static int design_bottom_sheet=0x7f06006a;
-        public static int design_menu_item_action_area=0x7f060071;
-        public static int design_menu_item_action_area_stub=0x7f060070;
-        public static int design_menu_item_text=0x7f06006f;
-        public static int design_navigation_view=0x7f06006e;
+        public static int design_bottom_sheet=0x7f060070;
+        public static int design_menu_item_action_area=0x7f060077;
+        public static int design_menu_item_action_area_stub=0x7f060076;
+        public static int design_menu_item_text=0x7f060075;
+        public static int design_navigation_view=0x7f060074;
         public static int disableHome=0x7f06000e;
-        public static int editTextConfirmPassword=0x7f06008a;
-        public static int editTextEmail=0x7f060077;
-        public static int editTextPassword=0x7f060078;
+        public static int drawer_layout=0x7f060087;
+        public static int editText1=0x7f06009f;
+        public static int editText2=0x7f0600a3;
+        public static int editTextConfirmPassword=0x7f060099;
+        public static int editTextEmail=0x7f06007f;
+        public static int editTextPassword=0x7f060080;
         public static int edit_query=0x7f06005c;
         public static int end=0x7f06001c;
-        public static int end_padder=0x7f060089;
+        public static int end_padder=0x7f060098;
         public static int enterAlways=0x7f060023;
         public static int enterAlwaysCollapsed=0x7f060024;
         public static int exitUntilCollapsed=0x7f060025;
@@ -2343,31 +2509,38 @@ containing a value of this type.
         public static int icon=0x7f060042;
         public static int ifRoom=0x7f060020;
         public static int image=0x7f06003f;
-        public static int imageViewBackground=0x7f060073;
-        public static int imageViewTitle=0x7f060074;
-        public static int info=0x7f060088;
+        public static int imageViewContact=0x7f06006c;
+        public static int imageViewTitle=0x7f06007c;
+        public static int info=0x7f060097;
         public static int item_touch_helper_previous_elevation=0x7f060000;
+        public static int layout_main=0x7f060088;
         public static int left=0x7f06002f;
-        public static int line1=0x7f060082;
-        public static int line3=0x7f060086;
-        public static int linearLayout1=0x7f060076;
+        public static int line1=0x7f060091;
+        public static int line3=0x7f060095;
+        public static int linearLayout2=0x7f06007d;
+        public static int linearLayout3=0x7f060081;
+        public static int linearLayout4=0x7f060084;
         public static int listMode=0x7f06000b;
+        public static int listViewContacts=0x7f06006a;
         public static int list_item=0x7f060041;
-        public static int media_actions=0x7f060080;
+        public static int media_actions=0x7f06008f;
         public static int middle=0x7f06001d;
         public static int mini=0x7f060037;
         public static int multiply=0x7f060016;
-        public static int navigation_header_container=0x7f06006d;
+        public static int nav_home=0x7f0600a4;
+        public static int nav_view=0x7f06008b;
+        public static int navigation_header_container=0x7f060073;
         public static int never=0x7f060021;
         public static int none=0x7f060010;
         public static int normal=0x7f06000c;
         public static int parallax=0x7f060028;
         public static int parentPanel=0x7f060046;
         public static int pin=0x7f060029;
+        public static int profile_image=0x7f06009b;
         public static int progress_circular=0x7f060006;
         public static int progress_horizontal=0x7f060007;
         public static int radio=0x7f060054;
-        public static int relativeLayout1=0x7f060072;
+        public static int relativeLayout1=0x7f06007b;
         public static int right=0x7f060030;
         public static int screen=0x7f060017;
         public static int scroll=0x7f060026;
@@ -2390,29 +2563,39 @@ containing a value of this type.
         public static int showCustom=0x7f060011;
         public static int showHome=0x7f060012;
         public static int showTitle=0x7f060013;
-        public static int snackbar_action=0x7f06006c;
-        public static int snackbar_text=0x7f06006b;
+        public static int snackbar_action=0x7f060072;
+        public static int snackbar_text=0x7f060071;
         public static int snap=0x7f060027;
         public static int spacer=0x7f060045;
+        public static int spinner1=0x7f0600a0;
+        public static int spinner2=0x7f0600a1;
+        public static int spinner3=0x7f0600a2;
         public static int split_action_bar=0x7f060008;
         public static int src_atop=0x7f060018;
         public static int src_in=0x7f060019;
         public static int src_over=0x7f06001a;
         public static int start=0x7f060031;
-        public static int status_bar_latest_event_content=0x7f06007f;
+        public static int status_bar_latest_event_content=0x7f06008e;
         public static int submit_area=0x7f060065;
         public static int tabMode=0x7f06000d;
-        public static int text=0x7f060087;
-        public static int text2=0x7f060085;
+        public static int text=0x7f060096;
+        public static int text2=0x7f060094;
+        public static int textInputEditText1=0x7f06009c;
+        public static int textInputEditText2=0x7f06009d;
+        public static int textInputEditText3=0x7f06009e;
         public static int textSpacerNoButtons=0x7f06004d;
-        public static int textViewNotAccount=0x7f06007b;
-        public static int textViewSignIn=0x7f060075;
-        public static int time=0x7f060083;
+        public static int textViewName=0x7f06006b;
+        public static int textViewNotAccount=0x7f060085;
+        public static int textViewSignIn=0x7f06007e;
+        public static int textViewTitle=0x7f060069;
+        public static int textViewUsername=0x7f06006d;
+        public static int time=0x7f060092;
         public static int title=0x7f060043;
         public static int title_template=0x7f060048;
+        public static int toolbar=0x7f060089;
         public static int top=0x7f060032;
         public static int topPanel=0x7f060047;
-        public static int touch_outside=0x7f060069;
+        public static int touch_outside=0x7f06006f;
         public static int up=0x7f060009;
         public static int useLogo=0x7f060014;
         public static int view_offset_helper=0x7f06000a;
@@ -2454,33 +2637,42 @@ containing a value of this type.
         public static int abc_search_dropdown_item_icons_2line=0x7f030016;
         public static int abc_search_view=0x7f030017;
         public static int abc_select_dialog_material=0x7f030018;
-        public static int design_bottom_sheet_dialog=0x7f030019;
-        public static int design_layout_snackbar=0x7f03001a;
-        public static int design_layout_snackbar_include=0x7f03001b;
-        public static int design_layout_tab_icon=0x7f03001c;
-        public static int design_layout_tab_text=0x7f03001d;
-        public static int design_menu_item_action_area=0x7f03001e;
-        public static int design_navigation_item=0x7f03001f;
-        public static int design_navigation_item_header=0x7f030020;
-        public static int design_navigation_item_separator=0x7f030021;
-        public static int design_navigation_item_subheader=0x7f030022;
-        public static int design_navigation_menu=0x7f030023;
-        public static int design_navigation_menu_item=0x7f030024;
-        public static int login=0x7f030025;
-        public static int main=0x7f030026;
-        public static int notification_media_action=0x7f030027;
-        public static int notification_media_cancel_action=0x7f030028;
-        public static int notification_template_big_media=0x7f030029;
-        public static int notification_template_big_media_narrow=0x7f03002a;
-        public static int notification_template_lines=0x7f03002b;
-        public static int notification_template_media=0x7f03002c;
-        public static int notification_template_part_chronometer=0x7f03002d;
-        public static int notification_template_part_time=0x7f03002e;
-        public static int register=0x7f03002f;
-        public static int select_dialog_item_material=0x7f030030;
-        public static int select_dialog_multichoice_material=0x7f030031;
-        public static int select_dialog_singlechoice_material=0x7f030032;
-        public static int support_simple_spinner_dropdown_item=0x7f030033;
+        public static int contactadapter=0x7f030019;
+        public static int contactdetail=0x7f03001a;
+        public static int contactfragment=0x7f03001b;
+        public static int design_bottom_sheet_dialog=0x7f03001c;
+        public static int design_layout_snackbar=0x7f03001d;
+        public static int design_layout_snackbar_include=0x7f03001e;
+        public static int design_layout_tab_icon=0x7f03001f;
+        public static int design_layout_tab_text=0x7f030020;
+        public static int design_menu_item_action_area=0x7f030021;
+        public static int design_navigation_item=0x7f030022;
+        public static int design_navigation_item_header=0x7f030023;
+        public static int design_navigation_item_separator=0x7f030024;
+        public static int design_navigation_item_subheader=0x7f030025;
+        public static int design_navigation_menu=0x7f030026;
+        public static int design_navigation_menu_item=0x7f030027;
+        public static int header=0x7f030028;
+        public static int listitemrow=0x7f030029;
+        public static int login=0x7f03002a;
+        public static int main=0x7f03002b;
+        public static int notification_media_action=0x7f03002c;
+        public static int notification_media_cancel_action=0x7f03002d;
+        public static int notification_template_big_media=0x7f03002e;
+        public static int notification_template_big_media_narrow=0x7f03002f;
+        public static int notification_template_lines=0x7f030030;
+        public static int notification_template_media=0x7f030031;
+        public static int notification_template_part_chronometer=0x7f030032;
+        public static int notification_template_part_time=0x7f030033;
+        public static int register=0x7f030034;
+        public static int registerfull=0x7f030035;
+        public static int select_dialog_item_material=0x7f030036;
+        public static int select_dialog_multichoice_material=0x7f030037;
+        public static int select_dialog_singlechoice_material=0x7f030038;
+        public static int support_simple_spinner_dropdown_item=0x7f030039;
+    }
+    public static final class menu {
+        public static int navmenu=0x7f0c0000;
     }
     public static final class string {
         public static int abc_action_bar_home_description=0x7f070000;
@@ -2502,21 +2694,29 @@ containing a value of this type.
         public static int abc_shareactionprovider_share_with=0x7f070010;
         public static int abc_shareactionprovider_share_with_application=0x7f070011;
         public static int abc_toolbar_collapse_description=0x7f070012;
-        public static int accept=0x7f07001d;
+        public static int accept=0x7f070021;
         public static int app_name=0x7f070017;
         public static int appbar_scrolling_view_behavior=0x7f070014;
         public static int bottom_sheet_behavior=0x7f070015;
+        public static int button_return=0x7f070028;
         public static int character_counter_pattern=0x7f070016;
-        public static int create_account=0x7f070020;
-        public static int enter_account=0x7f070021;
-        public static int has_account=0x7f07001f;
-        public static int hint_confirm_password=0x7f07001a;
+        public static int close_drawer=0x7f07002a;
+        public static int contacts=0x7f070027;
+        public static int create_account=0x7f070024;
+        public static int enter_account=0x7f070025;
+        public static int has_account=0x7f070023;
+        public static int hint_confirm_password=0x7f07001d;
         public static int hint_email=0x7f070018;
-        public static int hint_password=0x7f070019;
-        public static int not_account=0x7f07001e;
-        public static int remember=0x7f07001c;
-        public static int sign_in=0x7f07001b;
-        public static int sign_up=0x7f070022;
+        public static int hint_firstname=0x7f07001a;
+        public static int hint_identification=0x7f070019;
+        public static int hint_lastname=0x7f07001b;
+        public static int hint_password=0x7f07001c;
+        public static int hint_professional_profile=0x7f07001e;
+        public static int not_account=0x7f070022;
+        public static int open_drawer=0x7f070029;
+        public static int remember=0x7f070020;
+        public static int sign_in=0x7f07001f;
+        public static int sign_up=0x7f070026;
         public static int status_bar_notification_info_overflow=0x7f070013;
     }
     public static final class style {
@@ -2525,10 +2725,13 @@ containing a value of this type.
         public static int Animation_AppCompat_Dialog=0x7f090088;
         public static int Animation_AppCompat_DropDownUp=0x7f090089;
         public static int Animation_Design_BottomSheetDialog=0x7f09013f;
+        public static int AppTheme=0x7f09015c;
+        public static int AppThemeNoActionBar=0x7f09015b;
         public static int Base_AlertDialog_AppCompat=0x7f09008a;
         public static int Base_AlertDialog_AppCompat_Light=0x7f09008b;
         public static int Base_Animation_AppCompat_Dialog=0x7f09008c;
         public static int Base_Animation_AppCompat_DropDownUp=0x7f09008d;
+        public static int Base_CardView=0x7f090158;
         public static int Base_DialogWindowTitle_AppCompat=0x7f09008e;
         public static int Base_DialogWindowTitleBackground_AppCompat=0x7f09008f;
         public static int Base_TextAppearance_AppCompat=0x7f090036;
@@ -2668,6 +2871,11 @@ containing a value of this type.
         public static int Base_Widget_AppCompat_Toolbar=0x7f0900b5;
         public static int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f090079;
         public static int Base_Widget_Design_TabLayout=0x7f090140;
+        public static int CardView=0x7f090157;
+        public static int CardView_Dark=0x7f090159;
+        public static int CardView_Light=0x7f09015a;
+        public static int MyTheme=0x7f09015e;
+        public static int MyTheme_Base=0x7f09015d;
         public static int Platform_AppCompat=0x7f090017;
         public static int Platform_AppCompat_Light=0x7f090018;
         public static int Platform_ThemeOverlay_AppCompat=0x7f09007a;
@@ -5335,6 +5543,308 @@ containing a value of this type.
           @attr name android.support.v7.recyclerview:allowStacking
         */
         public static int ButtonBarLayout_allowStacking = 0;
+        /** Attributes that can be used with a CardView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardBackgroundColor android.support.v7.recyclerview:cardBackgroundColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardCornerRadius android.support.v7.recyclerview:cardCornerRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardElevation android.support.v7.recyclerview:cardElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardMaxElevation android.support.v7.recyclerview:cardMaxElevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardPreventCornerOverlap android.support.v7.recyclerview:cardPreventCornerOverlap}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_cardUseCompatPadding android.support.v7.recyclerview:cardUseCompatPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPadding android.support.v7.recyclerview:contentPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingBottom android.support.v7.recyclerview:contentPaddingBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingLeft android.support.v7.recyclerview:contentPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingRight android.support.v7.recyclerview:contentPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #CardView_contentPaddingTop android.support.v7.recyclerview:contentPaddingTop}</code></td><td></td></tr>
+           </table>
+           @see #CardView_android_minHeight
+           @see #CardView_android_minWidth
+           @see #CardView_cardBackgroundColor
+           @see #CardView_cardCornerRadius
+           @see #CardView_cardElevation
+           @see #CardView_cardMaxElevation
+           @see #CardView_cardPreventCornerOverlap
+           @see #CardView_cardUseCompatPadding
+           @see #CardView_contentPadding
+           @see #CardView_contentPaddingBottom
+           @see #CardView_contentPaddingLeft
+           @see #CardView_contentPaddingRight
+           @see #CardView_contentPaddingTop
+         */
+        public static final int[] CardView = {
+            0x0101013f, 0x01010140, 0x7f01011a, 0x7f01011b,
+            0x7f01011c, 0x7f01011d, 0x7f01011e, 0x7f01011f,
+            0x7f010120, 0x7f010121, 0x7f010122, 0x7f010123,
+            0x7f010124
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+          attribute's value can be found in the {@link #CardView} array.
+          @attr name android:minHeight
+        */
+        public static int CardView_android_minHeight = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+          attribute's value can be found in the {@link #CardView} array.
+          @attr name android:minWidth
+        */
+        public static int CardView_android_minWidth = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#cardBackgroundColor}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:cardBackgroundColor
+        */
+        public static int CardView_cardBackgroundColor = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#cardCornerRadius}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:cardCornerRadius
+        */
+        public static int CardView_cardCornerRadius = 3;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#cardElevation}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:cardElevation
+        */
+        public static int CardView_cardElevation = 4;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#cardMaxElevation}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:cardMaxElevation
+        */
+        public static int CardView_cardMaxElevation = 5;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#cardPreventCornerOverlap}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:cardPreventCornerOverlap
+        */
+        public static int CardView_cardPreventCornerOverlap = 7;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#cardUseCompatPadding}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:cardUseCompatPadding
+        */
+        public static int CardView_cardUseCompatPadding = 6;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#contentPadding}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:contentPadding
+        */
+        public static int CardView_contentPadding = 8;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#contentPaddingBottom}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:contentPaddingBottom
+        */
+        public static int CardView_contentPaddingBottom = 12;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#contentPaddingLeft}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:contentPaddingLeft
+        */
+        public static int CardView_contentPaddingLeft = 9;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#contentPaddingRight}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:contentPaddingRight
+        */
+        public static int CardView_contentPaddingRight = 10;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#contentPaddingTop}
+          attribute's value can be found in the {@link #CardView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:contentPaddingTop
+        */
+        public static int CardView_contentPaddingTop = 11;
+        /** Attributes that can be used with a CircleImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_color android.support.v7.recyclerview:civ_border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_overlay android.support.v7.recyclerview:civ_border_overlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_border_width android.support.v7.recyclerview:civ_border_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #CircleImageView_civ_fill_color android.support.v7.recyclerview:civ_fill_color}</code></td><td></td></tr>
+           </table>
+           @see #CircleImageView_civ_border_color
+           @see #CircleImageView_civ_border_overlay
+           @see #CircleImageView_civ_border_width
+           @see #CircleImageView_civ_fill_color
+         */
+        public static final int[] CircleImageView = {
+            0x7f010125, 0x7f010126, 0x7f010127, 0x7f010128
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#civ_border_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:civ_border_color
+        */
+        public static int CircleImageView_civ_border_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#civ_border_overlay}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:civ_border_overlay
+        */
+        public static int CircleImageView_civ_border_overlay = 2;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#civ_border_width}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:civ_border_width
+        */
+        public static int CircleImageView_civ_border_width = 0;
+        /**
+          <p>This symbol is the offset where the {@link android.support.v7.recyclerview.R.attr#civ_fill_color}
+          attribute's value can be found in the {@link #CircleImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android.support.v7.recyclerview:civ_fill_color
+        */
+        public static int CircleImageView_civ_fill_color = 3;
         /** Attributes that can be used with a CollapsingAppBarLayout_LayoutParams.
            <p>Includes the following attributes:</p>
            <table>

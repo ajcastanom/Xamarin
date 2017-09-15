@@ -4,32 +4,112 @@
     android:minHeight="25px"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/accenture_background"
     android:focusableInTouchMode="true"
     android:id="@+id/relativeLayout1">
     <ImageView
-        android:src="@drawable/accenture_logo"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/imageViewBackground" />
-    <ImageView
         android:src="@drawable/accenture_logo_title"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_alignParentRight="true"
+        android:layout_width="135.5dp"
+        android:layout_height="71.0dp"
+        android:layout_centerHorizontal="true"
         android:id="@+id/imageViewTitle"
-        android:layout_marginTop="38.5dp"
-        android:layout_marginRight="37.0dp" />
-    <TextView
-        android:text="@string/sign_in"
-        android:textSize="25dp"
-        android:textColor="@color/title"
-        android:layout_width="wrap_content"
+        android:layout_marginTop="55.0dp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#555555"
         android:layout_centerVertical="true"
-        android:id="@+id/textViewSignIn"
-        android:layout_marginLeft="32.5dp" />
-    <LinearLayout
+        android:layout_marginLeft="20.0dp"
+        android:layout_marginRight="20.0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:gravity="center"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginRight="10.0dp">
+            <TextView
+                android:text="@string/sign_in"
+                android:textSize="25dp"
+                android:textColor="@color/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/textViewSignIn" />
+            <EditText
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:textColorHint="@color/hint"
+                android:id="@+id/editTextEmail"
+                android:background="@drawable/border_text_edit" />
+            <EditText
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/key"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:textColorHint="@color/hint"
+                android:background="@drawable/border_text_edit"
+                android:id="@+id/editTextPassword" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:id="@+id/linearLayout3">
+                <CheckBox
+                    android:text="@string/remember"
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <Button
+                android:text="@string/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAccept" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginBottom="10.0dp">
+                <TextView
+                    android:text="@string/not_account"
+                    android:textColor="@color/title"
+                    android:gravity="bottom"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/textViewNotAccount" />
+                <Button
+                    android:text="@string/create_account"
+                    android:cursorVisible="true"
+                    android:gravity="bottom"
+                    android:background="@drawable/border_button"
+                    android:textColor="@color/create_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:id="@+id/buttonRegister"
+                    android:layout_marginLeft="7.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+<!--<LinearLayout
         android:orientation="vertical"
         android:minWidth="25px"
         android:minHeight="25px"
@@ -41,25 +121,7 @@
         android:id="@+id/linearLayout1"
         android:layout_below="@id/textViewSignIn"
         android:layout_marginLeft="0.0dp"
-        android:layout_marginTop="32.5dp">
-        <EditText
-            android:inputType="textEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
-            android:textColorHint="@color/hint"
-            android:id="@+id/editTextEmail"
-            android:background="@drawable/border_text_edit"
-            android:layout_marginTop="0.0dp" />
-        <EditText
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_password"
-            android:textColorHint="@color/hint"
-            android:background="@drawable/border_text_edit"
-            android:id="@+id/editTextPassword" />
-    </LinearLayout>
+        android:layout_marginTop="32.5dp" />
     <CheckBox
         android:text="@string/remember"
         android:layout_width="wrap_content"
@@ -70,35 +132,6 @@
         android:layout_marginRight="0.0dp"
         android:layout_marginLeft="53.0dp"
         android:layout_marginTop="7.0dp" />
-    <Button
-        android:text="@string/accept"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonAccept"
-        android:layout_toRightOf="@id/checkBox1"
-        android:layout_below="@id/linearLayout1"
-        android:layout_marginLeft="68.5dp" />
-    <TextView
-        android:text="@string/not_account"
-        android:textColor="@color/title"
-        android:textSize="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textViewNotAccount"
-        android:layout_below="@id/linearLayout1"
-        android:layout_marginTop="75.0dp" />
-    <Button
-        android:text="@string/create_account"
-        android:layout_centerHorizontal="true"
-        android:cursorVisible="true"
-        android:gravity="bottom"
-        android:paddingTop="0dp"
-        android:background="@drawable/border_button"
-        android:textColor="@color/create_account"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@id/textViewNotAccount"
-        android:id="@+id/buttonRegister"
-        android:layout_marginTop="0.0dp" />
+    
+   -->
 </RelativeLayout>
