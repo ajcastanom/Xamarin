@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Tables.android</string>
+  <string name="table_adapter">Tabla con adaptador</string>
+  <string name="table_simple">Tabla simple</string>
+  <string name="table_simple2">Tabla simple 2</string>
+  <string name="table_adapter2">Tabla con adaptador 2</string>
+  <string name="button_return">Regresar</string>
+</resources>

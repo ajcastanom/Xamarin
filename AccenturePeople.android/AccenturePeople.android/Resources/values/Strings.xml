@@ -18,7 +18,12 @@
   <string name="sign_up">Registrarme</string>
   <string name="contacts">Contactos</string>
   <string name="button_return">Regresar</string>
-
+  <string name="message_login_validate">Ingrese el E-mail y la contraseña</string>
+  <string name="message_resgister_validate">Ingrese el E-mail, la contraseña y la confirmación de la contraseña</string>
+  <string name="message_email_validate">Ingrese un E-mail correcto</string>
+  <string name="message_password_validate">La contraseña y la confirmación son diferentes. Deben ser iguales.</string>
+  <string name="save_data">Datos guardados</string>
+  <string name="error">Error</string>
   <string name="open_drawer">Open drawer</string>
   <string name="close_drawer">Close drawer</string>
 </resources>

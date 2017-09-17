@@ -8,7 +8,7 @@ using AccenturePeople.android.Utils.Validations;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
         Button buttonRegister, buttonLogin;
@@ -40,22 +40,22 @@ namespace AccenturePeople.android
             {
                 if (string.IsNullOrEmpty(editTextEmail.Text.ToString()) || string.IsNullOrEmpty(editTextPassword.Text.ToString()))
                 {
-                    Toast.MakeText(this, "Ingrese usuario y contraseña", ToastLength.Short).Show();
+                    Toast.MakeText(this, GetString(Resource.String.message_login_validate), ToastLength.Short).Show();
                 } else if (!Email.IsValid(editTextEmail.Text.ToString()))
                 {
-                    Toast.MakeText(this, "Ingrese un email correcto", ToastLength.Short).Show();
+                    Toast.MakeText(this, GetString(Resource.String.message_email_validate), ToastLength.Short).Show();
                 }
                 else
                 {
                     var result = dbManager.insertUser(editTextEmail.Text);
                     if (result)
-                    {
-                        Toast.MakeText(this, "Datos guardados", ToastLength.Short).Show();
+                    {                        
+                        Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
                         var mainActivity = new Intent(this, typeof(MainActivity));
                         StartActivity(mainActivity);
                     } else
-                    {
-                        Toast.MakeText(this, "Error", ToastLength.Short).Show();
+                    {                        
+                        Toast.MakeText(this, GetString(Resource.String.error), ToastLength.Short).Show();
                     }
                 }
 

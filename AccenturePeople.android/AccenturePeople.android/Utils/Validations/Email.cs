@@ -18,7 +18,6 @@ namespace AccenturePeople.android.Utils.Validations
     {
         public static bool IsValid(String email)
         {
-            return Patterns.EmailAddress.Matcher(email).Matches();
             String pattern = @"^[a-zA-Z0-9_.+-]+@accenture.com$";
 
             // Instantiate the regular expression object.

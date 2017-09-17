@@ -1033,32 +1033,32 @@ namespace AccenturePeople.android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b004c
-			public const int abc_background_cache_hint_selector_material_dark = 2131427404;
+			// aapt resource value: 0x7f0b0051
+			public const int abc_background_cache_hint_selector_material_dark = 2131427409;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int abc_background_cache_hint_selector_material_light = 2131427405;
+			// aapt resource value: 0x7f0b0052
+			public const int abc_background_cache_hint_selector_material_light = 2131427410;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_color_highlight_material = 2131427406;
+			// aapt resource value: 0x7f0b0053
+			public const int abc_color_highlight_material = 2131427411;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_primary_text_disable_only_material_dark = 2131427407;
+			// aapt resource value: 0x7f0b0054
+			public const int abc_primary_text_disable_only_material_dark = 2131427412;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_primary_text_disable_only_material_light = 2131427408;
+			// aapt resource value: 0x7f0b0055
+			public const int abc_primary_text_disable_only_material_light = 2131427413;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_primary_text_material_dark = 2131427409;
+			// aapt resource value: 0x7f0b0056
+			public const int abc_primary_text_material_dark = 2131427414;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int abc_primary_text_material_light = 2131427410;
+			// aapt resource value: 0x7f0b0057
+			public const int abc_primary_text_material_light = 2131427415;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_search_url_text = 2131427411;
+			// aapt resource value: 0x7f0b0058
+			public const int abc_search_url_text = 2131427416;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -1069,17 +1069,23 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int abc_secondary_text_material_dark = 2131427412;
+			// aapt resource value: 0x7f0b0059
+			public const int abc_secondary_text_material_dark = 2131427417;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int abc_secondary_text_material_light = 2131427413;
+			// aapt resource value: 0x7f0b005a
+			public const int abc_secondary_text_material_light = 2131427418;
+			
+			// aapt resource value: 0x7f0b004f
+			public const int accent = 2131427407;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int accent_material_dark = 2131427332;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int accent_material_light = 2131427333;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int accent_pressed = 2131427408;
 			
 			// aapt resource value: 0x7f0b0048
 			public const int background = 2131427400;
@@ -1234,6 +1240,12 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f0b0027
 			public const int material_grey_900 = 2131427367;
 			
+			// aapt resource value: 0x7f0b004c
+			public const int primary = 2131427404;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int primary_dark = 2131427405;
+			
 			// aapt resource value: 0x7f0b0028
 			public const int primary_dark_material_dark = 2131427368;
 			
@@ -1257,6 +1269,9 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f0b002f
 			public const int primary_text_disabled_material_light = 2131427375;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int ripple = 2131427406;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int ripple_material_dark = 2131427376;
@@ -1282,11 +1297,11 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f0b0037
 			public const int switch_thumb_disabled_material_light = 2131427383;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int switch_thumb_material_dark = 2131427414;
+			// aapt resource value: 0x7f0b005b
+			public const int switch_thumb_material_dark = 2131427419;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int switch_thumb_material_light = 2131427415;
+			// aapt resource value: 0x7f0b005c
+			public const int switch_thumb_material_light = 2131427420;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int switch_thumb_normal_material_dark = 2131427384;
@@ -1918,22 +1933,25 @@ namespace AccenturePeople.android
 			public const int ic_contacts_grey_900_24dp = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int Icon = 2130837592;
+			public const int ico_add = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int key = 2130837593;
-			
-			// aapt resource value: 0x7f02005d
-			public const int notification_template_icon_bg = 2130837597;
+			public const int Icon = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int platon = 2130837594;
+			public const int key = 2130837594;
+			
+			// aapt resource value: 0x7f02005e
+			public const int notification_template_icon_bg = 2130837598;
 			
 			// aapt resource value: 0x7f02005b
-			public const int profile = 2130837595;
+			public const int platon = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int shadow_linear = 2130837596;
+			public const int profile = 2130837596;
+			
+			// aapt resource value: 0x7f02005d
+			public const int shadow_linear = 2130837597;
 			
 			static Drawable()
 			{
@@ -2101,17 +2119,23 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060087
 			public const int drawer_layout = 2131099783;
 			
-			// aapt resource value: 0x7f06009f
-			public const int editText1 = 2131099807;
-			
-			// aapt resource value: 0x7f0600a3
-			public const int editText2 = 2131099811;
+			// aapt resource value: 0x7f0600a4
+			public const int editText2 = 2131099812;
 			
 			// aapt resource value: 0x7f060099
 			public const int editTextConfirmPassword = 2131099801;
 			
 			// aapt resource value: 0x7f06007f
 			public const int editTextEmail = 2131099775;
+			
+			// aapt resource value: 0x7f06009f
+			public const int editTextFirstname = 2131099807;
+			
+			// aapt resource value: 0x7f06009e
+			public const int editTextIdentification = 2131099806;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int editTextLastname = 2131099808;
 			
 			// aapt resource value: 0x7f060080
 			public const int editTextPassword = 2131099776;
@@ -2167,8 +2191,14 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f06003f
 			public const int image = 2131099711;
 			
+			// aapt resource value: 0x7f06009d
+			public const int imageButtonChooseImage = 2131099805;
+			
 			// aapt resource value: 0x7f06006c
 			public const int imageViewContact = 2131099756;
+			
+			// aapt resource value: 0x7f06009c
+			public const int imageViewProfile = 2131099804;
 			
 			// aapt resource value: 0x7f06007c
 			public const int imageViewTitle = 2131099772;
@@ -2221,8 +2251,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060016
 			public const int multiply = 2131099670;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int nav_home = 2131099812;
+			// aapt resource value: 0x7f0600a5
+			public const int nav_home = 2131099813;
 			
 			// aapt resource value: 0x7f06008b
 			public const int nav_view = 2131099787;
@@ -2248,9 +2278,6 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060029
 			public const int pin = 2131099689;
 			
-			// aapt resource value: 0x7f06009b
-			public const int profile_image = 2131099803;
-			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
 			
@@ -2262,6 +2289,9 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f06007b
 			public const int relativeLayout1 = 2131099771;
+			
+			// aapt resource value: 0x7f06009b
+			public const int relativeLayout2 = 2131099803;
 			
 			// aapt resource value: 0x7f060030
 			public const int right = 2131099696;
@@ -2341,14 +2371,14 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060045
 			public const int spacer = 2131099717;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int spinner1 = 2131099808;
-			
 			// aapt resource value: 0x7f0600a1
-			public const int spinner2 = 2131099809;
+			public const int spinner = 2131099809;
 			
 			// aapt resource value: 0x7f0600a2
-			public const int spinner3 = 2131099810;
+			public const int spinner2 = 2131099810;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int spinner3 = 2131099811;
 			
 			// aapt resource value: 0x7f060008
 			public const int split_action_bar = 2131099656;
@@ -2379,15 +2409,6 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f060094
 			public const int text2 = 2131099796;
-			
-			// aapt resource value: 0x7f06009c
-			public const int textInputEditText1 = 2131099804;
-			
-			// aapt resource value: 0x7f06009d
-			public const int textInputEditText2 = 2131099805;
-			
-			// aapt resource value: 0x7f06009e
-			public const int textInputEditText3 = 2131099806;
 			
 			// aapt resource value: 0x7f06004d
 			public const int textSpacerNoButtons = 2131099725;
@@ -2768,8 +2789,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f070016
 			public const int character_counter_pattern = 2131165206;
 			
-			// aapt resource value: 0x7f07002a
-			public const int close_drawer = 2131165226;
+			// aapt resource value: 0x7f070030
+			public const int close_drawer = 2131165232;
 			
 			// aapt resource value: 0x7f070027
 			public const int contacts = 2131165223;
@@ -2779,6 +2800,9 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f070025
 			public const int enter_account = 2131165221;
+			
+			// aapt resource value: 0x7f07002e
+			public const int error = 2131165230;
 			
 			// aapt resource value: 0x7f070023
 			public const int has_account = 2131165219;
@@ -2804,14 +2828,29 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f07001e
 			public const int hint_professional_profile = 2131165214;
 			
+			// aapt resource value: 0x7f07002b
+			public const int message_email_validate = 2131165227;
+			
+			// aapt resource value: 0x7f070029
+			public const int message_login_validate = 2131165225;
+			
+			// aapt resource value: 0x7f07002c
+			public const int message_password_validate = 2131165228;
+			
+			// aapt resource value: 0x7f07002a
+			public const int message_resgister_validate = 2131165226;
+			
 			// aapt resource value: 0x7f070022
 			public const int not_account = 2131165218;
 			
-			// aapt resource value: 0x7f070029
-			public const int open_drawer = 2131165225;
+			// aapt resource value: 0x7f07002f
+			public const int open_drawer = 2131165231;
 			
 			// aapt resource value: 0x7f070020
 			public const int remember = 2131165216;
+			
+			// aapt resource value: 0x7f07002d
+			public const int save_data = 2131165229;
 			
 			// aapt resource value: 0x7f07001f
 			public const int sign_in = 2131165215;

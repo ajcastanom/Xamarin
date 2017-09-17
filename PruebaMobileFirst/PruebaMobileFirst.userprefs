@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{4376F068-41C3-4414-BB4B-A00C45870715}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PruebaMobileFirst/Servicios/ContactosService.cs">
+    <Files>
+      <File FileName="PruebaMobileFirst/Servicios/IContactosService.cs" Line="8" Column="20" />
+      <File FileName="PruebaMobileFirst/Servicios/ContactosService.cs" Line="35" Column="25" />
+      <File FileName="PruebaMobileFirst/MobileFirst/Conector/MobileFirstConector.cs" Line="142" Column="1" />
+      <File FileName="PruebaMobileFirst/MobileFirst/Reporitorio/MobileFirstRepository.cs" Line="35" Column="26" />
+      <File FileName="PruebaMobileFirst/Contratos/IMobileFirstHelper.cs" Line="8" Column="14" />
+      <File FileName="PruebaMobileFirst/Modelos/Request/Login/LoginRequest.cs" Line="17" Column="6" />
+      <File FileName="iOS/ViewController.cs" Line="24" Column="72" />
+      <File FileName="iOS/Resources/mfpclient.plist" />
+      <File FileName="Droid/MainActivity.cs" Line="64" Column="47" />
+      <File FileName="Droid/packages.config" Line="1" Column="1" />
+      <File FileName="Droid/Implementaciones/MobileFirstHelper.cs" Line="15" Column="75" />
+      <File FileName="PruebaMobileFirst/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="iOS/Info.plist" />
+      <File FileName="Droid/Assets/mfpclient.properties" Line="4" Column="17" />
+      <File FileName="Droid/MainApplication.cs" Line="59" Column="4" />
+      <File FileName="iOS/Implementaciones/MobileFirstHelper.cs" Line="14" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PruebaMobileFirst.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.91B54A6B-A776-4852-B488-0B6019492F32" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/PruebaMobileFirst/Servicios/ContactosService.cs" relfile="PruebaMobileFirst/Servicios/ContactosService.cs" line="35" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/iOS/ViewController.cs" relfile="iOS/ViewController.cs" line="23" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/PruebaMobileFirst/MobileFirst/Reporitorio/MobileFirstRepository.cs" relfile="PruebaMobileFirst/MobileFirst/Reporitorio/MobileFirstRepository.cs" line="54" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/PruebaMobileFirst/MobileFirst/Conector/MobileFirstConector.cs" relfile="PruebaMobileFirst/MobileFirst/Conector/MobileFirstConector.cs" line="133" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/PruebaMobileFirst/MobileFirst/Conector/MobileFirstConector.cs" relfile="PruebaMobileFirst/MobileFirst/Conector/MobileFirstConector.cs" line="141" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/iOS/ViewController.cs" relfile="iOS/ViewController.cs" line="28" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/iOS/ViewController.cs" relfile="iOS/ViewController.cs" line="39" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/Droid/MainActivity.cs" relfile="Droid/MainActivity.cs" line="63" column="1" />
+      <Breakpoint file="/Users/richard.bedoya/Projects/PruebaMobileFirst/Droid/MainApplication.cs" relfile="Droid/MainApplication.cs" line="21" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PruebaMobileFirst.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.sdk_24" />
+</Properties>

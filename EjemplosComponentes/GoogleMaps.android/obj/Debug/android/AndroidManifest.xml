@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="GoogleMaps.android.GoogleMaps.android" android:versionCode="1" android:versionName="1.0">
+  <!--<uses-sdk android:minSdkVersion="21" />-->
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="10" />
+  <!-- We need to be able to download map tiles and access Google Play Services-->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!-- Allow the application to access Google web-based services. -->
+  <!-- Google Maps for Android v2 will cache map tiles on external storage -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <!-- Allow the application to access Google web-based services. -->
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <!--
+    NOTE: you MUST follow the instructions on this page
+    http://developer.xamarin.com/guides/android/platform_features/maps_and_location/maps/obtaining_a_google_maps_api_key/
+    to get an API key for your specific debug.keystore SHA1 and package name.
+    Update all the values below:
+    * package name in the prefix of uses-permission element
+    * package name in the prefix of permission element
+    * API_KEY value obtained from https://console.developers.google.com/
+    -->
+  <!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+  <uses-permission android:name="GoogleMaps.android.GoogleMaps.android.permission.MAPS_RECEIVE" />
+  <permission android:name="GoogleMaps.android.GoogleMaps.android.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="@string/app_name" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <!-- Put your Google Maps V2 API Key here. This key will not work for you.-->
+    <!-- See https://developers.google.com/maps/documentation/android/start#obtaining_an_api_key -->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCGqScW5lMDwsrSKZ6SczwPRghsF6UmGf8" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:label="GoogleMaps.android" android:name="md5fcab7297924c790d133c8e90b3c1345e.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="GoogleMaps.android.GoogleMaps.android.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.GoogleMaps.android.GoogleMaps.android" />
+      </intent-filter>
+    </receiver>
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+  </application>
+  <uses-sdk android:minSdkVersion="19" />
+
+  De: Vasquez, Leandro
+  Enviado: martes, 05 de septiembre de 2017 9:37:00 a. m.
+  Para: Alvarez, Jeyson; Botero, S.; Chica, Camilo; David Alexander Giraldo Tobon; Franco, Juan; Garcia, Juan David; Jimenez, Jenny; Johnny Tobon Bohorquez; Meneses, John Eduard; Muñeton, Brandon; Restrepo, L.; Salazar Mesa, Juan; Valencia, Edward; Zapata, Cristian; Zapata, Xiomara; Londoño, Stiven; Lopez, F.; Díaz, Julio A.; Eusse, Key; Bedoya, Richard; Castaño, Anderson; Guirales, Edison; Galeano, Luis; Juan Camilo, Restrepo
+  Asunto: Training mobile
+  Cuándo: jueves, 07 de septiembre de 2017 5:45 p. m.-7:45 p. m..
+  Dónde: Skype Meeting
+
+  Buenos días, Se cambia la clase del viernes para el jueves.
+
+  Saludos.
+  .........................................................................................................................................
+  à Join Skype Meeting
+  Trouble Joining? Try Skype Web App
+  Join by phone
+
+  +1 703 948 0488 (Sterling, United States) (15 Highest Use)                    English (United States)
+  +1800 3003 7676 (India Only) (15 Highest Use)                        English (United States)
+  +63 2 720 7300 (Manila, Philippines) (15 Highest Use)                           English (United States)
+  +44 20 3335 5555 (London, United Kingdom) (15 Highest Use)                            English (United Kingdom)
+  +39 0236005680 (Milan, Italy) (15 Highest Use)                        English (United States)
+  +34 91 114 3650 (Madrid, Spain) (15 Highest Use)                   English (United States)
+  +55 11 3130 0000 (Sao Paulo, Brazil) (15 Highest Use)                            English (United States)
+  +54 114318 8600 (Buenos Aires, Argentina) (15 Highest Use)                English (United States)
+  +81 3 3588 4460 (Tokyo, Japan) (15 Highest Use)                     English (United States)
+  +49 9281 925 3543 (Hof, Germany) (15 Highest Use)                              English (United States)
+  +33 1 5323 3939 (Paris, France) (15 Highest Use)                     English (United Kingdom)
+  +31 20 343 2734 (Amsterdam, Netherlands) (15 Highest Use)                              English (United Kingdom)
+  +86 21 61577600 (Shanghai, China) (15 Highest Use)                             English (United States)
+  +65 6603 2222 (Singapore, Singapore) (15 Highest Use)                         English (United States)
+  +61 2 90052999 (Sydney, Australia) (15 Highest Use)                             English (Australia)
+
+  Find a local number
+
+  Conference ID: 4817355696
+  Forgot your dial-in PIN? |Help
+
+  [!OC([1033])!]
+  .........................................................................................................................................
+
+  <application android:allowBackup="true" android:label="@string/app_name"></application><uses-feature android:glEsVersion="0x00020000" android:required="true" /></manifest>

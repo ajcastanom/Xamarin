@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:minWidth="25px"
     android:minHeight="25px"
     android:layout_width="match_parent"
@@ -24,43 +25,58 @@
             android:gravity="center"
             android:layout_marginLeft="10.0dp"
             android:layout_marginRight="10.0dp">
-            <refractored.controls.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
                 android:layout_width="96dp"
-                android:layout_height="96dp"
-                android:src="@drawable/profile"
-                app:civ_border_width="2dp"
-                app:civ_border_color="#FF000000"
-                android:layout_marginTop="20.0dp"
-                android:layout_marginBottom="20.0dp" />
+                android:layout_height="136dp"
+                android:id="@+id/relativeLayout2">
+                <refractored.controls.CircleImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:layout_marginTop="20.0dp"
+                    android:layout_marginBottom="20.0dp" />
+                <ImageButton
+                    android:background="@drawable/ico_add"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imageButtonChooseImage" />
+            </RelativeLayout>
             <EditText
                 android:inputType="text"
                 android:hint="@string/hint_identification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textInputEditText1" />
+                android:id="@+id/editTextIdentification" />
             <EditText
                 android:inputType="text"
                 android:hint="@string/hint_firstname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textInputEditText2" />
+                android:id="@+id/editTextFirstname" />
             <EditText
                 android:inputType="text"
                 android:hint="@string/hint_lastname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textInputEditText3" />
+                android:id="@+id/editTextLastname" />
             <EditText
                 android:inputType="text"
                 android:hint="@string/hint_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText1" />
+                android:id="@+id/editTextEmail" />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner1"
+                android:id="@+id/spinner"
                 android:layout_marginTop="10.0dp" />
             <Spinner
                 android:layout_width="match_parent"

@@ -1,0 +1,14 @@
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\bin\Debug\Choose.image.android.dll
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\bin\Debug\Choose.image.android.pdb
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\bin\Debug\Choose.image.android.Choose.image.android.apk
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\bin\Debug\Choose.image.android.Choose.image.android-Signed.apk
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\Choose.image.android.csproj.CoreCompileInputs.cache
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\Choose.image.android.dll
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\Choose.image.android.pdb
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\android\bin\Choose.image.android.Choose.image.android.apk
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\res\layout\main.xml
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\res\values\strings.xml
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\R.cs.flag
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\uploadflags.txt
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\bin\Debug\Choose.image.android.dll.mdb
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\android\assets\Choose.image.android.dll.mdb

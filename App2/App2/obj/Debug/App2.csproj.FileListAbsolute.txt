@@ -1,0 +1,15 @@
+C:\Users\ander\source\repos\App2\App2\bin\Debug\App2.dll
+C:\Users\ander\source\repos\App2\App2\bin\Debug\App2.pdb
+C:\Users\ander\source\repos\App2\App2\bin\Debug\App2.App2.apk
+C:\Users\ander\source\repos\App2\App2\bin\Debug\App2.App2-Signed.apk
+C:\Users\ander\source\repos\App2\App2\obj\Debug\App2.csprojResolveAssemblyReference.cache
+C:\Users\ander\source\repos\App2\App2\obj\Debug\App2.csproj.CoreCompileInputs.cache
+C:\Users\ander\source\repos\App2\App2\obj\Debug\App2.dll
+C:\Users\ander\source\repos\App2\App2\obj\Debug\App2.pdb
+C:\Users\ander\source\repos\App2\App2\obj\Debug\android\bin\App2.App2.apk
+C:\Users\ander\source\repos\App2\App2\obj\Debug\res\layout\main.xml
+C:\Users\ander\source\repos\App2\App2\obj\Debug\res\values\strings.xml
+C:\Users\ander\source\repos\App2\App2\obj\Debug\R.cs.flag
+C:\Users\ander\source\repos\App2\App2\obj\Debug\uploadflags.txt
+C:\Users\ander\source\repos\App2\App2\bin\Debug\App2.dll.mdb
+C:\Users\ander\source\repos\App2\App2\obj\Debug\android\assets\App2.dll.mdb

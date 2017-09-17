@@ -1,0 +1,28 @@
+Tables.android.MainActivity, Tables.android;md58e87278a936047951eb6910ce359b8d5.MainActivity
+Tables.android.MainActivity, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58e87278a936047951eb6910ce359b8d5.MainActivity
+Tables.android.MainActivity;md58e87278a936047951eb6910ce359b8d5.MainActivity
+tables.android.MainActivity;md58e87278a936047951eb6910ce359b8d5.MainActivity
+Tables.android.TableAdapterActivity, Tables.android;md58e87278a936047951eb6910ce359b8d5.TableAdapterActivity
+Tables.android.TableAdapterActivity, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58e87278a936047951eb6910ce359b8d5.TableAdapterActivity
+Tables.android.TableAdapterActivity;md58e87278a936047951eb6910ce359b8d5.TableAdapterActivity
+tables.android.TableAdapterActivity;md58e87278a936047951eb6910ce359b8d5.TableAdapterActivity
+Tables.android.TableSimpleActivity, Tables.android;md58e87278a936047951eb6910ce359b8d5.TableSimpleActivity
+Tables.android.TableSimpleActivity, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md58e87278a936047951eb6910ce359b8d5.TableSimpleActivity
+Tables.android.TableSimpleActivity;md58e87278a936047951eb6910ce359b8d5.TableSimpleActivity
+tables.android.TableSimpleActivity;md58e87278a936047951eb6910ce359b8d5.TableSimpleActivity
+Tables.android.Models.Planet, Tables.android;md5068bdeccc63c92934640e909879101b7.Planet
+Tables.android.Models.Planet, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5068bdeccc63c92934640e909879101b7.Planet
+Tables.android.Models.Planet;md5068bdeccc63c92934640e909879101b7.Planet
+tables.android.models.Planet;md5068bdeccc63c92934640e909879101b7.Planet
+Tables.android.Implementations.PlanetDetailActivity, Tables.android;md5b4cd9b6af1c4f0ac95cd2b66dd6fddb4.PlanetDetailActivity
+Tables.android.Implementations.PlanetDetailActivity, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b4cd9b6af1c4f0ac95cd2b66dd6fddb4.PlanetDetailActivity
+Tables.android.Implementations.PlanetDetailActivity;md5b4cd9b6af1c4f0ac95cd2b66dd6fddb4.PlanetDetailActivity
+tables.android.implementations.PlanetDetailActivity;md5b4cd9b6af1c4f0ac95cd2b66dd6fddb4.PlanetDetailActivity
+Tables.android.Creators.PlanetCreator, Tables.android;md501009ef43ffce7a1ac4e9731f3e19080.PlanetCreator
+Tables.android.Creators.PlanetCreator, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md501009ef43ffce7a1ac4e9731f3e19080.PlanetCreator
+Tables.android.Creators.PlanetCreator;md501009ef43ffce7a1ac4e9731f3e19080.PlanetCreator
+tables.android.creators.PlanetCreator;md501009ef43ffce7a1ac4e9731f3e19080.PlanetCreator
+Tables.android.Controls.CustomListAdapter, Tables.android;md5690618bda648ef907c6da1954e88b23a.CustomListAdapter
+Tables.android.Controls.CustomListAdapter, Tables.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5690618bda648ef907c6da1954e88b23a.CustomListAdapter
+Tables.android.Controls.CustomListAdapter;md5690618bda648ef907c6da1954e88b23a.CustomListAdapter
+tables.android.controls.CustomListAdapter;md5690618bda648ef907c6da1954e88b23a.CustomListAdapter
