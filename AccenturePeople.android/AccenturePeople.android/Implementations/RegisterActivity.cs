@@ -4,8 +4,9 @@ using Android.Content;
 using Android.OS;
 using Android.Widget;
 using AccenturePeople.android.Utils.Validations;
-using ContactAccentureAndroid.DataBase;
+using AccenturePeople.android.DataBase;
 using AccenturePeople.android.Implementations;
+using AccenturePeople.android.Models;
 
 namespace AccenturePeople.android
 {
@@ -41,6 +42,8 @@ namespace AccenturePeople.android
         {
             try
             {
+                Contact contact = new Contact(editTextEmail.Text, editTextPassword.Text);
+
                 if (string.IsNullOrEmpty(editTextEmail.Text.ToString()) || string.IsNullOrEmpty(editTextPassword.Text.ToString())
                     || string.IsNullOrEmpty(editConfirmPassword.Text.ToString()))
                 {
@@ -48,7 +51,7 @@ namespace AccenturePeople.android
                 }
                 else if (!Email.IsValid(editTextEmail.Text.ToString()))
                 {
-                    Toast.MakeText(this, GetString(Resource.String.message_email_validate), ToastLength.Short).Show();
+                    Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short).Show();
                 }
                 else if(editTextPassword.Text != editConfirmPassword.Text)
                 {
@@ -56,12 +59,16 @@ namespace AccenturePeople.android
                 }
                 else
                 {
-                    var result = dbManager.insertUser(editTextEmail.Text);
+                    var result = dbManager.InsertContact(contact);
                     if (result)
                     {
                         Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
                         var registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
+                        registerFullActivity.PutExtra("contact", contact);
                         StartActivity(registerFullActivity);
+                    } else if (result == false)
+                    {
+                        Toast.MakeText(this, GetString(Resource.String.message_email_exist), ToastLength.Short).Show();
                     }
                     else
                     {

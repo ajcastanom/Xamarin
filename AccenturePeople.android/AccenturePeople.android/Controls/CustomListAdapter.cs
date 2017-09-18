@@ -51,24 +51,20 @@ namespace AccenturePeople.android.Controls
             }
 
             Contact contact = this[position];
-            view.FindViewById<TextView>(Resource.Id.Name).Text = contact.Name;
-            view.FindViewById<TextView>(Resource.Id.Username).Text = contact.Username;
+            view.FindViewById<TextView>(Resource.Id.Name).Text = contact.Firstname;
+            view.FindViewById<TextView>(Resource.Id.Username).Text = contact.Email;
             var imageView = view.FindViewById<ImageView>(Resource.Id.Thumbnail);
 
             int imageId = Resource.Drawable.default_image;
-            if (contact.Image != null)
+            if (contact.Image != null && contact.Image != "")
             {
-                switch (contact.Image)
-                {
-                    case "aristoteles":
-                        imageId = Resource.Drawable.aristoteles;
-                        break;
-                    case "platon":
-                        imageId = Resource.Drawable.platon;
-                        break;
-                }
+                Android.Net.Uri uri = Android.Net.Uri.Parse(contact.Image);
+                imageView.SetImageURI(uri);
+            } else
+            {
+                imageView.SetImageResource(imageId);
             }
-            imageView.SetImageResource(imageId);
+            
             return view;
         }
     }

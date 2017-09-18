@@ -1,7 +1,0 @@
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\bin\Release\PruebaMobileFirst.dll
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\bin\Release\Newtonsoft.Json.dll
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\bin\Release\Worklight.Core.dll
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\bin\Release\Newtonsoft.Json.xml
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\obj\Release\PruebaMobileFirst.csproj.CoreCompileInputs.cache
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\obj\Release\PruebaMobileFirst.dll
-D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\obj\Release\PruebaMobileFirst.csprojResolveAssemblyReference.cache

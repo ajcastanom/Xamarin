@@ -99,7 +99,15 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "AccenturePeople.android.dll" comes first in this list. */
 		"AccenturePeople.android.dll",
+		"AccenturePeoplePCL.dll",
+		"MobileFirst.Android.JSONStore.dll",
+		"MobileFirst.Android.Push.dll",
+		"MobileFirst.Xamarin.Android.dll",
+		"Newtonsoft.Json.dll",
+		"Plugin.CurrentActivity.dll",
 		"Refractored.Controls.CircleImageView.dll",
+		"Worklight.Android.dll",
+		"Worklight.Core.dll",
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Design.dll",

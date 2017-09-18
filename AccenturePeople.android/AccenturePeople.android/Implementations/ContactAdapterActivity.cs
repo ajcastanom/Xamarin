@@ -12,6 +12,7 @@ using Android.Widget;
 
 using AccenturePeople.android.Models;
 using AccenturePeople.android.Controls;
+using AccenturePeople.android.DataBase;
 
 namespace AccenturePeople.android.Implementations
 {
@@ -19,16 +20,20 @@ namespace AccenturePeople.android.Implementations
     class ContactAdapterActivity : Activity
     {
         ListView listViewContacts;
+        DataBaseManager dbManager;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            dbManager = new DataBaseManager(this);
+
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.ContactAdapter);
 
             listViewContacts = FindViewById<ListView>(Resource.Id.listViewContacts);
             listViewContacts.ItemClick += HandleEventHandler;
-            listViewContacts.Adapter = new CustomListAdapter(this, loadContacts());
+            listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
         }
 
         private void ButtonReturn_Click(object sender, EventArgs e)
@@ -39,23 +44,17 @@ namespace AccenturePeople.android.Implementations
 
         void HandleEventHandler(object sender, AdapterView.ItemClickEventArgs e)
         {
-            Contact contact = loadContacts()[e.Position];
-            /*Intent planetDetailActivity = new Intent(this, typeof(PlanetDetailActivity));
-            planetDetailActivity.PutExtra("contact", contact);
-            StartActivity(planetDetailActivity);
+            Contact contact = LoadContacts()[e.Position];
+            Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
+            contactDetailActivity.PutExtra("contact", contact);
+            StartActivity(contactDetailActivity);
             /*Toast.MakeText(this, "Usted ha seleccionado " + planet.Name + " en la posición " + e.Position,
                            ToastLength.Short).Show();*/
         }
 
-        private List<Contact> loadContacts()
+        private List<Contact> LoadContacts()
         {
-            List<Contact> Contacts = new List<Contact>();
-            Contact contact = new Contact("Aristoteles", "Filosofo", "Grecia", "aristoteles");
-            Contacts.Add(contact);
-
-            contact = new Contact("Platón", "Otro Filosofo", "Grecia", "platon");
-            Contacts.Add(contact);
-
+            List<Contact> Contacts = dbManager.GetContacts();
             return Contacts;
         }
     }

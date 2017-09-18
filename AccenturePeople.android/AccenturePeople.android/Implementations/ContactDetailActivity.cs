@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using AccenturePeople.android.Models;
+using AccenturePeople.android.DataBase;
 
 namespace AccenturePeople.android.Implementations
 {
@@ -34,30 +35,27 @@ namespace AccenturePeople.android.Implementations
             buttonReturn.Click += ButtonReturn_Click;
 
 
-            Contact contact = (Contact)Intent.GetParcelableExtra("contact");
-            textViewName.Text = contact.Name;
-            textViewUsername.Text = contact.Username;
+            String Firstname = Intent.GetStringExtra("firstname");
+            String Email = Intent.GetStringExtra("email");
+            String Image = Intent.GetStringExtra("image");
+            textViewName.Text = Firstname;
+            textViewUsername.Text = Email;
 
             int imageId = Resource.Drawable.default_image;
-            if (contact.Image != null)
+            if (Image != "")
             {
-                switch (contact.Image)
-                {
-                    case "aristoteles":
-                        imageId = Resource.Drawable.aristoteles;
-                        break;
-                    case "platon":
-                        imageId = Resource.Drawable.platon;
-                        break;
-                }
+                Android.Net.Uri uri = Android.Net.Uri.Parse(Image);
+                imageViewContact.SetImageURI(uri);
             }
-            imageViewContact.SetImageResource(imageId);
+            else
+            {
+                imageViewContact.SetImageResource(imageId);
+            }
         }
 
         private void ButtonReturn_Click(object sender, EventArgs e)
         {
-            Intent mainActivity = new Intent(this, typeof(MainActivity));
-            StartActivity(mainActivity);
+            base.OnBackPressed();
         }
     }
 }

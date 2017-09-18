@@ -17,7 +17,8 @@ namespace AccenturePeople.android.Creators
     {
         public Java.Lang.Object CreateFromParcel(Parcel source)
         {
-            return new Contact(source.ReadString(), source.ReadString(), source.ReadString(), source.ReadString());
+            return new Contact(source.ReadInt(), source.ReadString(), source.ReadString(), source.ReadString(), source.ReadString(),
+                source.ReadString(), source.ReadString(), source.ReadString(), source.ReadString(), source.ReadString());
         }
 
         public Java.Lang.Object[] NewArray(int size)

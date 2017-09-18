@@ -22,6 +22,8 @@
   <string name="message_resgister_validate">Ingrese el E-mail, la contraseña y la confirmación de la contraseña</string>
   <string name="message_email_validate">Ingrese un E-mail correcto</string>
   <string name="message_password_validate">La contraseña y la confirmación son diferentes. Deben ser iguales.</string>
+  <string name="message_credentials_validate">El usuario y la contraseña son incorrectas.</string>
+  <string name="message_email_exist">El usuario ya existe, ingrese otro diferente.</string>
   <string name="save_data">Datos guardados</string>
   <string name="error">Error</string>
   <string name="open_drawer">Open drawer</string>

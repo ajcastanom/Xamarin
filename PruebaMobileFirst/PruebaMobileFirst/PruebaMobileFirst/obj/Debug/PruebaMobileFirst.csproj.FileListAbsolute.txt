@@ -1,0 +1,9 @@
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\bin\Debug\PruebaMobileFirst.dll
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\bin\Debug\PruebaMobileFirst.pdb
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\bin\Debug\Newtonsoft.Json.dll
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\bin\Debug\Worklight.Core.dll
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\bin\Debug\Newtonsoft.Json.xml
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\obj\Debug\PruebaMobileFirst.csprojResolveAssemblyReference.cache
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\obj\Debug\PruebaMobileFirst.csproj.CoreCompileInputs.cache
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\obj\Debug\PruebaMobileFirst.dll
+D:\Development\Repositories\Xamarin\PruebaMobileFirst\PruebaMobileFirst\PruebaMobileFirst\obj\Debug\PruebaMobileFirst.pdb
