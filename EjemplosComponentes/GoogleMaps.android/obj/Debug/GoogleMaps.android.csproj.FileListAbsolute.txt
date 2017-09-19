@@ -66,5 +66,3 @@ D:\Development\Repositories\Xamarin\EjemplosComponentes\GoogleMaps.android\obj\D
 D:\Development\Repositories\Xamarin\EjemplosComponentes\GoogleMaps.android\obj\Debug\res\values\strings.xml
 D:\Development\Repositories\Xamarin\EjemplosComponentes\GoogleMaps.android\obj\Debug\R.cs.flag
 D:\Development\Repositories\Xamarin\EjemplosComponentes\GoogleMaps.android\obj\Debug\uploadflags.txt
-D:\Development\Repositories\Xamarin\EjemplosComponentes\GoogleMaps.android\bin\Debug\GoogleMaps.android.dll.mdb
-D:\Development\Repositories\Xamarin\EjemplosComponentes\GoogleMaps.android\obj\Debug\android\assets\GoogleMaps.android.dll.mdb

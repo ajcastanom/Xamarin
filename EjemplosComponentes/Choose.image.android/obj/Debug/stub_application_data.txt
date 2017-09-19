@@ -1,2 +1,0 @@
-android.app.Application
-Choose.image.android.Choose.image.android

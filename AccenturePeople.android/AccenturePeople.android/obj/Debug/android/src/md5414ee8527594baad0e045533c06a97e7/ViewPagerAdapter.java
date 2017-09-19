@@ -22,7 +22,7 @@ public class ViewPagerAdapter
 	{
 		super (p0);
 		if (getClass () == ViewPagerAdapter.class)
-			mono.android.TypeManager.Activate ("AccenturePeople.android.Fragments.ViewPagerAdapter, AccenturePeople.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Support.V4.App.FragmentManager, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
+			mono.android.TypeManager.Activate ("AccenturePeople.android.Fragments.ViewPagerAdapter, AccenturePeople.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.Support.V4.App.FragmentManager, Xamarin.Android.Support.Fragment, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", this, new java.lang.Object[] { p0 });
 	}
 
 

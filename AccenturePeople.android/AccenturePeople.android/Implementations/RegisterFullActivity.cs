@@ -13,6 +13,7 @@ using Android.Net;
 using Refractored.Controls;
 using AccenturePeople.android.Models;
 using AccenturePeople.android.DataBase;
+using System.IO;
 
 namespace AccenturePeople.android.Implementations
 {
@@ -77,7 +78,7 @@ namespace AccenturePeople.android.Implementations
         }
 
         private void ImageButtonChooseImage_Click(object sender, EventArgs e)
-        {
+        {   
             Intent intent = new Intent();
             intent.SetType("image/*");
 

@@ -45,7 +45,7 @@ namespace Choose.image.android
 		{
 			
 			// aapt resource value: 0x7f040001
-			public const int buttonChooseImage = 2130968577;
+			public const int imageButtonChooseImage = 2130968577;
 			
 			// aapt resource value: 0x7f040000
 			public const int imageViewShowImage = 2130968576;

@@ -12,3 +12,4 @@ D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj
 D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\uploadflags.txt
 D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\bin\Debug\Choose.image.android.dll.mdb
 D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\android\assets\Choose.image.android.dll.mdb
+D:\Development\Repositories\Xamarin\EjemplosComponentes\Choose.image.android\obj\Debug\Choose.image.android.csprojResolveAssemblyReference.cache

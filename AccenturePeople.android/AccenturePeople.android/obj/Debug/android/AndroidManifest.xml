@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="AccenturePeople.android.AccenturePeople.android" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-  <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="24" />
+  <!--<uses-sdk android:minSdkVersion="24" />-->
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!--<uses-sdk android:minSdkVersion="21" />-->
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="10" />
+  <!-- We need to be able to download map tiles and access Google Play Services-->
   <uses-permission android:name="android.permission.INTERNET" />
+  <!-- Allow the application to access Google web-based services. -->
+  <!-- Google Maps for Android v2 will cache map tiles on external storage -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- Google Maps for Android v2 needs this permission so that it may check the connection state as it must download data -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- These are optional, but recommended. They will allow Maps to use the My Location provider. -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <!-- Allow the application to access Google web-based services. -->
+  <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+  <!--
+    NOTE: you MUST follow the instructions on this page
+    http://developer.xamarin.com/guides/android/platform_features/maps_and_location/maps/obtaining_a_google_maps_api_key/
+    to get an API key for your specific debug.keystore SHA1 and package name.
+    Update all the values below:
+    * package name in the prefix of uses-permission element
+    * package name in the prefix of permission element
+    * API_KEY value obtained from https://console.developers.google.com/
+    -->
+  <!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
+  <uses-permission android:name="AccenturePeople.android.AccenturePeople.android.permission.MAPS_RECEIVE" />
+  <permission android:name="AccenturePeople.android.AccenturePeople.android.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:allowBackup="true" android:label="@string/app_name" android:name="md59215f62e7092a2a775e1a3120128a8a0.MainApplication" android:debuggable="true">
-    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.LoginActivity">
+  <application android:label="@string/app_name" android:name="md59215f62e7092a2a775e1a3120128a8a0.MainApplication" android:allowBackup="true" android:debuggable="true">
+    <!-- Put your Google Maps V2 API Key here. This key will not work for you.-->
+    <!-- See https://developers.google.com/maps/documentation/android/start#obtaining_an_api_key -->
+    <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCGqScW5lMDwsrSKZ6SczwPRghsF6UmGf8" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.LoginActivity" />
+    <activity android:label="AccenturePeople.android" android:theme="@style/MyTheme" android:name="md59215f62e7092a2a775e1a3120128a8a0.MainActivity" />
+    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.RegisterActivity" />
+    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactAdapterActivity" />
+    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactDetailActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="AccenturePeople.android" android:theme="@style/MyTheme" android:name="md59215f62e7092a2a775e1a3120128a8a0.MainActivity" />
-    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.RegisterActivity" />
-    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactAdapterActivity" />
-    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactDetailActivity" />
     <activity android:label="AccenturePeople.android" android:theme="@style/AppTheme" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.RegisterFullActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="AccenturePeople.android.AccenturePeople.android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
@@ -29,5 +58,10 @@
       </intent-filter>
     </receiver>
     <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
   </application>
+  <uses-sdk android:minSdkVersion="19" />
+  <application android:allowBackup="true" android:label="@string/app_name"></application>
+  <uses-feature android:glEsVersion="0x00020000" android:required="true" />
 </manifest>

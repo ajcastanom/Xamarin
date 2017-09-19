@@ -1,4 +1,0 @@
-Choose.image.android.MainActivity, Choose.image.android;md5e9a459cc814f945e5b7a4ac6f4c2f78d.MainActivity
-Choose.image.android.MainActivity, Choose.image.android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5e9a459cc814f945e5b7a4ac6f4c2f78d.MainActivity
-Choose.image.android.MainActivity;md5e9a459cc814f945e5b7a4ac6f4c2f78d.MainActivity
-choose.image.android.MainActivity;md5e9a459cc814f945e5b7a4ac6f4c2f78d.MainActivity

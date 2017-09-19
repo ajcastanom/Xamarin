@@ -15,7 +15,7 @@ using System.IO;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
         Button buttonRegister, buttonLogin;
