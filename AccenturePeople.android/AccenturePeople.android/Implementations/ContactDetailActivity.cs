@@ -17,7 +17,7 @@ using Android.Gms.Maps.Model;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = true)]
+    [Activity(Label = "AccenturePeople.android", MainLauncher = false)]
     class ContactDetailActivity : Activity, IOnMapReadyCallback, ILocationListener
     {
         TextView textViewName, textViewUsername;

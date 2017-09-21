@@ -261,3 +261,13 @@ D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.andr
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\AccenturePeople.android.dll.mdb
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\AccenturePeople.android.dll.mdb
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\AccenturePeoplePCL.dll.mdb
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\res\drawable\ic_chrome_reader_mode_black_48dp.png
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\FSharp.Core.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\FSharpUtils.Newtonsoft.JsonValue.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\TypeSafe.Http.Net.Api.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\TypeSafe.Http.Net.HttpClient.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\TypeSafe.Http.Net.Metadata.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\FSharp.Core.xml
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\TypeSafe.Http.Net.Api.xml
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\TypeSafe.Http.Net.HttpClient.xml
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\bin\Debug\TypeSafe.Http.Net.Metadata.xml

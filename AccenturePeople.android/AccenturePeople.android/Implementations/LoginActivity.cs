@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System;
 using AccenturePeople.android.Models;
 using System.IO;
+using AccenturePeople.android.RestServices;
 
 namespace AccenturePeople.android
 {
@@ -42,6 +43,8 @@ namespace AccenturePeople.android
 
             dbManager = new DataBaseManager(this);
             //dbManager.OnUpgrade(dbManager.ReadableDatabase, 0, 1);
+
+            AccountRestService.GetUserInfoAsync();
         }
 
         private void ButtonLogin_Click(object sender, System.EventArgs e)

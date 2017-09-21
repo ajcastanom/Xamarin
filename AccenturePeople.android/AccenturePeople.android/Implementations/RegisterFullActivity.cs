@@ -14,20 +14,26 @@ using Refractored.Controls;
 using AccenturePeople.android.Models;
 using AccenturePeople.android.DataBase;
 using System.IO;
+using AccenturePeople.android.Utils.Validations;
+using AccenturePeople.android.RestServices;
+using AccenturePeople.android.Utils;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/AppTheme")]
+    [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppTheme")]
     class RegisterFullActivity : Activity
     {
         ImageButton imageButtonChooseImage;
         CircleImageView imageViewProfile;
         EditText editTextIdentification, editTextFirstname, editTextLastname, editTextEmail;
         Button buttonAccept;
+        Spinner spinnerProject, spinnerWbs;
 
         private static int PickImageId = 1000;
         private Contact contact;
         DataBaseManager dbManager;
+
+        List<String> listProjectsName, listWbsName;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -43,12 +49,25 @@ namespace AccenturePeople.android.Implementations
             editTextLastname = FindViewById<EditText>(Resource.Id.editTextLastname);
             editTextEmail = FindViewById<EditText>(Resource.Id.editTextEmail);
             buttonAccept = FindViewById<Button>(Resource.Id.buttonAccept);
+            spinnerProject = FindViewById<Spinner>(Resource.Id.spinnerProject);
+            spinnerWbs = FindViewById<Spinner>(Resource.Id.spinnerWbs);
 
             imageButtonChooseImage.Click += ImageButtonChooseImage_Click;
             buttonAccept.Click += ButtonAccept_Click;
 
             contact = (Contact)Intent.GetParcelableExtra("contact");
-            editTextEmail.Text = contact.Email;
+            contact = new Contact();
+            //editTextEmail.Text = contact.Email;
+
+            /*var itemsProjects = new List<string>() { "Seleccione un proyecto", "Proyecto A", "Proyecto B", "Proyecto C", "Proyecto D" };
+            var adapterProjects = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, itemsProjects);
+            spinnerProject.Adapter = adapterProjects;*/
+
+            /*var itemsWbs = new List<string>() { "Seleccione un WBS", "Wbs 1", "Wbs 2", "Wbs 3", "Wbs 4" };
+            var adapterWbs = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, itemsWbs);
+            spinnerWbs.Adapter = adapterWbs;*/
+
+            InitValuesAsync();
 
             dbManager = new DataBaseManager(this);
         }
@@ -63,7 +82,19 @@ namespace AccenturePeople.android.Implementations
             contact.ProfessionalProfile = "";
             contact.Location = "";
 
-            var result = dbManager.UpdateContact(contact);
+            if (string.IsNullOrEmpty(contact.Email))
+            {
+                Toast.MakeText(this, GetString(Resource.String.message_login_validate), ToastLength.Short).Show();
+            }
+            else if (!Email.IsValid(contact.Email))
+            {
+                Toast.MakeText(this, GetString(Resource.String.message_email_validate), ToastLength.Short).Show();
+            }
+            else if (dbManager.IsLogin(contact))
+            {
+            }
+
+                var result = dbManager.UpdateContact(contact);
             if (result)
             {
                 //se actualiza correctamente el perfil
@@ -94,6 +125,23 @@ namespace AccenturePeople.android.Implementations
                 imageViewProfile.SetImageURI(uri);
                 contact.Image = uri.ToString();
             }
+        }
+
+        public async System.Threading.Tasks.Task InitValuesAsync()
+        {
+            List<Project> ProjectsResult = await ContactRestService.GetProjects();            
+            Projects UtilsProjects = new Projects(ProjectsResult);
+            listProjectsName = UtilsProjects.getListNames();
+            listProjectsName.Insert(0, "Seleccione un proyecto");
+            var adapterProjects = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, listProjectsName);
+            spinnerProject.Adapter = adapterProjects;
+
+            List<Wbs> WbsResult = await ContactRestService.GetWbs();
+            WbsUtil UtilsWbs = new WbsUtil(WbsResult);
+            listWbsName = UtilsProjects.getListNames();
+            listWbsName.Insert(0, "Seleccione un WBS");
+            var adapterWbs = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, listWbsName);
+            spinnerWbs.Adapter = adapterWbs;
         }
     }
 }

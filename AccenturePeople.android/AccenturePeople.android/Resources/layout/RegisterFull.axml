@@ -50,25 +50,31 @@
                     android:id="@+id/imageButtonChooseImage" />
             </RelativeLayout>
             <EditText
-                android:inputType="text"
+                android:inputType="numberDecimal"
+                android:drawableLeft="@drawable/ic_chrome_reader_mode_black_48dp"
+                android:drawablePadding="10dp"
                 android:hint="@string/hint_identification"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextIdentification" />
             <EditText
                 android:inputType="text"
+                android:paddingLeft="39dp"
                 android:hint="@string/hint_firstname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextFirstname" />
             <EditText
                 android:inputType="text"
+                android:paddingLeft="39dp"
                 android:hint="@string/hint_lastname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/editTextLastname" />
             <EditText
                 android:inputType="text"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
                 android:hint="@string/hint_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,17 +82,17 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner"
+                android:id="@+id/spinnerProject"
                 android:layout_marginTop="10.0dp" />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner2"
+                android:id="@+id/spinnerWbs"
                 android:layout_marginTop="10.0dp" />
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/spinner3"
+                android:id="@+id/spinnerUbicacion"
                 android:layout_marginTop="10.0dp" />
             <EditText
                 android:inputType="textMultiLine"
