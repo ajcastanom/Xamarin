@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{147FF32C-6BE6-42A5-95C6-472D150E74A3}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AccenturePeople.iOS/AppDelegate.cs">
+    <Files>
+      <File FileName="AccenturePeople.iOS/AppDelegate.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F38F8621-AADA-4474-99DB-52A34F9366B5">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS>
+  <MonoDevelop.Ide.ItemProperties.AccenturePeople.android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+</Properties>
