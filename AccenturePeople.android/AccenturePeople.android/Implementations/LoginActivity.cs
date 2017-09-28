@@ -16,12 +16,15 @@ using AccenturePeople.android.RestServices;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
         Button buttonRegister, buttonLogin;
         EditText editTextEmail, editTextPassword;
         DataBaseManager dbManager;
+
+        IContactosService contactosService;
+        IMobileFirstHelper mobileFirstHelper;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -31,6 +34,8 @@ namespace AccenturePeople.android
 
             // Create UI
             SetContentView(Resource.Layout.Login);
+            mobileFirstHelper = new MobileFirstHelper();
+            contactosService = new ContactosService(mobileFirstHelper);
 
 
             editTextEmail = FindViewById<EditText>(Resource.Id.editTextEmail);
@@ -43,8 +48,6 @@ namespace AccenturePeople.android
 
             dbManager = new DataBaseManager(this);
             //dbManager.OnUpgrade(dbManager.ReadableDatabase, 0, 1);
-
-            AccountRestService.GetUserInfoAsync();
         }
 
         private void ButtonLogin_Click(object sender, System.EventArgs e)
@@ -60,25 +63,9 @@ namespace AccenturePeople.android
                 {
                     Toast.MakeText(this, GetString(Resource.String.message_email_validate), ToastLength.Short).Show();
                 }
-                else if(dbManager.IsLogin(contact))
+                else
                 {
-                    var mainActivity = new Intent(this, typeof(MainActivity));
-                    //mainActivity.PutExtra("contact", contact);
-                    StartActivity(mainActivity);
-                    //Ir a la actividad de la lista de contactos
-                    /*var result = dbManager.insertUser(editTextEmail.Text);
-                    if (result)
-                    {                        
-                        Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
-                        var mainActivity = new Intent(this, typeof(MainActivity));
-                        StartActivity(mainActivity);
-                    } else
-                    {                        
-                        Toast.MakeText(this, GetString(Resource.String.error), ToastLength.Short).Show();
-                    }*/
-                } else
-                {
-                    Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short).Show();
+                    Login(contact);
                 }
 
     }
@@ -94,9 +81,49 @@ namespace AccenturePeople.android
             StartActivity(intent: registerActivity);
         }
 
-        private void Login()
+        private void Login(Contact contact)
         {
-              
+            Task.Run(async () =>
+            {
+                try
+                {
+                    //bool conectado = await contactosService.Login(contact.Email, contact.Password, "password");
+                    Login login = await AccountRestService.LoginAsync(contact.Email, contact.Password);
+                    if (false)
+                    {
+                        var mainActivity = new Intent(this, typeof(MainActivity));
+                        //mainActivity.PutExtra("contact", contact);
+                        StartActivity(mainActivity);
+                        //Ir a la actividad de la lista de contactos
+                        /*var result = dbManager.insertUser(editTextEmail.Text);
+                        if (result)
+                        {                        
+                            Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
+                            var mainActivity = new Intent(this, typeof(MainActivity));
+                            StartActivity(mainActivity);
+                        } else
+                        {                        
+                            Toast.MakeText(this, GetString(Resource.String.error), ToastLength.Short).Show();
+                        }*/
+                    }
+                    else
+                    {
+                        Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short).Show();
+                    }
+                    RunOnUiThread(() =>
+                    {
+
+                    });
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+
+                }
+            });
         }
     }
 }

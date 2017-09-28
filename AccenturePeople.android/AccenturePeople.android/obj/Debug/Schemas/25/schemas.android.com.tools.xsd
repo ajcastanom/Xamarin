@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>9/19/2017 10:32:15 PM</xs:documentation>
+    <xs:documentation>9/22/2017 7:17:21 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -569,6 +569,7 @@
             <xs:enumeration value="@string/message_email_exist" />
             <xs:enumeration value="@string/message_email_validate" />
             <xs:enumeration value="@string/message_login_validate" />
+            <xs:enumeration value="@string/message_password_length_validate" />
             <xs:enumeration value="@string/message_password_validate" />
             <xs:enumeration value="@string/message_resgister_validate" />
             <xs:enumeration value="@string/not_account" />

@@ -757,6 +757,60 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f010048
 			public const int menu = 2130772040;
 			
+			// aapt resource value: 0x7f010171
+			public const int ms_alignLabels = 2130772337;
+			
+			// aapt resource value: 0x7f010175
+			public const int ms_arrowColor = 2130772341;
+			
+			// aapt resource value: 0x7f010174
+			public const int ms_arrowSize = 2130772340;
+			
+			// aapt resource value: 0x7f010166
+			public const int ms_baseColor = 2130772326;
+			
+			// aapt resource value: 0x7f010177
+			public const int ms_enableErrorLabel = 2130772343;
+			
+			// aapt resource value: 0x7f010176
+			public const int ms_enableFloatingLabel = 2130772342;
+			
+			// aapt resource value: 0x7f010169
+			public const int ms_error = 2130772329;
+			
+			// aapt resource value: 0x7f010168
+			public const int ms_errorColor = 2130772328;
+			
+			// aapt resource value: 0x7f01016d
+			public const int ms_floatingLabelColor = 2130772333;
+			
+			// aapt resource value: 0x7f01016c
+			public const int ms_floatingLabelText = 2130772332;
+			
+			// aapt resource value: 0x7f010167
+			public const int ms_highlightColor = 2130772327;
+			
+			// aapt resource value: 0x7f01016a
+			public const int ms_hint = 2130772330;
+			
+			// aapt resource value: 0x7f01016b
+			public const int ms_hintColor = 2130772331;
+			
+			// aapt resource value: 0x7f01016e
+			public const int ms_multiline = 2130772334;
+			
+			// aapt resource value: 0x7f01016f
+			public const int ms_nbErrorLines = 2130772335;
+			
+			// aapt resource value: 0x7f010172
+			public const int ms_thickness = 2130772338;
+			
+			// aapt resource value: 0x7f010173
+			public const int ms_thickness_error = 2130772339;
+			
+			// aapt resource value: 0x7f010170
+			public const int ms_typeface = 2130772336;
+			
 			// aapt resource value: 0x7f010092
 			public const int multiChoiceItemLayout = 2130772114;
 			
@@ -1224,44 +1278,44 @@ namespace AccenturePeople.android
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f06005b
-			public const int abc_background_cache_hint_selector_material_dark = 2131099739;
-			
-			// aapt resource value: 0x7f06005c
-			public const int abc_background_cache_hint_selector_material_light = 2131099740;
-			
 			// aapt resource value: 0x7f06005d
-			public const int abc_btn_colored_borderless_text_material = 2131099741;
+			public const int abc_background_cache_hint_selector_material_dark = 2131099741;
 			
 			// aapt resource value: 0x7f06005e
-			public const int abc_btn_colored_text_material = 2131099742;
+			public const int abc_background_cache_hint_selector_material_light = 2131099742;
 			
 			// aapt resource value: 0x7f06005f
-			public const int abc_color_highlight_material = 2131099743;
+			public const int abc_btn_colored_borderless_text_material = 2131099743;
 			
 			// aapt resource value: 0x7f060060
-			public const int abc_hint_foreground_material_dark = 2131099744;
+			public const int abc_btn_colored_text_material = 2131099744;
 			
 			// aapt resource value: 0x7f060061
-			public const int abc_hint_foreground_material_light = 2131099745;
+			public const int abc_color_highlight_material = 2131099745;
+			
+			// aapt resource value: 0x7f060062
+			public const int abc_hint_foreground_material_dark = 2131099746;
+			
+			// aapt resource value: 0x7f060063
+			public const int abc_hint_foreground_material_light = 2131099747;
 			
 			// aapt resource value: 0x7f060014
 			public const int abc_input_method_navigation_guard = 2131099668;
 			
-			// aapt resource value: 0x7f060062
-			public const int abc_primary_text_disable_only_material_dark = 2131099746;
-			
-			// aapt resource value: 0x7f060063
-			public const int abc_primary_text_disable_only_material_light = 2131099747;
-			
 			// aapt resource value: 0x7f060064
-			public const int abc_primary_text_material_dark = 2131099748;
+			public const int abc_primary_text_disable_only_material_dark = 2131099748;
 			
 			// aapt resource value: 0x7f060065
-			public const int abc_primary_text_material_light = 2131099749;
+			public const int abc_primary_text_disable_only_material_light = 2131099749;
 			
 			// aapt resource value: 0x7f060066
-			public const int abc_search_url_text = 2131099750;
+			public const int abc_primary_text_material_dark = 2131099750;
+			
+			// aapt resource value: 0x7f060067
+			public const int abc_primary_text_material_light = 2131099751;
+			
+			// aapt resource value: 0x7f060068
+			public const int abc_search_url_text = 2131099752;
 			
 			// aapt resource value: 0x7f060015
 			public const int abc_search_url_text_normal = 2131099669;
@@ -1272,35 +1326,35 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060017
 			public const int abc_search_url_text_selected = 2131099671;
 			
-			// aapt resource value: 0x7f060067
-			public const int abc_secondary_text_material_dark = 2131099751;
-			
-			// aapt resource value: 0x7f060068
-			public const int abc_secondary_text_material_light = 2131099752;
-			
 			// aapt resource value: 0x7f060069
-			public const int abc_tint_btn_checkable = 2131099753;
+			public const int abc_secondary_text_material_dark = 2131099753;
 			
 			// aapt resource value: 0x7f06006a
-			public const int abc_tint_default = 2131099754;
+			public const int abc_secondary_text_material_light = 2131099754;
 			
 			// aapt resource value: 0x7f06006b
-			public const int abc_tint_edittext = 2131099755;
+			public const int abc_tint_btn_checkable = 2131099755;
 			
 			// aapt resource value: 0x7f06006c
-			public const int abc_tint_seek_thumb = 2131099756;
+			public const int abc_tint_default = 2131099756;
 			
 			// aapt resource value: 0x7f06006d
-			public const int abc_tint_spinner = 2131099757;
+			public const int abc_tint_edittext = 2131099757;
 			
 			// aapt resource value: 0x7f06006e
-			public const int abc_tint_switch_thumb = 2131099758;
+			public const int abc_tint_seek_thumb = 2131099758;
 			
 			// aapt resource value: 0x7f06006f
-			public const int abc_tint_switch_track = 2131099759;
+			public const int abc_tint_spinner = 2131099759;
 			
-			// aapt resource value: 0x7f060059
-			public const int accent = 2131099737;
+			// aapt resource value: 0x7f060070
+			public const int abc_tint_switch_thumb = 2131099760;
+			
+			// aapt resource value: 0x7f060071
+			public const int abc_tint_switch_track = 2131099761;
+			
+			// aapt resource value: 0x7f06005b
+			public const int accent = 2131099739;
 			
 			// aapt resource value: 0x7f060018
 			public const int accent_material_dark = 2131099672;
@@ -1308,11 +1362,11 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060019
 			public const int accent_material_light = 2131099673;
 			
-			// aapt resource value: 0x7f06005a
-			public const int accent_pressed = 2131099738;
+			// aapt resource value: 0x7f06005c
+			public const int accent_pressed = 2131099740;
 			
-			// aapt resource value: 0x7f060052
-			public const int background = 2131099730;
+			// aapt resource value: 0x7f060054
+			public const int background = 2131099732;
 			
 			// aapt resource value: 0x7f06001a
 			public const int background_floating_material_dark = 2131099674;
@@ -1362,8 +1416,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060051
 			public const int cardview_shadow_start_color = 2131099729;
 			
-			// aapt resource value: 0x7f060070
-			public const int common_google_signin_btn_text_dark = 2131099760;
+			// aapt resource value: 0x7f060072
+			public const int common_google_signin_btn_text_dark = 2131099762;
 			
 			// aapt resource value: 0x7f060000
 			public const int common_google_signin_btn_text_dark_default = 2131099648;
@@ -1377,8 +1431,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060003
 			public const int common_google_signin_btn_text_dark_pressed = 2131099651;
 			
-			// aapt resource value: 0x7f060071
-			public const int common_google_signin_btn_text_light = 2131099761;
+			// aapt resource value: 0x7f060073
+			public const int common_google_signin_btn_text_light = 2131099763;
 			
 			// aapt resource value: 0x7f060004
 			public const int common_google_signin_btn_text_light_default = 2131099652;
@@ -1392,14 +1446,14 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060007
 			public const int common_google_signin_btn_text_light_pressed = 2131099655;
 			
-			// aapt resource value: 0x7f060055
-			public const int create_account = 2131099733;
+			// aapt resource value: 0x7f060057
+			public const int create_account = 2131099735;
 			
 			// aapt resource value: 0x7f060008
 			public const int design_bottom_navigation_shadow_color = 2131099656;
 			
-			// aapt resource value: 0x7f060072
-			public const int design_error = 2131099762;
+			// aapt resource value: 0x7f060074
+			public const int design_error = 2131099764;
 			
 			// aapt resource value: 0x7f060009
 			public const int design_fab_shadow_end_color = 2131099657;
@@ -1431,8 +1485,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060012
 			public const int design_textinput_error_color_light = 2131099666;
 			
-			// aapt resource value: 0x7f060073
-			public const int design_tint_password_toggle = 2131099763;
+			// aapt resource value: 0x7f060075
+			public const int design_tint_password_toggle = 2131099765;
 			
 			// aapt resource value: 0x7f060026
 			public const int dim_foreground_disabled_material_dark = 2131099686;
@@ -1446,6 +1500,12 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060029
 			public const int dim_foreground_material_light = 2131099689;
 			
+			// aapt resource value: 0x7f060052
+			public const int disabled_color = 2131099730;
+			
+			// aapt resource value: 0x7f060053
+			public const int error_color = 2131099731;
+			
 			// aapt resource value: 0x7f06002a
 			public const int foreground_material_dark = 2131099690;
 			
@@ -1458,8 +1518,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f06002d
 			public const int highlighted_text_material_light = 2131099693;
 			
-			// aapt resource value: 0x7f060054
-			public const int hint = 2131099732;
+			// aapt resource value: 0x7f060056
+			public const int hint = 2131099734;
 			
 			// aapt resource value: 0x7f06002e
 			public const int material_blue_grey_800 = 2131099694;
@@ -1506,11 +1566,11 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f06003b
 			public const int notification_material_background_media_default_color = 2131099707;
 			
-			// aapt resource value: 0x7f060056
-			public const int primary = 2131099734;
+			// aapt resource value: 0x7f060058
+			public const int primary = 2131099736;
 			
-			// aapt resource value: 0x7f060057
-			public const int primary_dark = 2131099735;
+			// aapt resource value: 0x7f060059
+			public const int primary_dark = 2131099737;
 			
 			// aapt resource value: 0x7f06003c
 			public const int primary_dark_material_dark = 2131099708;
@@ -1536,8 +1596,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f060043
 			public const int primary_text_disabled_material_light = 2131099715;
 			
-			// aapt resource value: 0x7f060058
-			public const int ripple = 2131099736;
+			// aapt resource value: 0x7f06005a
+			public const int ripple = 2131099738;
 			
 			// aapt resource value: 0x7f060044
 			public const int ripple_material_dark = 2131099716;
@@ -1563,11 +1623,11 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f06004b
 			public const int switch_thumb_disabled_material_light = 2131099723;
 			
-			// aapt resource value: 0x7f060074
-			public const int switch_thumb_material_dark = 2131099764;
+			// aapt resource value: 0x7f060076
+			public const int switch_thumb_material_dark = 2131099766;
 			
-			// aapt resource value: 0x7f060075
-			public const int switch_thumb_material_light = 2131099765;
+			// aapt resource value: 0x7f060077
+			public const int switch_thumb_material_light = 2131099767;
 			
 			// aapt resource value: 0x7f06004c
 			public const int switch_thumb_normal_material_dark = 2131099724;
@@ -1575,8 +1635,8 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f06004d
 			public const int switch_thumb_normal_material_light = 2131099725;
 			
-			// aapt resource value: 0x7f060053
-			public const int title = 2131099731;
+			// aapt resource value: 0x7f060055
+			public const int title = 2131099733;
 			
 			static Color()
 			{
@@ -1942,6 +2002,18 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f0a0075
 			public const int disabled_alpha_material_light = 2131361909;
 			
+			// aapt resource value: 0x7f0a008e
+			public const int error_label_spacing = 2131361934;
+			
+			// aapt resource value: 0x7f0a008f
+			public const int floating_label_bottom_spacing = 2131361935;
+			
+			// aapt resource value: 0x7f0a0090
+			public const int floating_label_inside_spacing = 2131361936;
+			
+			// aapt resource value: 0x7f0a0091
+			public const int floating_label_top_spacing = 2131361937;
+			
 			// aapt resource value: 0x7f0a0076
 			public const int highlight_alpha_material_colored = 2131361910;
 			
@@ -1971,6 +2043,12 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f0a008a
 			public const int item_touch_helper_swipe_escape_velocity = 2131361930;
+			
+			// aapt resource value: 0x7f0a0092
+			public const int label_text_size = 2131361938;
+			
+			// aapt resource value: 0x7f0a0093
+			public const int min_content_height = 2131361939;
 			
 			// aapt resource value: 0x7f0a007d
 			public const int notification_action_icon_size = 2131361917;
@@ -2016,6 +2094,15 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f0a0087
 			public const int notification_top_pad_large_text = 2131361927;
+			
+			// aapt resource value: 0x7f0a0094
+			public const int right_left_spinner_padding = 2131361940;
+			
+			// aapt resource value: 0x7f0a0095
+			public const int underline_bottom_spacing = 2131361941;
+			
+			// aapt resource value: 0x7f0a0096
+			public const int underline_top_spacing = 2131361942;
 			
 			static Dimension()
 			{
@@ -2412,52 +2499,55 @@ namespace AccenturePeople.android
 			public const int key = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int navigation_empty_icon = 2130837631;
+			public const int my_background = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int notification_action_background = 2130837632;
+			public const int navigation_empty_icon = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int notification_bg = 2130837633;
+			public const int notification_action_background = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int notification_bg_low = 2130837634;
+			public const int notification_bg = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int notification_bg_low_normal = 2130837635;
+			public const int notification_bg_low = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int notification_bg_low_pressed = 2130837636;
+			public const int notification_bg_low_normal = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int notification_bg_normal = 2130837637;
+			public const int notification_bg_low_pressed = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int notification_bg_normal_pressed = 2130837638;
+			public const int notification_bg_normal = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int notification_icon_background = 2130837639;
-			
-			// aapt resource value: 0x7f02008d
-			public const int notification_template_icon_bg = 2130837645;
-			
-			// aapt resource value: 0x7f02008e
-			public const int notification_template_icon_low_bg = 2130837646;
+			public const int notification_bg_normal_pressed = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int notification_tile_bg = 2130837640;
+			public const int notification_icon_background = 2130837640;
+			
+			// aapt resource value: 0x7f02008e
+			public const int notification_template_icon_bg = 2130837646;
+			
+			// aapt resource value: 0x7f02008f
+			public const int notification_template_icon_low_bg = 2130837647;
 			
 			// aapt resource value: 0x7f020089
-			public const int notify_panel_notification_icon_bg = 2130837641;
+			public const int notification_tile_bg = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int platon = 2130837642;
+			public const int notify_panel_notification_icon_bg = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int profile = 2130837643;
+			public const int platon = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int shadow_linear = 2130837644;
+			public const int profile = 2130837644;
+			
+			// aapt resource value: 0x7f02008d
+			public const int shadow_linear = 2130837645;
 			
 			static Drawable()
 			{
@@ -2949,11 +3039,11 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f0b0056
 			public const int spacer = 2131427414;
 			
+			// aapt resource value: 0x7f0b00c5
+			public const int spinnerLocation = 2131427525;
+			
 			// aapt resource value: 0x7f0b00c3
 			public const int spinnerProject = 2131427523;
-			
-			// aapt resource value: 0x7f0b00c5
-			public const int spinnerUbicacion = 2131427525;
 			
 			// aapt resource value: 0x7f0b00c4
 			public const int spinnerWbs = 2131427524;
@@ -3585,6 +3675,9 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f07004d
 			public const int message_login_validate = 2131165261;
+			
+			// aapt resource value: 0x7f070057
+			public const int message_password_length_validate = 2131165271;
 			
 			// aapt resource value: 0x7f070050
 			public const int message_password_validate = 2131165264;
@@ -6110,6 +6203,80 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 14
 			public const int MapAttrs_zOrderOnTop = 14;
+			
+			public static int[] MaterialSpinner = new int[] {
+					2130772326,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330,
+					2130772331,
+					2130772332,
+					2130772333,
+					2130772334,
+					2130772335,
+					2130772336,
+					2130772337,
+					2130772338,
+					2130772339,
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343};
+			
+			// aapt resource value: 11
+			public const int MaterialSpinner_ms_alignLabels = 11;
+			
+			// aapt resource value: 15
+			public const int MaterialSpinner_ms_arrowColor = 15;
+			
+			// aapt resource value: 14
+			public const int MaterialSpinner_ms_arrowSize = 14;
+			
+			// aapt resource value: 0
+			public const int MaterialSpinner_ms_baseColor = 0;
+			
+			// aapt resource value: 17
+			public const int MaterialSpinner_ms_enableErrorLabel = 17;
+			
+			// aapt resource value: 16
+			public const int MaterialSpinner_ms_enableFloatingLabel = 16;
+			
+			// aapt resource value: 3
+			public const int MaterialSpinner_ms_error = 3;
+			
+			// aapt resource value: 2
+			public const int MaterialSpinner_ms_errorColor = 2;
+			
+			// aapt resource value: 7
+			public const int MaterialSpinner_ms_floatingLabelColor = 7;
+			
+			// aapt resource value: 6
+			public const int MaterialSpinner_ms_floatingLabelText = 6;
+			
+			// aapt resource value: 1
+			public const int MaterialSpinner_ms_highlightColor = 1;
+			
+			// aapt resource value: 4
+			public const int MaterialSpinner_ms_hint = 4;
+			
+			// aapt resource value: 5
+			public const int MaterialSpinner_ms_hintColor = 5;
+			
+			// aapt resource value: 8
+			public const int MaterialSpinner_ms_multiline = 8;
+			
+			// aapt resource value: 9
+			public const int MaterialSpinner_ms_nbErrorLines = 9;
+			
+			// aapt resource value: 12
+			public const int MaterialSpinner_ms_thickness = 12;
+			
+			// aapt resource value: 13
+			public const int MaterialSpinner_ms_thickness_error = 13;
+			
+			// aapt resource value: 10
+			public const int MaterialSpinner_ms_typeface = 10;
 			
 			public static int[] MenuGroup = new int[] {
 					16842766,

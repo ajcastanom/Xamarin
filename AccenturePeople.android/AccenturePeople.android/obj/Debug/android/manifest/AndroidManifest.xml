@@ -38,17 +38,17 @@
     <!-- See https://developers.google.com/maps/documentation/android/start#obtaining_an_api_key -->
     <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCGqScW5lMDwsrSKZ6SczwPRghsF6UmGf8" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.LoginActivity" />
-    <activity android:label="AccenturePeople.android" android:theme="@style/MyTheme" android:name="md59215f62e7092a2a775e1a3120128a8a0.MainActivity" />
-    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.RegisterActivity" />
-    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactAdapterActivity" />
-    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactDetailActivity" />
-    <activity android:label="AccenturePeople.android" android:theme="@style/AppTheme" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.RegisterFullActivity">
+    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.LoginActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="AccenturePeople.android" android:theme="@style/MyTheme" android:name="md59215f62e7092a2a775e1a3120128a8a0.MainActivity" />
+    <activity android:label="AccenturePeople.android" android:theme="@style/AppThemeNoActionBar" android:name="md59215f62e7092a2a775e1a3120128a8a0.RegisterActivity" />
+    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactAdapterActivity" />
+    <activity android:label="AccenturePeople.android" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.ContactDetailActivity" />
+    <activity android:label="AccenturePeople.android" android:theme="@style/AppTheme" android:name="md52d70045b1870e0bd8d7bc8f4a55a3a71.RegisterFullActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="AccenturePeople.android.AccenturePeople.android.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

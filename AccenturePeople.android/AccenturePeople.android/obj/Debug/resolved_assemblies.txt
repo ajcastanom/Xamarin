@@ -2,10 +2,12 @@ D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.andr
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\AccenturePeoplePCL.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\FSharp.Core.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\FSharpUtils.Newtonsoft.JsonValue.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\MaterialSpinner.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\MobileFirst.Android.JSONStore.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\MobileFirst.Android.Push.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\MobileFirst.Xamarin.Android.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\Newtonsoft.Json.dll
+D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\NineOldAndroids.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\Plugin.CurrentActivity.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\Refractored.Controls.CircleImageView.dll
 D:\Development\Repositories\Xamarin\AccenturePeople.android\AccenturePeople.android\obj\Debug\android\assets\TypeSafe.Http.Net.Api.dll

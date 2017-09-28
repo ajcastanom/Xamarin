@@ -53,9 +53,13 @@ namespace AccenturePeople.android
                 {
                     Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short).Show();
                 }
-                else if(editTextPassword.Text != editConfirmPassword.Text)
+                else if (editTextPassword.Text.Length < 6)
                 {
                     Toast.MakeText(this, GetString(Resource.String.message_password_validate), ToastLength.Short).Show();
+                }
+                else if(editTextPassword.Text != editConfirmPassword.Text)
+                {
+                    Toast.MakeText(this, GetString(Resource.String.message_password_length_validate), ToastLength.Short).Show();
                 }
                 else
                 {

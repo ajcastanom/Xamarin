@@ -60,5 +60,26 @@ namespace AccenturePeople.android.RestServices
                 return wbs;
             }
         }
+
+        public static async System.Threading.Tasks.Task<List<Locations>> GetLocation()
+        {
+            string UriUserInfo = "contactAcc/GetLocations";
+
+            string url = REST_URL + UriUserInfo;
+
+            using (var client = new HttpClient())
+            {
+                var response = await client.PostAsync(url, new StringContent("application/json, text/json"));
+
+                response.EnsureSuccessStatusCode();
+
+                string content = await response.Content.ReadAsStringAsync();
+
+                List<Locations> location = JsonConvert.DeserializeObject<List<Locations>>(content);
+
+                //handling the answer  
+                return location;
+            }
+        }
     }
 }
