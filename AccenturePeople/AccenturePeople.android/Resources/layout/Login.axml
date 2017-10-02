@@ -65,13 +65,20 @@
                 android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="center"
                 android:id="@+id/linearLayout3">
-                <CheckBox
+                <TextView
                     android:text="@string/remember"
-                    android:id="@+id/checkBox1"
+                    android:textSize="15dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/textViewNotAccount" />
+                <Switch
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/switchRemember" />
             </LinearLayout>
             <Button
                 android:text="@string/accept"

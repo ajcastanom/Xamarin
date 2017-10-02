@@ -18,7 +18,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -165,6 +165,7 @@
     <Compile Include="Creators\ContactCreator.cs" />
     <Compile Include="DataBase\DataBaseManager.cs" />
     <Compile Include="DataBase\Entities\ContactEntity.cs" />
+    <Compile Include="DataBase\Entities\LoginRemember.cs" />
     <Compile Include="Implementations\ContactAdapterActivity.cs" />
     <Compile Include="Implementations\ContactDetailActivity.cs" />
     <Compile Include="Implementations\Fragments\ContactFragment.cs" />
@@ -176,6 +177,7 @@
     <Compile Include="Implementations\RegisterFullActivity.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Credentials.cs" />
     <Compile Include="Models\Locations.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Project.cs" />
