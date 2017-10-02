@@ -63,6 +63,11 @@ namespace AccenturePeople.android
                     trans.Add(Resource.Id.ContentFrameLayout, new ContactsFragment(), "Contacts");
                     trans.Commit();
                     break;
+                case (Resource.Id.nav_logout):
+                    Intent loginActivity = new Intent(this, typeof(LoginActivity));
+                    loginActivity.PutExtra("loginExecute", "false");
+                    StartActivity(loginActivity);
+                    break;
             }
 
             // Close drawer
@@ -90,6 +95,11 @@ namespace AccenturePeople.android
             List<Contact> Contacts = dbManager.GetContacts();
             
             return Contacts;
+        }
+
+        public override void OnBackPressed()
+        {
+            return;
         }
     }
 }

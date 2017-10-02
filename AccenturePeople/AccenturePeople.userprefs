@@ -1,13 +1,15 @@
-﻿<Properties StartupConfiguration="{147FF32C-6BE6-42A5-95C6-472D150E74A3}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{F6D4FD29-1449-4B8C-90FF-887D58C1E272}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AccenturePeople.android/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.AppCompat/library_project_imports/res/values-v24/values-v24.xml">
+    <Files>
+      <File FileName="../../../../../../Library/Frameworks/Mono.framework/Versions/5.2.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="5814" Column="3" />
+      <File FileName="AccenturePeople.android/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.AppCompat/library_project_imports/res/values-v24/values-v24.xml" Line="1" Column="53" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F38F8621-AADA-4474-99DB-52A34F9366B5">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS>
   <MonoDevelop.Ide.ItemProperties.AccenturePeople.android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
 </Properties>

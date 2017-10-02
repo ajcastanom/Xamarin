@@ -32,5 +32,11 @@ namespace AccenturePeople.android.Models
 
         [JsonProperty(PropertyName = ".expires")]
         public String Expires { get; set; }
+
+        [JsonProperty(PropertyName = "error")]
+        public String Error { get; set; }
+
+        [JsonProperty(PropertyName = "error_description")]
+        public String ErrorDescription { get; set; }
     }
 }
