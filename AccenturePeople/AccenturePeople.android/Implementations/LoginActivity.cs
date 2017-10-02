@@ -13,16 +13,24 @@ using System;
 using AccenturePeople.android.Models;
 using System.IO;
 using AccenturePeople.android.RestServices;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace AccenturePeople.android
 {
     [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
+        Toast ToastValidateAccount;
+        Intent mainActivity;
         Button buttonRegister, buttonLogin;
         EditText editTextEmail, editTextPassword;
+        Switch switchRemember;
         DataBaseManager dbManager;
+        ProgressDialog progress;
 
+        bool isLoginRemember = false;
+        string loginExecute;
         IContactosService contactosService;
         IMobileFirstHelper mobileFirstHelper;
 
@@ -40,6 +48,7 @@ namespace AccenturePeople.android
 
             editTextEmail = FindViewById<EditText>(Resource.Id.editTextEmail);
             editTextPassword = FindViewById<EditText>(Resource.Id.editTextPassword);
+            switchRemember = FindViewById<Switch>(Resource.Id.switchRemember);
             buttonRegister = FindViewById<Button>(Resource.Id.buttonRegister);
             buttonLogin = FindViewById<Button>(Resource.Id.buttonAccept);
 
@@ -47,7 +56,16 @@ namespace AccenturePeople.android
             buttonLogin.Click += ButtonLogin_Click;
 
             dbManager = new DataBaseManager(this);
+            dbManager.OnCreate(dbManager.WritableDatabase);
             //dbManager.OnUpgrade(dbManager.ReadableDatabase, 0, 1);
+
+            ToastValidateAccount = Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short);
+
+            mainActivity = new Intent(this, typeof(MainActivity));
+
+            loginExecute = Intent.GetStringExtra("loginExecute");
+
+            Init();
         }
 
         private void ButtonLogin_Click(object sender, System.EventArgs e)
@@ -65,7 +83,8 @@ namespace AccenturePeople.android
                 }
                 else
                 {
-                    Login(contact);
+                    isLoginRemember = false;
+                    Login(contact, switchRemember.Checked);
                 }
 
     }
@@ -81,39 +100,38 @@ namespace AccenturePeople.android
             StartActivity(intent: registerActivity);
         }
 
-        private void Login(Contact contact)
+        private void Login(Contact contact, bool switchRememberValue)
         {
+            progress.Show();
             Task.Run(async () =>
             {
                 try
-                {
-                    //bool conectado = await contactosService.Login(contact.Email, contact.Password, "password");
-                    Login login = await AccountRestService.LoginAsync(contact.Email, contact.Password);
-                    if (false)
+                {                    
+                    Login login = await AccountRestService.LoginAsync(contact.Email, contact.Password);                    
+                    if (login.Error == null)
                     {
-                        var mainActivity = new Intent(this, typeof(MainActivity));
-                        //mainActivity.PutExtra("contact", contact);
+                        if (!isLoginRemember)
+                        {
+                            //se registra el login
+                            short isRemember = 0;
+                            if (switchRememberValue)
+                            {
+                                isRemember = 1;
+                            }
+                            dbManager.InsertLoginRemember(contact.Email, contact.Password, isRemember);
+                        }
+                        
                         StartActivity(mainActivity);
-                        //Ir a la actividad de la lista de contactos
-                        /*var result = dbManager.insertUser(editTextEmail.Text);
-                        if (result)
-                        {                        
-                            Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
-                            var mainActivity = new Intent(this, typeof(MainActivity));
-                            StartActivity(mainActivity);
-                        } else
-                        {                        
-                            Toast.MakeText(this, GetString(Resource.String.error), ToastLength.Short).Show();
-                        }*/
                     }
                     else
                     {
-                        Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short).Show();
+                        ToastValidateAccount.Show();
                     }
                     RunOnUiThread(() =>
                     {
-
                     });
+
+                    progress.Dismiss();
                 }
                 catch (Exception ex)
                 {
@@ -124,6 +142,39 @@ namespace AccenturePeople.android
 
                 }
             });
+        }
+
+        private void Init()
+        {
+            ProgressDialog();
+
+            isLoginRemember = true;
+            string stringCredentials = dbManager.GetLoginRemember();
+            Credentials credentials = JsonConvert.DeserializeObject<Credentials>(stringCredentials);
+            
+            if(credentials.IsRemember == 1)
+            {
+                Contact contact = new Contact(credentials.UserName, credentials.Password);
+                editTextEmail.Text = contact.Email;
+                editTextPassword.Text = contact.Password;
+                switchRemember.Checked = true;
+                if (loginExecute == null)
+                {
+                    Login(contact, true);
+                }
+                
+                
+            }   
+        }
+
+        private void ProgressDialog()
+        {
+            progress = new Android.App.ProgressDialog(this);
+            progress.Indeterminate = true;
+            progress.SetProgressStyle(Android.App.ProgressDialogStyle.Spinner);
+            progress.SetMessage("Cargando...");
+            progress.SetInverseBackgroundForced(true);
+            progress.SetCancelable(false);
         }
     }
 }

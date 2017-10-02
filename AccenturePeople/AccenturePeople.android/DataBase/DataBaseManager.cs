@@ -25,6 +25,7 @@ namespace AccenturePeople.android.DataBase
         public override void OnCreate(SQLiteDatabase db)
         {
             db.ExecSQL(ContactEntity.CREATE_TABLE_CONTACT);
+            db.ExecSQL(LoginRemember.CREATE_TABLE_LOGIN_REMEMBER);
         }
 
         public override void OnUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
@@ -152,6 +153,58 @@ namespace AccenturePeople.android.DataBase
 
             db.Close();
             return isValid;
+        }
+
+        /***************************************************************
+         ***      METODOS PARA CONSULTAR TABLA LOGIN_REMEMBER        ***
+         ***************************************************************/
+
+        public bool InsertLoginRemember(String username, String password, short isRemember)
+        {
+            try
+            {
+                SQLiteDatabase db = this.WritableDatabase;
+                db.ExecSQL("DELETE FROM " + LoginRemember.LOGIN_REMEMBER_TABLE_NAME);
+                ContentValues contentValues = new ContentValues();
+                contentValues.Put(LoginRemember.LOGIN_REMEMBER_USERNAME, username);
+                contentValues.Put(LoginRemember.LOGIN_REMEMBER_PASSWORD, password);
+                contentValues.Put(LoginRemember.LOGIN_REMEMBER_IS_REMEMBER, isRemember);
+                db.Insert(LoginRemember.LOGIN_REMEMBER_TABLE_NAME, null, contentValues);
+                db.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public string GetLoginRemember()
+        {
+            try
+            {
+                SQLiteDatabase db = this.ReadableDatabase;
+                List<Contact> arrayList = new List<Contact>();
+                ICursor res = db.RawQuery("SELECT * FROM " + LoginRemember.LOGIN_REMEMBER_TABLE_NAME, null);
+                res.MoveToFirst();
+                string credentials = "{}";
+                while (res.IsAfterLast == false)
+                {
+                    credentials = "{";
+                    credentials += "'username': '" + res.GetString(res.GetColumnIndex(LoginRemember.LOGIN_REMEMBER_USERNAME)) + "'";
+                    credentials += ",'password': '" + res.GetString(res.GetColumnIndex(LoginRemember.LOGIN_REMEMBER_PASSWORD)) + "'";
+                    credentials += ",'is_remember': " + res.GetString(res.GetColumnIndex(LoginRemember.LOGIN_REMEMBER_IS_REMEMBER)) + "";
+                    credentials += "}";
+                    res.MoveToNext();
+                }
+
+                db.Close();
+                return credentials;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

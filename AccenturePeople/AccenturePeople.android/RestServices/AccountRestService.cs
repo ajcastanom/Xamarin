@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using AccenturePeople.android.Models;
+using System.Net.Http.Headers;
 
 namespace AccenturePeople.android.RestServices
 {
@@ -20,21 +21,39 @@ namespace AccenturePeople.android.RestServices
 
             string url = REST_URL + UriToken;
 
-            url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
 
             using (var client = new HttpClient())
             {
-                var response = await client.PostAsync(url, new StringContent("application/json, text/json"));
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+                List<KeyValuePair<string, string>> nameValueCollection = new List<KeyValuePair<string, string>>();
+                nameValueCollection.Add(new KeyValuePair<string, string>("UserName", Username));
+                nameValueCollection.Add(new KeyValuePair<string, string>("Password", Password));
+                nameValueCollection.Add(new KeyValuePair<string, string>("grant_type", "password"));
+                message.Content = new FormUrlEncodedContent(nameValueCollection);
 
-                response.EnsureSuccessStatusCode();
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+                    
+                    Login login = JsonConvert.DeserializeObject<Login>(content);
 
-                string content = await response.Content.ReadAsStringAsync();
+                    //handling the answer  
+                    return login;
+                }
+                catch (Exception ex)
+                {
+                    Login login = new Login();
+                    login.Error = "true";
 
-                Login login = JsonConvert.DeserializeObject<Login>(content);
-
-                //handling the answer  
-                return login;
+                    return login;
+                }               
             }
+
         }
 
         public static async System.Threading.Tasks.Task<String> GetUserInfoAsync()

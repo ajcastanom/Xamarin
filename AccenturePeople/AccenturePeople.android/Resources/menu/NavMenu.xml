@@ -5,5 +5,9 @@
       android:id="@+id/nav_home"
       android:icon="@drawable/ic_contacts_grey_900_24dp"
       android:title="Contactos" />
+    <item
+      android:id="@+id/nav_logout"
+      android:icon="@drawable/ic_contacts_grey_900_24dp"
+      android:title="Cerrar sesión" />
   </group>
 </menu>
