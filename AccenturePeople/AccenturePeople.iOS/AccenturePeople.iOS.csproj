@@ -84,21 +84,24 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\accenture_background.imageset\accenture_background.png" />
-    <ImageAsset Include="Assets.xcassets\accenture_background.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\accenture_logo_title.imageset\accenture_logo_title.png" />
-    <ImageAsset Include="Assets.xcassets\accenture_logo_title.imageset\Contents.json" />
-=======
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
->>>>>>> 3a148714a6de80f666fad3a317d2486e1e6b36d6
+    <ImageAsset Include="Assets.xcassets\accenture_background.imageset\accenture_background.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\accenture_background.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\accenture_logo_title.imageset\accenture_logo_title.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\accenture_logo_title.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
