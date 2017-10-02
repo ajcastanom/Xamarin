@@ -1,9 +1,5 @@
 ﻿<Properties StartupConfiguration="{147FF32C-6BE6-42A5-95C6-472D150E74A3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AccenturePeople.iOS/AppDelegate.cs">
-    <Files>
-      <File FileName="AccenturePeople.iOS/AppDelegate.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -1,26 +1,100 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-	<dependencies>
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106" />
-		<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
-	</dependencies>
-	<scenes>
-		<!--View Controller-->
-		<scene sceneID="tne-QT-ifu">
-			<objects>
-				<viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-					<layoutGuides>
-						<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-						<viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
-					</layoutGuides>
-					<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-						<rect key="frame" x="0.0" y="0.0" width="375" height="667" />
-						<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-						<color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
-					</view>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
-			</objects>
-		</scene>
-	</scenes>
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accenture_background" translatesAutoresizingMaskIntoConstraints="NO" id="1L3-Qx-bXu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-S4-RC3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpF-EP-DLj">
+                                        <rect key="frame" x="40" y="193" width="295" height="281"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="281" id="jAL-59-BQf"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="accenture_logo_title" translatesAutoresizingMaskIntoConstraints="NO" id="Y5t-Hq-2YS">
+                                        <rect key="frame" x="120" y="82" width="135" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XpF-EP-DLj" firstAttribute="leading" secondItem="yfi-S4-RC3" secondAttribute="leading" constant="40" id="2Ck-PV-Uy9"/>
+                                    <constraint firstItem="XpF-EP-DLj" firstAttribute="centerX" secondItem="yfi-S4-RC3" secondAttribute="centerX" id="7Cx-aG-V3f"/>
+                                    <constraint firstItem="XpF-EP-DLj" firstAttribute="leading" secondItem="yfi-S4-RC3" secondAttribute="leading" constant="40" id="OZ3-4D-RrT"/>
+                                    <constraint firstItem="XpF-EP-DLj" firstAttribute="top" secondItem="yfi-S4-RC3" secondAttribute="top" constant="192" id="Ot3-uN-WUZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XpF-EP-DLj" secondAttribute="trailing" constant="40" id="Pps-rm-tEX"/>
+                                    <constraint firstAttribute="trailing" secondItem="XpF-EP-DLj" secondAttribute="trailing" constant="40" id="QKf-gu-Qbq"/>
+                                    <constraint firstAttribute="bottom" secondItem="XpF-EP-DLj" secondAttribute="bottom" constant="194" id="gql-cs-bWm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Q0-Q8-LeD"/>
+                            <constraint firstAttribute="trailing" secondItem="yfi-S4-RC3" secondAttribute="trailing" id="7pA-xx-REQ"/>
+                            <constraint firstAttribute="trailing" secondItem="yfi-S4-RC3" secondAttribute="trailing" id="InI-Qp-UTl"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ltd-Xg-344"/>
+                            <constraint firstAttribute="trailing" secondItem="yfi-S4-RC3" secondAttribute="trailing" id="PIs-JJ-7IE"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="leading" secondItem="1L3-Qx-bXu" secondAttribute="leading" id="REa-Vw-I1g"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yfi-S4-RC3" secondAttribute="bottom" id="XDr-MJ-8EC"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="a9X-12-Xw6"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="eJO-o0-XEB"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="trailing" secondItem="1L3-Qx-bXu" secondAttribute="trailing" id="hx7-fx-FZX"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="top" secondItem="1L3-Qx-bXu" secondAttribute="top" id="kCN-ZM-8kh"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="bottom" secondItem="1L3-Qx-bXu" secondAttribute="bottom" id="kwf-56-R8Z"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n6i-gi-BS8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yfi-S4-RC3" secondAttribute="bottom" id="q82-LU-jXl"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r7M-be-eFS"/>
+                            <constraint firstItem="yfi-S4-RC3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uJC-pV-15K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="-0.44977511244377816"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="F9a-nC-Agl">
+            <objects>
+                <viewController id="hTv-ha-Wc4" customClass="RegisterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Gl-6F-bIN"/>
+                        <viewControllerLayoutGuide type="bottom" id="2l7-77-LFT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uVC-7y-7ek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEA-oB-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="accenture_background" width="800" height="450"/>
+        <image name="accenture_logo_title" width="2488" height="657"/>
+    </resources>
 </document>
