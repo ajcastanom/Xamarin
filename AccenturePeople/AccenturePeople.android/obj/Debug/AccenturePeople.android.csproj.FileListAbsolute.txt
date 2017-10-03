@@ -407,5 +407,3 @@ D:/Development/Repositories/Xamarin/AccenturePeople/AccenturePeople.android/obj/
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeople.android/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Tasks.dll
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeople.android/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Base.dll
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeople.android/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Maps.dll
-/Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeople.android/obj/Debug/AccenturePeople.android.dll
-/Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeople.android/obj/Debug/AccenturePeople.android.pdb

@@ -21,7 +21,6 @@ D:/Development/Repositories/Xamarin/AccenturePeople/AccenturePeoplePCL/Accenture
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/bin/Debug/Newtonsoft.Json.dll
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/bin/Debug/Worklight.Core.dll
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/bin/Debug/Newtonsoft.Json.xml
-/Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/obj/Debug/AccenturePeoplePCL.csprojResolveAssemblyReference.cache
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/obj/Debug/AccenturePeoplePCL.csproj.CoreCompileInputs.cache
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/obj/Debug/AccenturePeoplePCL.dll
 /Users/anderson/Documents/Repositorios/Xamarin/AccenturePeople/AccenturePeoplePCL/AccenturePeoplePCL/obj/Debug/AccenturePeoplePCL.pdb

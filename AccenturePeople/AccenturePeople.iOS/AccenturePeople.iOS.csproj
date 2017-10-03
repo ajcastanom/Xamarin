@@ -109,6 +109,7 @@
     <Folder Include="Resources\drawable\" />
     <Folder Include="Assets.xcassets\accenture_background.imageset\" />
     <Folder Include="Assets.xcassets\accenture_logo_title.imageset\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -133,6 +134,16 @@
     <Compile Include="ViewControllers\RegisterViewController.designer.cs">
       <DependentUpon>RegisterViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewControllers\MainViewController.cs" />
+    <Compile Include="ViewControllers\MainViewController.designer.cs">
+      <DependentUpon>MainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CellViewController.cs" />
+    <Compile Include="ViewControllers\CellViewController.designer.cs">
+      <DependentUpon>CellViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataModel.cs" />
+    <Compile Include="ViewControllers\TableViewSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\accenture_background.png" />
