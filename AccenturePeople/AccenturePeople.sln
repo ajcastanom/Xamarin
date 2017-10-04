@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccenturePeople.android", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccenturePeoplePCL", "AccenturePeoplePCL\AccenturePeoplePCL\AccenturePeoplePCL.csproj", "{8C97DC15-F372-48EB-8ACC-4BAAB56B9C69}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccenturePeople.iOS", "AccenturePeople.iOS\AccenturePeople.iOS.csproj", "{0C5959A7-2961-43CD-B01B-7389A0C91AE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,18 @@ Global
 		{8C97DC15-F372-48EB-8ACC-4BAAB56B9C69}.Release|iPhone.Build.0 = Release|Any CPU
 		{8C97DC15-F372-48EB-8ACC-4BAAB56B9C69}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{8C97DC15-F372-48EB-8ACC-4BAAB56B9C69}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Debug|iPhone.Build.0 = Debug|iPhone
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Release|Any CPU.Build.0 = Release|iPhone
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Release|iPhone.ActiveCfg = Release|iPhone
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Release|iPhone.Build.0 = Release|iPhone
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{0C5959A7-2961-43CD-B01B-7389A0C91AE6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
