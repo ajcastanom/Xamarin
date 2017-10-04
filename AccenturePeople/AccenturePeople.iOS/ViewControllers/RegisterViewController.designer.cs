@@ -9,7 +9,7 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace AccenturePeople.iOS
+namespace AccenturePeoplePCL.iOS
 {
     [Register ("RegisterViewController")]
     partial class RegisterViewController

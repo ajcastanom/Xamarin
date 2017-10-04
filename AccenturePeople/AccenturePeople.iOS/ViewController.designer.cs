@@ -5,7 +5,7 @@
 //
 using Foundation;
 
-namespace AccenturePeople.iOS
+namespace AccenturePeoplePCL.iOS
 {
     [Register("ViewController")]
     partial class ViewController

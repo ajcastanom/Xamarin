@@ -7,7 +7,7 @@ using Android.Database.Sqlite;
 using Android.Database;
 using AccenturePeople.android.DataBase.Entities;
 using System.Collections;
-using AccenturePeople.android.Models;
+using AccenturePeoplePCL.Models;
 using System.Collections.Generic;
 using System.IO;
 

@@ -3,10 +3,10 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
-using AccenturePeople.android.Utils.Validations;
+using AccenturePeoplePCL.Utils.Validations;
 using AccenturePeople.android.DataBase;
 using AccenturePeople.android.Implementations;
-using AccenturePeople.android.Models;
+using AccenturePeoplePCL.Models;
 
 namespace AccenturePeople.android
 {
@@ -68,7 +68,7 @@ namespace AccenturePeople.android
                     {
                         Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
                         var registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
-                        registerFullActivity.PutExtra("contact", contact);
+                        registerFullActivity.PutExtra("email", contact.Email);
                         StartActivity(registerFullActivity);
                     } else if (result == false)
                     {

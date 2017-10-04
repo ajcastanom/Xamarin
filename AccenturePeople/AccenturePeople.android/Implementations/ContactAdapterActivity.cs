@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-using AccenturePeople.android.Models;
+using AccenturePeoplePCL.Models;
 using AccenturePeople.android.Controls;
 using AccenturePeople.android.DataBase;
 
@@ -46,7 +46,9 @@ namespace AccenturePeople.android.Implementations
         {
             Contact contact = LoadContacts()[e.Position];
             Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
-            contactDetailActivity.PutExtra("contact", contact);
+            contactDetailActivity.PutExtra("firstname", contact.Firstname);
+            contactDetailActivity.PutExtra("email", contact.Email);
+            contactDetailActivity.PutExtra("image", contact.Image);
             StartActivity(contactDetailActivity);
             /*Toast.MakeText(this, "Usted ha seleccionado " + planet.Name + " en la posición " + e.Position,
                            ToastLength.Short).Show();*/

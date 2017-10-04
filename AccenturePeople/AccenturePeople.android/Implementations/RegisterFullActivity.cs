@@ -11,12 +11,12 @@ using Android.Views;
 using Android.Widget;
 using Android.Net;
 using Refractored.Controls;
-using AccenturePeople.android.Models;
 using AccenturePeople.android.DataBase;
 using System.IO;
-using AccenturePeople.android.Utils.Validations;
 using AccenturePeople.android.RestServices;
-using AccenturePeople.android.Utils;
+using AccenturePeoplePCL.Utils;
+using AccenturePeoplePCL.Utils.Validations;
+using AccenturePeoplePCL.Models;
 
 namespace AccenturePeople.android.Implementations
 {
@@ -56,7 +56,8 @@ namespace AccenturePeople.android.Implementations
             imageButtonChooseImage.Click += ImageButtonChooseImage_Click;
             buttonAccept.Click += ButtonAccept_Click;
 
-            contact = (Contact)Intent.GetParcelableExtra("contact");
+            contact = new Contact();
+            contact.Email = Intent.GetStringExtra("email");
             editTextEmail.Text = contact.Email;
 
             /*var itemsProjects = new List<string>() { "Seleccione un proyecto", "Proyecto A", "Proyecto B", "Proyecto C", "Proyecto D" };
@@ -100,7 +101,7 @@ namespace AccenturePeople.android.Implementations
                 //se actualiza correctamente el perfil
                 Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
                 var mainActivity = new Intent(this, typeof(MainActivity));
-                mainActivity.PutExtra("contact", contact);
+                //mainActivity.PutExtra("contact", contact);
                 StartActivity(mainActivity);
             } else
             {

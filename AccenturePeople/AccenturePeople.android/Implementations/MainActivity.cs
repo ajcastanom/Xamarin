@@ -9,7 +9,7 @@ using AccenturePeople.android.Fragments;
 using Android.Widget;
 using AccenturePeople.android.Controls;
 using Android.Content;
-using AccenturePeople.android.Models;
+using AccenturePeoplePCL.Models;
 using System;
 using System.Collections.Generic;
 using AccenturePeople.android.Implementations;

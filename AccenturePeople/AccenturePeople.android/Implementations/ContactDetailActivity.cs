@@ -9,7 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using AccenturePeople.android.Models;
+using AccenturePeoplePCL.Models;
 using AccenturePeople.android.DataBase;
 using Android.Gms.Maps;
 using Android.Locations;
@@ -116,14 +116,14 @@ namespace AccenturePeople.android.Implementations
             buttonReturn = FindViewById<Button>(Resource.Id.buttonReturn);
             buttonReturn.Click += ButtonReturn_Click;
 
-            Contact contact = new Contact();
+            /*Contact contact = new Contact();
             String Firstname = contact.Firstname = "anderson";
             String Email = contact.Email = "a@acc.com";
-            String Image = contact.Image = "";
+            String Image = contact.Image = "";*/
 
-            /*String Firstname = Intent.GetStringExtra("firstname");
+            String Firstname = Intent.GetStringExtra("firstname");
             String Email = Intent.GetStringExtra("email");
-            String Image = Intent.GetStringExtra("image");*/
+            String Image = Intent.GetStringExtra("image");
             textViewName.Text = Firstname;
             textViewUsername.Text = Email;
 

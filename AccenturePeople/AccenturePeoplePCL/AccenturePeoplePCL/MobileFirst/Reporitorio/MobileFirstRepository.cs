@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using AccenturePeoplePCL.MobileFirst.Conector;
 using AccenturePeoplePCL.MobileFirst.Resultado;
 using AccenturePeoplePCL.MobileFirst.Seguridad;
-using AccenturePeoplePCL.Utilidades;
+using AccenturePeoplePCL.Utils;
 using Worklight;
 
 namespace AccenturePeoplePCL.MobileFirst.Reporitorio
