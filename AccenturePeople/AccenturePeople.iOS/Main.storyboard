@@ -20,6 +20,104 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4696" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5392" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <variation key="heightClass=regular-widthClass=compact" image="background"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5485" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="15" y="17" width="99" height="28"/>
+                                        <variation key="heightClass=regular-widthClass=compact" image="logo_title">
+                                            <mask key="constraints">
+                                                <include reference="5555"/>
+                                                <include reference="5574"/>
+                                            </mask>
+                                        </variation>
+                                        <constraints>
+                                            <constraint id="5555" firstItem="5485" firstAttribute="width" constant="99"/>
+                                            <constraint id="5574" firstItem="5485" firstAttribute="height" constant="28"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5555"/>
+                                                <exclude reference="5574"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="5503" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="17" y="130" width="287" height="204"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint id="5612" firstItem="5503" firstAttribute="height" constant="204"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="5612"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="5612"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="5392"/>
+                                        <exclude reference="5485"/>
+                                        <exclude reference="5503"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="5393"/>
+                                        <exclude reference="5394"/>
+                                        <exclude reference="5395"/>
+                                        <exclude reference="5396"/>
+                                        <exclude reference="5397"/>
+                                        <exclude reference="5398"/>
+                                        <exclude reference="5399"/>
+                                        <exclude reference="5486"/>
+                                        <exclude reference="5487"/>
+                                        <exclude reference="5534"/>
+                                        <exclude reference="5535"/>
+                                        <exclude reference="5536"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="5392"/>
+                                        <include reference="5485"/>
+                                        <include reference="5503"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="5393"/>
+                                        <include reference="5394"/>
+                                        <include reference="5395"/>
+                                        <include reference="5396"/>
+                                        <include reference="5397"/>
+                                        <include reference="5398"/>
+                                        <include reference="5399"/>
+                                        <include reference="5486"/>
+                                        <include reference="5487"/>
+                                        <include reference="5534"/>
+                                        <include reference="5535"/>
+                                        <include reference="5536"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="5393" firstItem="5392" firstAttribute="trailing" secondItem="4696" secondAttribute="trailing"/>
+                                    <constraint id="5394" firstItem="5392" firstAttribute="top" secondItem="4696" secondAttribute="top"/>
+                                    <constraint id="5395" firstItem="5392" firstAttribute="leading" secondItem="4696" secondAttribute="leading"/>
+                                    <constraint id="5396" firstItem="5392" firstAttribute="bottom" secondItem="4696" secondAttribute="bottom"/>
+                                    <constraint id="5397" firstItem="5392" firstAttribute="centerY" secondItem="4696" secondAttribute="centerY"/>
+                                    <constraint id="5398" firstItem="5392" firstAttribute="centerY" secondItem="4696" secondAttribute="centerY"/>
+                                    <constraint id="5399" firstItem="5392" firstAttribute="centerX" secondItem="4696" secondAttribute="centerX"/>
+                                    <constraint id="5486" firstItem="5485" firstAttribute="top" secondItem="5392" secondAttribute="top" constant="17"/>
+                                    <constraint id="5487" firstItem="5485" firstAttribute="leading" secondItem="5392" secondAttribute="leading" constant="15"/>
+                                    <constraint id="5534" firstItem="5503" firstAttribute="top" secondItem="5392" secondAttribute="top" constant="130"/>
+                                    <constraint id="5535" firstItem="5392" firstAttribute="trailing" secondItem="5503" secondAttribute="trailing" constant="16"/>
+                                    <constraint id="5536" firstItem="5503" firstAttribute="leading" secondItem="5392" secondAttribute="leading" constant="17"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <variation key="default">
@@ -67,8 +165,10 @@
     </scenes>
     <resources>
         <image name="background" width="800" height="450"/>
+        <image name="logo_title" width="2488" height="657"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedScreenMetrics key="destination"/>
+        <simulatedOrientationMetrics key="orientation"/>
     </simulatedMetricsContainer>
 </document>
