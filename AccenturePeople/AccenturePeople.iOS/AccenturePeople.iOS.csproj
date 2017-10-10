@@ -102,9 +102,17 @@
     <ImageAsset Include="Resources\Assets.xcassets\logo_title.imageset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\email.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\email.imageset\email.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\key.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\password.imageset\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\password.imageset\key.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Resources\Assets.xcassets\email.imageset\" />
+    <Folder Include="Resources\Assets.xcassets\password.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -120,6 +128,18 @@
     <Compile Include="ViewController.cs" />
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginViewController.cs" />
+    <Compile Include="LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterViewController.cs" />
+    <Compile Include="RegisterViewController.designer.cs">
+      <DependentUpon>RegisterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListContactViewController.cs" />
+    <Compile Include="ListContactViewController.designer.cs">
+      <DependentUpon>ListContactViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

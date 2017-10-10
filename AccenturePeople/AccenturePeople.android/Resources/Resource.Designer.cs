@@ -2381,8 +2381,26 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f020057
 			public const int avd_hide_password = 2130837591;
 			
+			// aapt resource value: 0x7f020090
+			public const int avd_hide_password_1 = 2130837648;
+			
+			// aapt resource value: 0x7f020091
+			public const int avd_hide_password_2 = 2130837649;
+			
+			// aapt resource value: 0x7f020092
+			public const int avd_hide_password_3 = 2130837650;
+			
 			// aapt resource value: 0x7f020058
 			public const int avd_show_password = 2130837592;
+			
+			// aapt resource value: 0x7f020093
+			public const int avd_show_password_1 = 2130837651;
+			
+			// aapt resource value: 0x7f020094
+			public const int avd_show_password_2 = 2130837652;
+			
+			// aapt resource value: 0x7f020095
+			public const int avd_show_password_3 = 2130837653;
 			
 			// aapt resource value: 0x7f020059
 			public const int border_button = 2130837593;
