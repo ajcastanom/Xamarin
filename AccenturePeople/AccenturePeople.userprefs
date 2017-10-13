@@ -1,7 +1,10 @@
-﻿<Properties StartupConfiguration="{F6D4FD29-1449-4B8C-90FF-887D58C1E272}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AccenturePeople.iOS/AppDelegate.cs">
+﻿<Properties StartupConfiguration="{0C5959A7-2961-43CD-B01B-7389A0C91AE6}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AccenturePeople.iOS/ListContactViewController.cs">
     <Files>
-      <File FileName="AccenturePeople.iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="AccenturePeople.iOS/Main.storyboard" />
+      <File FileName="AccenturePeople.iOS/RegisterViewController.cs" Line="1" Column="1" />
+      <File FileName="AccenturePeople.iOS/LoginViewController.cs" Line="1" Column="1" />
+      <File FileName="AccenturePeople.iOS/ListContactViewController.cs" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -10,7 +13,7 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS>
+  <MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F38F8621-AADA-4474-99DB-52A34F9366B5">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.AccenturePeople.iOS>
   <MonoDevelop.Ide.ItemProperties.AccenturePeople.android PreferredExecutionTarget="Android.Android_Accelerated_x86" />
