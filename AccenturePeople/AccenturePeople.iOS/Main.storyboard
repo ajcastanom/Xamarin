@@ -48,27 +48,38 @@
                                         <rect key="frame" x="17" y="130" width="287" height="204"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5969" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                                <rect key="frame" x="104" y="0.0" width="79" height="27"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5969" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="104" y="0.0" width="79" height="26"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <constraints>
+                                                    <constraint id="6510" firstItem="5969" firstAttribute="height" constant="26"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="6510"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="6510"/>
+                                                    </mask>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <constraints>
                                             <constraint id="5612" firstItem="5503" firstAttribute="height" constant="204"/>
-                                            <constraint id="6211" firstItem="5969" firstAttribute="height" secondItem="5503" secondAttribute="height"/>
                                             <constraint id="6216" firstItem="5969" firstAttribute="leading" secondItem="5503" secondAttribute="leading" constant="104"/>
                                             <constraint id="6217" firstItem="5503" firstAttribute="trailing" secondItem="5969" secondAttribute="trailing" constant="104"/>
-                                            <constraint id="6242" firstItem="5969" firstAttribute="top" secondItem="5503" secondAttribute="top"/>
+                                            <constraint id="6509" firstItem="5969" firstAttribute="top" secondItem="5503" secondAttribute="top"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="5612"/>
-                                                <exclude reference="6211"/>
                                                 <exclude reference="6216"/>
                                                 <exclude reference="6217"/>
-                                                <exclude reference="6242"/>
+                                                <exclude reference="6509"/>
                                             </mask>
                                             <mask key="subviews">
                                                 <exclude reference="5969"/>
@@ -77,10 +88,9 @@
                                         <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="constraints">
                                                 <include reference="5612"/>
-                                                <include reference="6211"/>
                                                 <include reference="6216"/>
                                                 <include reference="6217"/>
-                                                <include reference="6242"/>
+                                                <include reference="6509"/>
                                             </mask>
                                             <mask key="subviews">
                                                 <include reference="5969"/>

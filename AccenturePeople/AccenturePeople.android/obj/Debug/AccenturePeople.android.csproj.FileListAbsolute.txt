@@ -404,3 +404,7 @@ D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\obj\
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\obj\Debug\res\drawable\ic_chrome_reader_mode_black_48dp.png
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\obj\Debug\R.cs.flag
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\obj\Debug\uploadflags.txt
+D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\bin\Debug\AccenturePeoplePCL.dll.mdb
+D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\bin\Debug\AccenturePeople.android.dll.mdb
+D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\obj\Debug\android\assets\AccenturePeople.android.dll.mdb
+D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeople.android\obj\Debug\android\assets\AccenturePeoplePCL.dll.mdb
