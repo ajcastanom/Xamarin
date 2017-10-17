@@ -2381,26 +2381,26 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f020057
 			public const int avd_hide_password = 2130837591;
 			
-			// aapt resource value: 0x7f020090
-			public const int avd_hide_password_1 = 2130837648;
-			
 			// aapt resource value: 0x7f020091
-			public const int avd_hide_password_2 = 2130837649;
+			public const int avd_hide_password_1 = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int avd_hide_password_3 = 2130837650;
+			public const int avd_hide_password_2 = 2130837650;
+			
+			// aapt resource value: 0x7f020093
+			public const int avd_hide_password_3 = 2130837651;
 			
 			// aapt resource value: 0x7f020058
 			public const int avd_show_password = 2130837592;
 			
-			// aapt resource value: 0x7f020093
-			public const int avd_show_password_1 = 2130837651;
-			
 			// aapt resource value: 0x7f020094
-			public const int avd_show_password_2 = 2130837652;
+			public const int avd_show_password_1 = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int avd_show_password_3 = 2130837653;
+			public const int avd_show_password_2 = 2130837653;
+			
+			// aapt resource value: 0x7f020096
+			public const int avd_show_password_3 = 2130837654;
 			
 			// aapt resource value: 0x7f020059
 			public const int border_button = 2130837593;
@@ -2546,11 +2546,11 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f020088
 			public const int notification_icon_background = 2130837640;
 			
-			// aapt resource value: 0x7f02008e
-			public const int notification_template_icon_bg = 2130837646;
-			
 			// aapt resource value: 0x7f02008f
-			public const int notification_template_icon_low_bg = 2130837647;
+			public const int notification_template_icon_bg = 2130837647;
+			
+			// aapt resource value: 0x7f020090
+			public const int notification_template_icon_low_bg = 2130837648;
 			
 			// aapt resource value: 0x7f020089
 			public const int notification_tile_bg = 2130837641;
@@ -2562,10 +2562,13 @@ namespace AccenturePeople.android
 			public const int platon = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int profile = 2130837644;
+			public const int professionalProfile = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int shadow_linear = 2130837645;
+			public const int profile = 2130837645;
+			
+			// aapt resource value: 0x7f02008e
+			public const int shadow_linear = 2130837646;
 			
 			static Drawable()
 			{
@@ -2763,9 +2766,6 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f0b00a0
 			public const int drawer_layout = 2131427488;
 			
-			// aapt resource value: 0x7f0b00c7
-			public const int editText2 = 2131427527;
-			
 			// aapt resource value: 0x7f0b00bc
 			public const int editTextConfirmPassword = 2131427516;
 			
@@ -2783,6 +2783,9 @@ namespace AccenturePeople.android
 			
 			// aapt resource value: 0x7f0b0099
 			public const int editTextPassword = 2131427481;
+			
+			// aapt resource value: 0x7f0b00c7
+			public const int editTextProfessionalProfile = 2131427527;
 			
 			// aapt resource value: 0x7f0b0070
 			public const int edit_query = 2131427440;
@@ -3697,6 +3700,18 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f07004f
 			public const int message_email_validate = 2131165263;
 			
+			// aapt resource value: 0x7f070059
+			public const int message_firstname_validate = 2131165273;
+			
+			// aapt resource value: 0x7f070058
+			public const int message_identification_validate = 2131165272;
+			
+			// aapt resource value: 0x7f07005a
+			public const int message_lastname_validate = 2131165274;
+			
+			// aapt resource value: 0x7f07005d
+			public const int message_location_validate = 2131165277;
+			
 			// aapt resource value: 0x7f07004d
 			public const int message_login_validate = 2131165261;
 			
@@ -3706,8 +3721,17 @@ namespace AccenturePeople.android
 			// aapt resource value: 0x7f070050
 			public const int message_password_validate = 2131165264;
 			
+			// aapt resource value: 0x7f07005e
+			public const int message_professionalprofile_validate = 2131165278;
+			
+			// aapt resource value: 0x7f07005b
+			public const int message_project_validate = 2131165275;
+			
 			// aapt resource value: 0x7f07004e
 			public const int message_resgister_validate = 2131165262;
+			
+			// aapt resource value: 0x7f07005c
+			public const int message_wbs_validate = 2131165276;
 			
 			// aapt resource value: 0x7f070046
 			public const int not_account = 2131165254;

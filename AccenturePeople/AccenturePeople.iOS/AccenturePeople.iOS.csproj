@@ -102,12 +102,24 @@
     <ImageAsset Include="Resources\Assets.xcassets\logo_title.imageset\Contents.json">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\Assets.xcassets\email.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Assets.xcassets\email.imageset\email.png" />
-    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\key.png" />
-    <ImageAsset Include="Resources\Assets.xcassets\password.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Assets.xcassets\password.imageset\key.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\email.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\email.imageset\email.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\Image.imageset\key.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\password.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Assets.xcassets\password.imageset\key.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

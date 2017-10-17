@@ -29,4 +29,11 @@
   <string name="open_drawer">Open drawer</string>
   <string name="close_drawer">Close drawer</string>
   <string name="message_password_length_validate">La contraseña debe tener al menos 6 caracteres.</string>
+  <string name="message_identification_validate">Ingrese la identificación.</string>
+  <string name="message_firstname_validate">Ingrese el nombre.</string>
+  <string name="message_lastname_validate">Ingrese el apellido.</string>
+  <string name="message_project_validate">Seleccione un proyecto.</string>
+  <string name="message_wbs_validate">Seleccione un Wbs.</string>
+  <string name="message_location_validate">Seleccione una ubicación.</string>
+  <string name="message_professionalprofile_validate">Ingrese el perfil profesional.</string>
 </resources>

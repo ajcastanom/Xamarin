@@ -73,6 +73,7 @@
                 android:id="@+id/editTextLastname" />
             <EditText
                 android:inputType="text"
+                android:enabled="false"
                 android:drawableLeft="@drawable/email"
                 android:drawablePadding="10dp"
                 android:hint="@string/hint_email"
@@ -97,9 +98,12 @@
             <EditText
                 android:inputType="textMultiLine"
                 android:hint="@string/hint_professional_profile"
+                android:gravity="top"
+                android:drawableLeft="@drawable/professionalProfile"
+                android:drawablePadding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="100.0dp"
-                android:id="@+id/editText2"
+                android:id="@+id/editTextProfessionalProfile"
                 android:layout_marginTop="10.0dp" />
             <Button
                 android:text="@string/accept"

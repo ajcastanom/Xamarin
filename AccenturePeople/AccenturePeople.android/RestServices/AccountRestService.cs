@@ -17,9 +17,9 @@ namespace AccenturePeople.android.RestServices
 
         public static async System.Threading.Tasks.Task<Login> LoginAsync(String Username, String Password)
         {
-            string UriToken = "token";
+            string Uri = "token";
 
-            string url = REST_URL + UriToken;
+            string url = REST_URL + Uri;
 
             //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
 
@@ -56,11 +56,58 @@ namespace AccenturePeople.android.RestServices
 
         }
 
+        public static async System.Threading.Tasks.Task<String> RegisterEmailAsync(String Username, String Password, String ConfirmPassword)
+        {
+            string Uri = "api/Account/Register";
+
+            string url = REST_URL + Uri;
+
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+
+            using (var client = new HttpClient())
+            {
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                List<KeyValuePair<string, string>> nameValueCollection = new List<KeyValuePair<string, string>>();
+                nameValueCollection.Add(new KeyValuePair<string, string>("Email", Username));
+                nameValueCollection.Add(new KeyValuePair<string, string>("Password", Password));
+                nameValueCollection.Add(new KeyValuePair<string, string>("ConfirmPassword", ConfirmPassword)); 
+                message.Content = new FormUrlEncodedContent(nameValueCollection);
+
+                String msg = null;
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+
+                    String response = JsonConvert.DeserializeObject<String>(content);
+
+                    msg = null;
+                }
+                catch (Exception ex)
+                {
+                    if(ex.Message.Equals("400 (Bad Request)"))
+                    {
+                        msg = "El usuario ya existe, ingrese otro diferente.";
+                    } else
+                    {
+                       msg = "Error al registrar el Email";
+                    }
+                    
+                }
+
+                return msg;
+            }
+
+        }
+
         public static async System.Threading.Tasks.Task<String> GetUserInfoAsync()
         {
-            string UriUserInfo = "api/Account/UserInfo";
+            string Uri = "api/Account/UserInfo";
 
-            string url = REST_URL + UriUserInfo;
+            string url = REST_URL + Uri;
 
             using (var client = new HttpClient())
             {
