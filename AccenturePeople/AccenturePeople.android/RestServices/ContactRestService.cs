@@ -129,6 +129,39 @@ namespace AccenturePeople.android.RestServices
             }
 
         }
+
+        public static async System.Threading.Tasks.Task<List<ContactService>> GetAllUser()
+        {
+            string Uri = "contactAcc/GetAllUser";
+
+            string url = REST_URL + Uri;
+
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+
+            using (var client = new HttpClient())
+            {
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                List<ContactService> contacts = null;
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+
+                    contacts = JsonConvert.DeserializeObject<List<ContactService>>(content);
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+
+                return contacts;
+            }
+
+        }
     }
 
 

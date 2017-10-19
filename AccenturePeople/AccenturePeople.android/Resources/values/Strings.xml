@@ -36,4 +36,8 @@
   <string name="message_wbs_validate">Seleccione un Wbs.</string>
   <string name="message_location_validate">Seleccione una ubicación.</string>
   <string name="message_professionalprofile_validate">Ingrese el perfil profesional.</string>
+  <string name="project">Proyecto:</string>
+  <string name="wbs">Wbs:</string>
+  <string name="profesional_profile">Perfil Profesional:</string>
+  <string name="location">Ubicación:</string>
 </resources>

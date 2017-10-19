@@ -20,7 +20,7 @@ namespace AccenturePeople.android.Implementations
     [Activity(Label = "AccenturePeople.android", MainLauncher = false)]
     class ContactDetailActivity : Activity, IOnMapReadyCallback, ILocationListener
     {
-        TextView textViewName, textViewUsername;
+        TextView textViewName, textViewUsername, textViewIdentification, textViewProjectName, textViewWbsName, textViewProfessionalProfile;
         ImageView imageViewContact;
         Button buttonReturn;
 
@@ -33,17 +33,18 @@ namespace AccenturePeople.android.Implementations
         LatLng Lating;
         LatLng ownLatLng;
         double ownLatitude, ownLongitude;
+        string ownLocationName;
 
         public void OnLocationChanged(Location location)
         {
-            this.ownLatitude = location.Latitude;
-            this.ownLongitude = location.Longitude;
+            //this.ownLatitude = location.Latitude;
+            //this.ownLongitude = location.Longitude;
 
             this.ownLatLng = new LatLng(this.ownLatitude, this.ownLongitude);
 
             MarkerOptions markerOptions = new MarkerOptions();
             markerOptions.SetPosition(this.ownLatLng);
-            markerOptions.SetTitle("Aquí estoy!!");
+            markerOptions.SetTitle(ownLocationName);
 
             this.googleMap.AddMarker(markerOptions);
 
@@ -100,18 +101,15 @@ namespace AccenturePeople.android.Implementations
 
             this.mapFragment = FragmentManager.FindFragmentById<MapFragment>(Resource.Id.fragmentGoogleMap);
 
-            SetupMap();
-            this.locationManager = (LocationManager)GetSystemService(Context.LocationService);
-            this.provider = this.locationManager.GetBestProvider(new Criteria(), false);
-            this.location = this.locationManager.GetLastKnownLocation(this.provider);
-            if (this.location == null)
-            {
-                System.Diagnostics.Debug.WriteLine("No hay posición");
-            }
+                        
 
 
             textViewName = FindViewById<TextView>(Resource.Id.textViewName);
+            textViewIdentification = FindViewById<TextView>(Resource.Id.textViewIdentification);
             textViewUsername = FindViewById<TextView>(Resource.Id.textViewUsername);
+            textViewProjectName = FindViewById<TextView>(Resource.Id.textviewProjectName);
+            textViewWbsName = FindViewById<TextView>(Resource.Id.textviewWbsName);
+            textViewProfessionalProfile = FindViewById<TextView>(Resource.Id.textviewProfessionalProfile);
             imageViewContact = FindViewById<ImageView>(Resource.Id.imageViewContact);
             buttonReturn = FindViewById<Button>(Resource.Id.buttonReturn);
             buttonReturn.Click += ButtonReturn_Click;
@@ -121,11 +119,27 @@ namespace AccenturePeople.android.Implementations
             String Email = contact.Email = "a@acc.com";
             String Image = contact.Image = "";*/
 
-            String Firstname = Intent.GetStringExtra("firstname");
-            String Email = Intent.GetStringExtra("email");
+            String firstname = Intent.GetStringExtra("firstname");
+            String lastname = Intent.GetStringExtra("lastname");
+            String identification = Intent.GetStringExtra("identification");
+            String username = Intent.GetStringExtra("username");
+            String projectName = Intent.GetStringExtra("projectName");
+            String wbsName = Intent.GetStringExtra("wbsName");
+            String professionalProfile = Intent.GetStringExtra("professionalProfile");
+            String locationName = Intent.GetStringExtra("locationName");
+            double latitude = double.Parse(Intent.GetStringExtra("latitude"));
+            double longitude = double.Parse(Intent.GetStringExtra("longitude"));
             String Image = Intent.GetStringExtra("image");
-            textViewName.Text = Firstname;
-            textViewUsername.Text = Email;
+
+            textViewName.Text = firstname + " " + lastname;
+            textViewIdentification.Text = identification;
+            textViewUsername.Text = username;
+            textViewProjectName.Text = projectName;
+            textViewWbsName.Text = wbsName;
+            textViewProfessionalProfile.Text = professionalProfile;
+            this.ownLocationName = locationName;
+            this.ownLatitude = latitude;
+            this.ownLongitude = longitude;
 
             int imageId = Resource.Drawable.default_image;
             if (Image != "")
@@ -136,6 +150,15 @@ namespace AccenturePeople.android.Implementations
             else
             {
                 imageViewContact.SetImageResource(imageId);
+            }
+
+            SetupMap();
+            this.locationManager = (LocationManager)GetSystemService(Context.LocationService);
+            this.provider = this.locationManager.GetBestProvider(new Criteria(), false);
+            this.location = this.locationManager.GetLastKnownLocation(this.provider);
+            if (this.location == null)
+            {
+                System.Diagnostics.Debug.WriteLine("No hay posición");
             }
         }
 

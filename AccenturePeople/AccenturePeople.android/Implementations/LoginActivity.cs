@@ -18,7 +18,7 @@ using Newtonsoft.Json.Linq;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "Contacts", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
         Toast ToastValidateAccount;

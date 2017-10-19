@@ -37,6 +37,7 @@
     <Compile Include="MobileFirst\Resultado\MobileFirstResult.cs" />
     <Compile Include="MobileFirst\Seguridad\SecurityChallengeHandler.cs" />
     <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\ContactService.cs" />
     <Compile Include="Models\Credentials.cs" />
     <Compile Include="Models\Locations.cs" />
     <Compile Include="Models\Login.cs" />
