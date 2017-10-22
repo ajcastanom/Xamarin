@@ -1,0 +1,4 @@
+Simple_ListView_Filter.MainActivity, Simple ListView Filter;md502a5ba6c94b014641fd6c0ae0c5bdba9.MainActivity
+Simple_ListView_Filter.MainActivity, Simple ListView Filter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md502a5ba6c94b014641fd6c0ae0c5bdba9.MainActivity
+Simple_ListView_Filter.MainActivity;md502a5ba6c94b014641fd6c0ae0c5bdba9.MainActivity
+simple_listview_filter.MainActivity;md502a5ba6c94b014641fd6c0ae0c5bdba9.MainActivity

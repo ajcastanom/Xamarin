@@ -1,0 +1,40 @@
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\bin\Debug\Simple ListView Filter.dll
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\bin\Debug\Simple ListView Filter.pdb
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\bin\Debug\Simple_ListView_Filter.Simple_ListView_Filter.apk
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\bin\Debug\Simple_ListView_Filter.Simple_ListView_Filter-Signed.apk
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\Simple ListView Filter.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\Simple ListView Filter.dll
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\Simple ListView Filter.pdb
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\android\bin\Simple_ListView_Filter.Simple_ListView_Filter.apk
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\res\layout\main.xml
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\res\values\strings.xml
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\res\drawable\icon.png
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\R.cs.flag
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\uploadflags.txt
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\obj\Debug\Simple ListView Filter.dll.mdb
+C:\Users\Hp\Documents\Visual Studio 2013\Projects\Android Tutorials\Simple ListView Filter\Simple ListView Filter\bin\Debug\Simple ListView Filter.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Simple ListView Filter.dll
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Simple ListView Filter.pdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Simple_ListView_Filter.Simple_ListView_Filter.apk
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Simple_ListView_Filter.Simple_ListView_Filter-Signed.apk
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\Simple ListView Filter.csprojResolveAssemblyReference.cache
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\Simple ListView Filter.csproj.CoreCompileInputs.cache
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\Simple ListView Filter.dll
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\Simple ListView Filter.pdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\android\bin\Simple_ListView_Filter.Simple_ListView_Filter.apk
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\res\layout\main.xml
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\res\values\strings.xml
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\res\drawable\icon.png
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\R.cs.flag
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\uploadflags.txt
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Mono.Android.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\mscorlib.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Simple ListView Filter.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\Simple ListView Filter.dllSimple ListView Filter.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\System.Core.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\System.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\System.Xml.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Development\Repositories\Xamarin\Xamarin-Simple-ListView-Filter-master\Simple ListView Filter\obj\Debug\android\assets\Simple ListView Filter.dll.mdb
