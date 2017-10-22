@@ -34,13 +34,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp">
-                <ListView
+                <LinearLayout
+                          android:orientation="vertical"
+                          android:minWidth="25px"
+                          android:minHeight="25px"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:id="@+id/linearLayout1">
+                  <SearchView
                     android:minWidth="25px"
                     android:minHeight="25px"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/listViewContacts" />
+                    android:layout_height="match_parent"
+                    android:id="@+id/searchViewFilter"/>
+                  <ListView
+                      android:minWidth="25px"
+                      android:minHeight="25px"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/listViewContacts" />
+                </LinearLayout>                
             </FrameLayout>
         </LinearLayout>
         <android.support.design.widget.NavigationView

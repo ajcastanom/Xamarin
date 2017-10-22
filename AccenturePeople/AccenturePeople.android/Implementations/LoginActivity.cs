@@ -20,7 +20,7 @@ using Android.Views.InputMethods;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "Login", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "Login", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
         Toast ToastValidateAccount;

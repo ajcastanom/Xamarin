@@ -12,12 +12,14 @@ namespace AccenturePeople.android.Controls
     {
         Activity context;
         List<ContactService> contacts;
+        List<ContactService> contactsComplete;
 
         public CustomListAdapter(Activity _context, List<ContactService> _contacts)
             : base()
         {
             this.context = _context;
             this.contacts = _contacts;
+            this.contactsComplete = _contacts;
         }
 
         public override int Count
@@ -64,6 +66,27 @@ namespace AccenturePeople.android.Controls
             }*/
             
             return view;
+        }
+
+        private List<ContactService> GetListFilter(string _textFilter)
+        {
+            List<ContactService> filterContacts = new List<ContactService>();
+
+            string textFilter = _textFilter.ToLower();
+            foreach(ContactService contactService in this.contactsComplete){
+                if (contactService.FirstName.ToLower().Contains(textFilter) || contactService.UserAcc.ToLower().Contains(textFilter) || contactService.LocationName.ToLower().Contains(textFilter))
+                {
+                    filterContacts.Add(contactService);
+                }
+            }
+
+            return filterContacts;
+        }
+
+        public void Filter(string _textFilter)
+        {
+            this.contacts = GetListFilter(_textFilter);
+            this.NotifyDataSetChanged();
         }
     }
 }

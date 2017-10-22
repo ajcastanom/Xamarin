@@ -23,6 +23,7 @@ namespace AccenturePeople.android
     public class MainActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
+        SearchView searchViewFilter;
         ListView listViewContacts;
 
         DataBaseManager dbManager;
@@ -52,11 +53,19 @@ namespace AccenturePeople.android
             drawerLayout.SetDrawerListener(drawerToggle);
             drawerToggle.SyncState();
 
+            searchViewFilter = FindViewById<SearchView>(Resource.Id.searchViewFilter);
+            searchViewFilter.QueryTextChange += SearchViewFilter_QueryTextChange;
+
             listViewContacts = FindViewById<ListView>(Resource.Id.listViewContacts);
             listViewContacts.ItemClick += HandleEventHandler;
             //listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
             Init();
             GetAllUser();
+        }
+
+        private void SearchViewFilter_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
+        {
+            ((CustomListAdapter)listViewContacts.Adapter).Filter(e.NewText);
         }
 
         void NavigationView_NavigationItemSelected(object sender, NavigationView.NavigationItemSelectedEventArgs e)

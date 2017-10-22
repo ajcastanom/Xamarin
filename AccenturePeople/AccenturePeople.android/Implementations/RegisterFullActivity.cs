@@ -22,7 +22,7 @@ using Android.Views.InputMethods;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "Contactos", MainLauncher = true, Theme = "@style/AppTheme")]
+    [Activity(Label = "Contactos", MainLauncher = false, Theme = "@style/AppTheme")]
     class RegisterFullActivity : Activity
     {
         ImageButton imageButtonChooseImage;
