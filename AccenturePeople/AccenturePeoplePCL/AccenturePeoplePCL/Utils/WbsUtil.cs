@@ -8,26 +8,26 @@ namespace AccenturePeoplePCL.Utils
 {
     public class WbsUtil
     {
-        private Dictionary<string, long> WbsId;
-        private List<Wbs> ListWbs;
+        private static Dictionary<string, long> WbsId;
+        private static List<Wbs> ListWbs;
 
         public WbsUtil(List<Wbs> _wbs)
         {
-            this.WbsId = new Dictionary<string, long>();
-            this.ListWbs = _wbs;
+            WbsId = new Dictionary<string, long>();
+            ListWbs = _wbs;
 
             foreach (Wbs wbs in _wbs)
             {
-                this.WbsId.Add(wbs.Name, wbs.Id);
+                WbsId.Add(wbs.Name, wbs.Id);
             }
         }
 
-        public long getId(string name)
+        public static long getId(string name)
         {
             return WbsId[name];
         }
 
-        public List<String> getListNames()
+        public static List<String> getListNames()
         {
             List<string> listNames = new List<string>();
             foreach (Wbs project in ListWbs)

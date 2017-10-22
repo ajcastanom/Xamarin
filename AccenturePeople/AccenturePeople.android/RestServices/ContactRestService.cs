@@ -3,6 +3,8 @@
 using AccenturePeoplePCL.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System;
+using System.Net.Http.Headers;
 
 namespace AccenturePeople.android.RestServices
 {
@@ -72,5 +74,122 @@ namespace AccenturePeople.android.RestServices
                 return location;
             }
         }
+
+        public static async System.Threading.Tasks.Task<Boolean> InsertContactUserAsync(Contact contact)
+        {
+            string Uri = "contactAcc/InsertContactUser";
+
+            string url = REST_URL + Uri;
+
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+
+            using (var client = new HttpClient())
+            {
+                String IdAspNet = await GetIdAspNetUsers(contact.Email);
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                List<KeyValuePair<string, string>> nameValueCollection = new List<KeyValuePair<string, string>>();
+                nameValueCollection.Add(new KeyValuePair<string, string>("idContactLocations", contact.Location));
+                nameValueCollection.Add(new KeyValuePair<string, string>("idWbs", contact.Wbs));
+                nameValueCollection.Add(new KeyValuePair<string, string>("idProject", contact.Project));
+                nameValueCollection.Add(new KeyValuePair<string, string>("firstName", contact.Firstname));
+                nameValueCollection.Add(new KeyValuePair<string, string>("lastName", contact.LastName));
+                var username = contact.Email.Split('@')[0];
+                nameValueCollection.Add(new KeyValuePair<string, string>("userAcc", username));
+                nameValueCollection.Add(new KeyValuePair<string, string>("idDocument", contact.Identification.ToString()));
+                nameValueCollection.Add(new KeyValuePair<string, string>("professionalProfile", contact.ProfessionalProfile));
+                nameValueCollection.Add(new KeyValuePair<string, string>("idWbs", contact.Wbs));
+                nameValueCollection.Add(new KeyValuePair<string, string>("idAspNetUsers", IdAspNet));
+                message.Content = new FormUrlEncodedContent(nameValueCollection);
+
+                Boolean msg = false;
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+
+                    String response = JsonConvert.DeserializeObject<String>(content);
+
+                    msg = response.Equals("true");
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+                return msg;
+            }
+
+        }
+
+        public static async System.Threading.Tasks.Task<List<ContactService>> GetAllUser()
+        {
+            string Uri = "contactAcc/GetAllUser";
+
+            string url = REST_URL + Uri;
+
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+
+            using (var client = new HttpClient())
+            {
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                List<ContactService> contacts = null;
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+
+                    contacts = JsonConvert.DeserializeObject<List<ContactService>>(content);
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+
+                return contacts;
+            }
+
+        }
+
+        private static async System.Threading.Tasks.Task<String> GetIdAspNetUsers(String email)
+        {
+            string Uri = "contactAcc/GetidAspNetUsers";
+
+            string url = REST_URL + Uri + "?email=" + email;
+
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+
+            using (var client = new HttpClient())
+            {
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                String idAspNet = "";
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+
+                    idAspNet = JsonConvert.DeserializeObject<String>(content);
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+                return idAspNet;
+            }
+
+        }
     }
+
+
 }

@@ -15,10 +15,12 @@ using System.IO;
 using AccenturePeople.android.RestServices;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Android.Views;
+using Android.Views.InputMethods;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = true, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "Login", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
     class LoginActivity : Activity
     {
         Toast ToastValidateAccount;
@@ -175,6 +177,13 @@ namespace AccenturePeople.android
             progress.SetMessage("Cargando...");
             progress.SetInverseBackgroundForced(true);
             progress.SetCancelable(false);
+        }
+
+        public override bool OnTouchEvent(MotionEvent e)
+        {
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            imm.HideSoftInputFromWindow(editTextEmail.WindowToken, 0);
+            return base.OnTouchEvent(e);
         }
     }
 }

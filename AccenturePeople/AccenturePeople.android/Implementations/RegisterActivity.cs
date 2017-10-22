@@ -7,6 +7,11 @@ using AccenturePeoplePCL.Utils.Validations;
 using AccenturePeople.android.DataBase;
 using AccenturePeople.android.Implementations;
 using AccenturePeoplePCL.Models;
+using System.Threading.Tasks;
+using AccenturePeople.android.RestServices;
+using System;
+using Android.Views;
+using Android.Views.InputMethods;
 
 namespace AccenturePeople.android
 {
@@ -15,6 +20,7 @@ namespace AccenturePeople.android
     {
         Button buttonLogin, buttonAccept;
         EditText editTextEmail, editTextPassword, editConfirmPassword;
+        ProgressDialog progress;
 
         DataBaseManager dbManager;
 
@@ -35,7 +41,9 @@ namespace AccenturePeople.android
             buttonLogin.Click += ButtonLogin_Click;
             buttonAccept.Click += ButtonAccept_Click;
 
-            dbManager = new DataBaseManager(this);
+            //dbManager = new DataBaseManager(this);
+
+            Init();
         }
 
         private void ButtonAccept_Click(object sender, System.EventArgs e)
@@ -63,21 +71,8 @@ namespace AccenturePeople.android
                 }
                 else
                 {
-                    var result = dbManager.InsertContact(contact);
-                    if (result)
-                    {
-                        Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
-                        var registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
-                        registerFullActivity.PutExtra("email", contact.Email);
-                        StartActivity(registerFullActivity);
-                    } else if (result == false)
-                    {
-                        Toast.MakeText(this, GetString(Resource.String.message_email_exist), ToastLength.Short).Show();
-                    }
-                    else
-                    {
-                        Toast.MakeText(this, GetString(Resource.String.error), ToastLength.Short).Show();
-                    }
+                    //var result = dbManager.InsertContact(contact);
+                    RegisterEmail(contact);
                 }
             }
             catch (System.Exception ex)
@@ -90,6 +85,68 @@ namespace AccenturePeople.android
         {
             var LoginActivity = new Intent(this, typeof(LoginActivity));
             StartActivity(intent: LoginActivity);
+        }
+
+        private void RegisterEmail(Contact contact)
+        {
+            progress.Show();
+            Task.Run(async () =>
+            {
+                try
+                {
+                    string response = await AccountRestService.RegisterEmailAsync(contact.Email, contact.Password, contact.Password);
+                    if (response == null)
+                    {
+                        RunOnUiThread(() =>
+                        {
+                            //Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
+                            var registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
+                            registerFullActivity.PutExtra("email", contact.Email);
+                            registerFullActivity.PutExtra("password", contact.Password);
+                            StartActivity(intent: registerFullActivity);
+                        });
+                    }
+                    else
+                    {
+                        RunOnUiThread(() =>
+                        {
+                            progress.Dismiss();
+                            Toast.MakeText(this, response, ToastLength.Short).Show();
+                        });
+                        
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+
+                }
+            });
+        }
+
+        private void Init()
+        {
+            ProgressDialog();
+        }
+
+        private void ProgressDialog()
+        {
+            progress = new Android.App.ProgressDialog(this);
+            progress.Indeterminate = true;
+            progress.SetProgressStyle(Android.App.ProgressDialogStyle.Spinner);
+            progress.SetMessage("Cargando...");
+            progress.SetInverseBackgroundForced(true);
+            progress.SetCancelable(false);
+        }
+
+        public override bool OnTouchEvent(MotionEvent e)
+        {
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            imm.HideSoftInputFromWindow(editTextEmail.WindowToken, 0);
+            return base.OnTouchEvent(e);
         }
     }
 }

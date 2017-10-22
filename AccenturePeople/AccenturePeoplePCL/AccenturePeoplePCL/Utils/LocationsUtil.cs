@@ -9,26 +9,26 @@ namespace AccenturePeoplePCL.Utils
 {
     public class LocationsUtil
     {
-        private Dictionary<string, long> locationsId;
-        private List<Locations> locations;
+        private static Dictionary<string, long> locationsId;
+        private static List<Locations> locations;
 
         public LocationsUtil(List<Locations> _locations)
         {
-            this.locationsId = new Dictionary<string, long>();
-            this.locations = _locations;
+            locationsId = new Dictionary<string, long>();
+            locations = _locations;
 
             foreach (Locations location in _locations)
             {
-                this.locationsId.Add(location.Name, location.Id);
+                locationsId.Add(location.Name, location.Id);
             }
         }
 
-        public long getId(string name)
+        public static long getId(string name)
         {
             return locationsId[name];
         }
 
-        public List<String> getListNames()
+        public static List<String> getListNames()
         {
             List<string> listNames = new List<string>();
             foreach (Locations location in locations)

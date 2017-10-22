@@ -14,16 +14,20 @@ using System;
 using System.Collections.Generic;
 using AccenturePeople.android.Implementations;
 using AccenturePeople.android.DataBase;
+using System.Threading.Tasks;
+using AccenturePeople.android.RestServices;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/MyTheme")]
+    [Activity(Label = "Contactos", MainLauncher = false, Theme = "@style/MyTheme")]
     public class MainActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
         ListView listViewContacts;
 
         DataBaseManager dbManager;
+        ProgressDialog progress;
+        List<ContactService> contacts;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -50,7 +54,9 @@ namespace AccenturePeople.android
 
             listViewContacts = FindViewById<ListView>(Resource.Id.listViewContacts);
             listViewContacts.ItemClick += HandleEventHandler;
-            listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
+            //listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
+            Init();
+            GetAllUser();
         }
 
         void NavigationView_NavigationItemSelected(object sender, NavigationView.NavigationItemSelectedEventArgs e)
@@ -82,11 +88,19 @@ namespace AccenturePeople.android
 
         void HandleEventHandler(object sender, AdapterView.ItemClickEventArgs e)
         {
-            Contact contact = LoadContacts()[e.Position];
+            ContactService contact = contacts[e.Position];
             Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
-            contactDetailActivity.PutExtra("firstname", contact.Firstname);
-            contactDetailActivity.PutExtra("email", contact.Email);
-            contactDetailActivity.PutExtra("image", contact.Image);
+            contactDetailActivity.PutExtra("firstname", contact.FirstName);
+            contactDetailActivity.PutExtra("lastname", contact.LastName);
+            contactDetailActivity.PutExtra("identification", contact.IdDocument);
+            contactDetailActivity.PutExtra("username", contact.UserAcc);
+            contactDetailActivity.PutExtra("projectName", contact.ProjectName);
+            contactDetailActivity.PutExtra("wbsName", contact.Wbsname);
+            contactDetailActivity.PutExtra("professionalProfile", contact.ProfessionalProfile);
+            contactDetailActivity.PutExtra("locationName", contact.LocationName);
+            contactDetailActivity.PutExtra("latitude", contact.Latitude.ToString());
+            contactDetailActivity.PutExtra("longitude", contact.Longitude.ToString());
+            contactDetailActivity.PutExtra("image", "");
             StartActivity(contactDetailActivity);
         }
 
@@ -100,6 +114,48 @@ namespace AccenturePeople.android
         public override void OnBackPressed()
         {
             return;
+        }
+
+        private void Init()
+        {
+            ProgressDialog();
+        }
+
+        private void ProgressDialog()
+        {
+            progress = new Android.App.ProgressDialog(this);
+            progress.Indeterminate = true;
+            progress.SetProgressStyle(Android.App.ProgressDialogStyle.Spinner);
+            progress.SetMessage("Cargando...");
+            progress.SetInverseBackgroundForced(true);
+            progress.SetCancelable(false);
+        }
+
+        private void GetAllUser()
+        {
+            progress.Show();
+            Task.Run(async () =>
+            {
+                try
+                {
+                    List<ContactService> contacts = await ContactRestService.GetAllUser();
+                    RunOnUiThread(() =>
+                    {
+                        this.contacts = contacts;
+                        listViewContacts.Adapter = new CustomListAdapter(this, contacts);
+                        progress.Dismiss();
+                        
+                    });                    
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+
+                }
+            });
         }
     }
 }

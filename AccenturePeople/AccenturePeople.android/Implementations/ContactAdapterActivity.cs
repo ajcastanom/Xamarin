@@ -13,6 +13,8 @@ using Android.Widget;
 using AccenturePeoplePCL.Models;
 using AccenturePeople.android.Controls;
 using AccenturePeople.android.DataBase;
+using System.Threading.Tasks;
+using AccenturePeople.android.RestServices;
 
 namespace AccenturePeople.android.Implementations
 {
@@ -21,6 +23,9 @@ namespace AccenturePeople.android.Implementations
     {
         ListView listViewContacts;
         DataBaseManager dbManager;
+
+        ProgressDialog progress;
+        List<ContactService> contacts;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,7 +38,9 @@ namespace AccenturePeople.android.Implementations
 
             listViewContacts = FindViewById<ListView>(Resource.Id.listViewContacts);
             listViewContacts.ItemClick += HandleEventHandler;
-            listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
+            //listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
+            Init();
+            GetAllUser();
         }
 
         private void ButtonReturn_Click(object sender, EventArgs e)
@@ -58,6 +65,48 @@ namespace AccenturePeople.android.Implementations
         {
             List<Contact> Contacts = dbManager.GetContacts();
             return Contacts;
+        }
+
+        private void Init()
+        {
+            ProgressDialog();
+        }
+
+        private void ProgressDialog()
+        {
+            progress = new Android.App.ProgressDialog(this);
+            progress.Indeterminate = true;
+            progress.SetProgressStyle(Android.App.ProgressDialogStyle.Spinner);
+            progress.SetMessage("Cargando...");
+            progress.SetInverseBackgroundForced(true);
+            progress.SetCancelable(false);
+        }
+
+        private void GetAllUser()
+        {
+            progress.Show();
+            Task.Run(async () =>
+            {
+                try
+                {
+                    List<ContactService> contacts = await ContactRestService.GetAllUser();
+                    RunOnUiThread(() =>
+                    {
+                        this.contacts = contacts;
+                        listViewContacts.Adapter = new CustomListAdapter(this, contacts);
+                        progress.Dismiss();
+
+                    });
+                }
+                catch (Exception ex)
+                {
+
+                }
+                finally
+                {
+
+                }
+            });
         }
     }
 }

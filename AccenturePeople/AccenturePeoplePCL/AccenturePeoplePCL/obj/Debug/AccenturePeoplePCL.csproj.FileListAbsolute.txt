@@ -24,3 +24,4 @@ D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\Accenture
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csproj.CoreCompileInputs.cache
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.dll
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.pdb
+D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csprojResolveAssemblyReference.cache
