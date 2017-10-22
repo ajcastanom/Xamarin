@@ -103,6 +103,7 @@ namespace AccenturePeople.android
                             var registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
                             registerFullActivity.PutExtra("email", contact.Email);
                             registerFullActivity.PutExtra("password", contact.Password);
+                            registerFullActivity.PutExtra("viewName", "register");
                             StartActivity(intent: registerFullActivity);
                         });
                     }

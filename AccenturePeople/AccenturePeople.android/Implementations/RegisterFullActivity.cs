@@ -33,8 +33,10 @@ namespace AccenturePeople.android.Implementations
 
         private static int PickImageId = 1000;
         private Contact contact;
+        private ContactService contactService;
         DataBaseManager dbManager;
         ProgressDialog progress;
+        String viewName;
 
 
         List<String> listProjectsName, listWbsName, listLocationsName;
@@ -61,10 +63,28 @@ namespace AccenturePeople.android.Implementations
             imageButtonChooseImage.Click += ImageButtonChooseImage_Click;
             buttonAccept.Click += ButtonAccept_Click;
 
+            viewName = Intent.GetStringExtra("viewName");
+
             contact = new Contact();
-            contact.Email = Intent.GetStringExtra("email");
-            contact.Password = Intent.GetStringExtra("password");
-            editTextEmail.Text = contact.Email;
+            if (viewName.Equals("register"))
+            {                
+                contact.Email = Intent.GetStringExtra("email");
+                contact.Password = Intent.GetStringExtra("password");
+                editTextEmail.Text = contact.Email;
+            } else if (viewName.Equals("main"))
+            {
+                contact.Id = long.Parse(Intent.GetStringExtra("id"));
+                contact.Location = Intent.GetStringExtra("idContactLocations");
+                contact.Wbs = Intent.GetStringExtra("idWbs");
+                contact.Project = Intent.GetStringExtra("idProject");
+                contact.Firstname = Intent.GetStringExtra("firstName");
+                contact.LastName = Intent.GetStringExtra("lastName");
+                contact.Email = Intent.GetStringExtra("userAcc") + "@accenture.com";
+                contact.Identification = long.Parse(Intent.GetStringExtra("idDocument"));
+                contact.ProfessionalProfile = Intent.GetStringExtra("professionalProfile");
+                contact.IdAspNetUsers = Intent.GetStringExtra("idAspNetUsers");
+            }
+            
 
             /*var itemsProjects = new List<string>() { "Seleccione un proyecto", "Proyecto A", "Proyecto B", "Proyecto C", "Proyecto D" };
             var adapterProjects = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, itemsProjects);
@@ -186,6 +206,18 @@ namespace AccenturePeople.android.Implementations
             listLocationsName.Insert(0, "Seleccione una ubicación");
             var adapterLocations = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, listLocationsName);
             spinnerLocation.Adapter = adapterLocations;
+
+            if (viewName.Equals("main"))
+            {
+                editTextIdentification.Text = contact.Identification.ToString();
+                editTextFirstname.Text = contact.Firstname;
+                editTextLastname.Text = contact.LastName;
+                editTextEmail.Text = contact.Email;
+                spinnerProject.SetSelection(Projects.getIndex(long.Parse(contact.Project)));
+                spinnerWbs.SetSelection(WbsUtil.getIndex(long.Parse(contact.Wbs)));
+                spinnerLocation.SetSelection(LocationsUtil.getIndex(long.Parse(contact.Location)));
+                editTextProfessionalProfile.Text = contact.ProfessionalProfile;               
+            }
         }
 
         private void InsertContact(Contact contact)
@@ -211,6 +243,7 @@ namespace AccenturePeople.android.Implementations
                         RunOnUiThread(() =>
                         {
                             var mainActivity = new Intent(this, typeof(MainActivity));
+                            mainActivity.PutExtra("email", contact.Email);
                             StartActivity(intent: mainActivity);
                         });
                     } else

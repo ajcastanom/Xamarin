@@ -98,7 +98,6 @@ namespace AccenturePeople.android.RestServices
                 nameValueCollection.Add(new KeyValuePair<string, string>("userAcc", username));
                 nameValueCollection.Add(new KeyValuePair<string, string>("idDocument", contact.Identification.ToString()));
                 nameValueCollection.Add(new KeyValuePair<string, string>("professionalProfile", contact.ProfessionalProfile));
-                nameValueCollection.Add(new KeyValuePair<string, string>("idWbs", contact.Wbs));
                 nameValueCollection.Add(new KeyValuePair<string, string>("idAspNetUsers", IdAspNet));
                 message.Content = new FormUrlEncodedContent(nameValueCollection);
 

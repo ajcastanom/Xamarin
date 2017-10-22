@@ -7,6 +7,7 @@ namespace AccenturePeoplePCL.Models
 {
     public class Contact
     {
+        public long Id { get; set; }
         public long Identification { get; set; }
         public string Firstname { get; set; }
         public string LastName { get; set; }
@@ -17,6 +18,7 @@ namespace AccenturePeoplePCL.Models
         public string ProfessionalProfile { get; set; }
         public string Location { get; set; }
         public string Image { get; set; }
+        public string IdAspNetUsers { get; set; }
 
         public Contact(){}
 

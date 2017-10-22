@@ -25,10 +25,13 @@ namespace AccenturePeople.android
         DrawerLayout drawerLayout;
         SearchView searchViewFilter;
         ListView listViewContacts;
+        TextView textViewUserLoggedEmail, textViewUserLoggedName;
 
         DataBaseManager dbManager;
         ProgressDialog progress;
         List<ContactService> contacts;
+        String userEmailLogged;
+        ContactService userLogged;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -56,16 +59,23 @@ namespace AccenturePeople.android
             searchViewFilter = FindViewById<SearchView>(Resource.Id.searchViewFilter);
             searchViewFilter.QueryTextChange += SearchViewFilter_QueryTextChange;
 
+            userEmailLogged = Intent.GetStringExtra("email");
+
             listViewContacts = FindViewById<ListView>(Resource.Id.listViewContacts);
             listViewContacts.ItemClick += HandleEventHandler;
             //listViewContacts.Adapter = new CustomListAdapter(this, LoadContacts());
             Init();
             GetAllUser();
+
+
         }
 
         private void SearchViewFilter_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
         {
-            ((CustomListAdapter)listViewContacts.Adapter).Filter(e.NewText);
+            if(listViewContacts.Adapter != null)
+            {
+                ((CustomListAdapter)listViewContacts.Adapter).Filter(e.NewText);
+            }
         }
 
         void NavigationView_NavigationItemSelected(object sender, NavigationView.NavigationItemSelectedEventArgs e)
@@ -73,6 +83,23 @@ namespace AccenturePeople.android
 
             switch (e.MenuItem.ItemId)
             {
+                case (Resource.Id.nav_user_edit):
+                    Intent registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
+                    registerFullActivity.PutExtra("viewName", "main");
+
+                    registerFullActivity.PutExtra("id", userLogged.Id.ToString());
+                    registerFullActivity.PutExtra("idContactLocations", userLogged.IdContactLocations.ToString());
+                    registerFullActivity.PutExtra("idWbs", userLogged.IdWbs.ToString());
+                    registerFullActivity.PutExtra("idProject", userLogged.IdProject.ToString());
+                    registerFullActivity.PutExtra("firstName", userLogged.FirstName);
+                    registerFullActivity.PutExtra("lastName", userLogged.LastName);
+                    registerFullActivity.PutExtra("userAcc", userLogged.UserAcc);
+                    registerFullActivity.PutExtra("idDocument", userLogged.IdDocument);
+                    registerFullActivity.PutExtra("professionalProfile", userLogged.ProfessionalProfile);
+                    registerFullActivity.PutExtra("idAspNetUsers", userLogged.IdAspNetUsers);
+
+                    StartActivity(registerFullActivity);
+                    break;
                 case (Resource.Id.nav_home):
                     var trans = SupportFragmentManager.BeginTransaction();
                     trans.Add(Resource.Id.ContentFrameLayout, new ContactsFragment(), "Contacts");
@@ -147,11 +174,25 @@ namespace AccenturePeople.android
             {
                 try
                 {
-                    List<ContactService> contacts = await ContactRestService.GetAllUser();
+                    List<ContactService> contacts = GetAllUserWhitoutUserLogged(await ContactRestService.GetAllUser());
+
                     RunOnUiThread(() =>
                     {
                         this.contacts = contacts;
                         listViewContacts.Adapter = new CustomListAdapter(this, contacts);
+                        //Load data user logged
+                        textViewUserLoggedName = FindViewById<TextView>(Resource.Id.textViewUserLoggedName);
+                        textViewUserLoggedEmail = FindViewById<TextView>(Resource.Id.textViewUserLoggedEmail);
+                        if (userLogged == null)
+                        {
+                            textViewUserLoggedName.Text = "Accenture";
+                        } else
+                        {
+                            textViewUserLoggedName.Text = userLogged.FirstName + " " + userLogged.LastName;
+                        }
+
+                        textViewUserLoggedEmail.Text = userEmailLogged;
+
                         progress.Dismiss();
                         
                     });                    
@@ -165,6 +206,24 @@ namespace AccenturePeople.android
 
                 }
             });
+        }
+
+        private List<ContactService> GetAllUserWhitoutUserLogged(List<ContactService> users)
+        {
+            string userAcc = userEmailLogged.Split('@')[0];
+            List<ContactService> contacts = new List<ContactService>();
+            foreach(ContactService contactService in users)
+            {
+                if (contactService.UserAcc.Equals(userAcc))
+                {
+                    userLogged = contactService;
+                } else
+                {
+                    contacts.Add(contactService);
+                }
+            }
+
+            return contacts;
         }
     }
 }
