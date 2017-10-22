@@ -75,7 +75,7 @@ namespace AccenturePeople.android.RestServices
             }
         }
 
-        public static async System.Threading.Tasks.Task<String> InsertContactUserAsync(Contact contact)
+        public static async System.Threading.Tasks.Task<Boolean> InsertContactUserAsync(Contact contact)
         {
             string Uri = "contactAcc/InsertContactUser";
 
@@ -85,6 +85,7 @@ namespace AccenturePeople.android.RestServices
 
             using (var client = new HttpClient())
             {
+                String IdAspNet = await GetIdAspNetUsers(contact.Email);
                 HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
                 message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 List<KeyValuePair<string, string>> nameValueCollection = new List<KeyValuePair<string, string>>();
@@ -98,9 +99,10 @@ namespace AccenturePeople.android.RestServices
                 nameValueCollection.Add(new KeyValuePair<string, string>("idDocument", contact.Identification.ToString()));
                 nameValueCollection.Add(new KeyValuePair<string, string>("professionalProfile", contact.ProfessionalProfile));
                 nameValueCollection.Add(new KeyValuePair<string, string>("idWbs", contact.Wbs));
+                nameValueCollection.Add(new KeyValuePair<string, string>("idAspNetUsers", IdAspNet));
                 message.Content = new FormUrlEncodedContent(nameValueCollection);
 
-                String msg = null;
+                Boolean msg = false;
                 try
                 {
                     HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
@@ -110,18 +112,10 @@ namespace AccenturePeople.android.RestServices
 
                     String response = JsonConvert.DeserializeObject<String>(content);
 
-                    msg = response;
+                    msg = response.Equals("true");
                 }
                 catch (Exception ex)
                 {
-                    if (ex.Message.Equals("400 (Bad Request)"))
-                    {
-                        msg = "El usuario ya existe, ingrese otro diferente.";
-                    }
-                    else
-                    {
-                        msg = "Error al registrar el usuario";
-                    }
 
                 }
 
@@ -159,6 +153,39 @@ namespace AccenturePeople.android.RestServices
                 }
 
                 return contacts;
+            }
+
+        }
+
+        private static async System.Threading.Tasks.Task<String> GetIdAspNetUsers(String email)
+        {
+            string Uri = "contactAcc/GetidAspNetUsers";
+
+            string url = REST_URL + Uri + "?email=" + email;
+
+            //url += "?UserName=" + Username + "&Password=" + Password + "&grant_type=password";
+
+            using (var client = new HttpClient())
+            {
+                HttpRequestMessage message = new HttpRequestMessage(new HttpMethod("POST"), url);
+                message.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                String idAspNet = "";
+                try
+                {
+                    HttpResponseMessage httpResponseMessage = await client.SendAsync(message);
+                    httpResponseMessage.EnsureSuccessStatusCode();
+                    HttpContent httpContent = httpResponseMessage.Content;
+                    var content = await httpContent.ReadAsStringAsync();
+
+                    idAspNet = JsonConvert.DeserializeObject<String>(content);
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+                return idAspNet;
             }
 
         }

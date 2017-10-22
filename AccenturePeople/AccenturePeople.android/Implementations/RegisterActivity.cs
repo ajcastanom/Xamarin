@@ -10,6 +10,8 @@ using AccenturePeoplePCL.Models;
 using System.Threading.Tasks;
 using AccenturePeople.android.RestServices;
 using System;
+using Android.Views;
+using Android.Views.InputMethods;
 
 namespace AccenturePeople.android
 {
@@ -138,6 +140,13 @@ namespace AccenturePeople.android
             progress.SetMessage("Cargando...");
             progress.SetInverseBackgroundForced(true);
             progress.SetCancelable(false);
+        }
+
+        public override bool OnTouchEvent(MotionEvent e)
+        {
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            imm.HideSoftInputFromWindow(editTextEmail.WindowToken, 0);
+            return base.OnTouchEvent(e);
         }
     }
 }

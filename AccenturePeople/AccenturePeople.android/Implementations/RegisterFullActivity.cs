@@ -18,10 +18,11 @@ using AccenturePeoplePCL.Utils;
 using AccenturePeoplePCL.Utils.Validations;
 using AccenturePeoplePCL.Models;
 using System.Threading.Tasks;
+using Android.Views.InputMethods;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/AppTheme")]
+    [Activity(Label = "Contactos", MainLauncher = true, Theme = "@style/AppTheme")]
     class RegisterFullActivity : Activity
     {
         ImageButton imageButtonChooseImage;
@@ -194,8 +195,8 @@ namespace AccenturePeople.android.Implementations
             {
                 try
                 {
-                    string response = await ContactRestService.InsertContactUserAsync(contact);
-                    if (response.Equals("true"))
+                    Boolean response = await ContactRestService.InsertContactUserAsync(contact);
+                    if (response)
                     {
                         /*if (!isLoginRemember)
                         {
@@ -212,15 +213,14 @@ namespace AccenturePeople.android.Implementations
                             var mainActivity = new Intent(this, typeof(MainActivity));
                             StartActivity(intent: mainActivity);
                         });
-                    }
-                    RunOnUiThread(() =>
+                    } else
                     {
-                        progress.Dismiss();
-                        Toast.MakeText(this, response, ToastLength.Short).Show();
-                    });
-
-
-                    
+                        RunOnUiThread(() =>
+                        {
+                            progress.Dismiss();
+                            Toast.MakeText(this, "Fallo el registro del usuario, vuelva a intentar.", ToastLength.Short).Show();
+                        });
+                    }                    
                 }
                 catch (Exception ex)
                 {
@@ -246,6 +246,13 @@ namespace AccenturePeople.android.Implementations
             progress.SetMessage("Cargando...");
             progress.SetInverseBackgroundForced(true);
             progress.SetCancelable(false);
+        }
+
+        public override bool OnTouchEvent(MotionEvent e)
+        {
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            imm.HideSoftInputFromWindow(editTextIdentification.WindowToken, 0);
+            return base.OnTouchEvent(e);
         }
     }
 }

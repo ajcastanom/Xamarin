@@ -19,7 +19,7 @@ using AccenturePeople.android.RestServices;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "Contactos", MainLauncher = true, Theme = "@style/MyTheme")]
+    [Activity(Label = "Contactos", MainLauncher = false, Theme = "@style/MyTheme")]
     public class MainActivity : AppCompatActivity
     {
         DrawerLayout drawerLayout;
