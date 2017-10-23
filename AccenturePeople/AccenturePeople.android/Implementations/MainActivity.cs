@@ -57,6 +57,9 @@ namespace AccenturePeople.android
             drawerToggle.SyncState();
 
             searchViewFilter = FindViewById<SearchView>(Resource.Id.searchViewFilter);
+            //searchViewFilter.OnActionViewExpanded();
+            searchViewFilter.SetIconifiedByDefault(true);
+            searchViewFilter.SetQueryHint("Buscar...");
             searchViewFilter.QueryTextChange += SearchViewFilter_QueryTextChange;
 
             userEmailLogged = Intent.GetStringExtra("email");

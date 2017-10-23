@@ -19,7 +19,7 @@ using Android.Support.V7.App;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/MyTheme")]
+    [Activity(Label = "Perfil", MainLauncher = false, Theme = "@style/MyTheme")]
     class ContactDetailActivity : AppCompatActivity, IOnMapReadyCallback, ILocationListener
     {
         TextView textViewName, textViewUsername, textViewIdentification, textViewProjectName, textViewWbsName, textViewProfessionalProfile;

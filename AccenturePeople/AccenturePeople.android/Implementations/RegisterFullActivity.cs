@@ -23,7 +23,7 @@ using Android.Support.V7.App;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "Contactos", MainLauncher = false, Theme = "@style/MyTheme")]
+    [Activity(Label = "Registrar Usuario", MainLauncher = false, Theme = "@style/MyTheme")]
     class RegisterFullActivity : AppCompatActivity
     {
         ImageButton imageButtonChooseImage;
