@@ -15,7 +15,7 @@ using Android.Views.InputMethods;
 
 namespace AccenturePeople.android
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
+    [Activity(Label = "Crear Cuenta", MainLauncher = false, Theme = "@style/AppThemeNoActionBar")]
     class RegisterActivity : Activity
     {
         Button buttonLogin, buttonAccept;

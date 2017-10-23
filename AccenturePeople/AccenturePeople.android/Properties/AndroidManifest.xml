@@ -30,8 +30,9 @@
     -->
 	<!-- Notice here that we have the package name of our application as a prefix on the permissions. -->
 	<uses-permission android:name="AccenturePeople.android.AccenturePeople.android.permission.MAPS_RECEIVE" />
+	<uses-permission android:name="android.permission.CAMERA" />
 	<permission android:name="AccenturePeople.android.AccenturePeople.android.permission.MAPS_RECEIVE" android:protectionLevel="signature" />
-	<application android:label="@string/app_name" android:icon="@drawable/accenture_icon">
+	<application android:icon="@drawable/accenture_icon" android:label="Contactos Accenture">
 		<!-- Put your Google Maps V2 API Key here. This key will not work for you.-->
 		<!-- See https://developers.google.com/maps/documentation/android/start#obtaining_an_api_key -->
 		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCGqScW5lMDwsrSKZ6SczwPRghsF6UmGf8" />
