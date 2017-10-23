@@ -90,21 +90,27 @@ namespace AccenturePeople.android
                     ViewContactDetail(userLogged);
                     break;
                 case (Resource.Id.nav_user_edit):
-                    Intent registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
-                    registerFullActivity.PutExtra("viewName", "main");
+                    if (userLogged != null)
+                    {
+                        Intent registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
+                        registerFullActivity.PutExtra("viewName", "main");
 
-                    registerFullActivity.PutExtra("id", userLogged.Id.ToString());
-                    registerFullActivity.PutExtra("idContactLocations", userLogged.IdContactLocations.ToString());
-                    registerFullActivity.PutExtra("idWbs", userLogged.IdWbs.ToString());
-                    registerFullActivity.PutExtra("idProject", userLogged.IdProject.ToString());
-                    registerFullActivity.PutExtra("firstName", userLogged.FirstName);
-                    registerFullActivity.PutExtra("lastName", userLogged.LastName);
-                    registerFullActivity.PutExtra("userAcc", userLogged.UserAcc);
-                    registerFullActivity.PutExtra("idDocument", userLogged.IdDocument);
-                    registerFullActivity.PutExtra("professionalProfile", userLogged.ProfessionalProfile);
-                    registerFullActivity.PutExtra("idAspNetUsers", userLogged.IdAspNetUsers);
+                        registerFullActivity.PutExtra("id", userLogged.Id.ToString());
+                        registerFullActivity.PutExtra("idContactLocations", userLogged.IdContactLocations.ToString());
+                        registerFullActivity.PutExtra("idWbs", userLogged.IdWbs.ToString());
+                        registerFullActivity.PutExtra("idProject", userLogged.IdProject.ToString());
+                        registerFullActivity.PutExtra("firstName", userLogged.FirstName);
+                        registerFullActivity.PutExtra("lastName", userLogged.LastName);
+                        registerFullActivity.PutExtra("userAcc", userLogged.UserAcc);
+                        registerFullActivity.PutExtra("idDocument", userLogged.IdDocument);
+                        registerFullActivity.PutExtra("professionalProfile", userLogged.ProfessionalProfile);
+                        registerFullActivity.PutExtra("idAspNetUsers", userLogged.IdAspNetUsers);
 
-                    StartActivity(registerFullActivity);
+                        StartActivity(registerFullActivity);
+                    } else
+                    {
+                        Toast.MakeText(this, GetString(Resource.String.validate_contact_detail), ToastLength.Short).Show();
+                    }
                     break;
                 case (Resource.Id.nav_home):
                     drawerLayout.CloseDrawers();
@@ -219,19 +225,26 @@ namespace AccenturePeople.android
 
         private void ViewContactDetail(ContactService contact)
         {
-            Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
-            contactDetailActivity.PutExtra("firstname", contact.FirstName);
-            contactDetailActivity.PutExtra("lastname", contact.LastName);
-            contactDetailActivity.PutExtra("identification", contact.IdDocument);
-            contactDetailActivity.PutExtra("username", contact.UserAcc);
-            contactDetailActivity.PutExtra("projectName", contact.ProjectName);
-            contactDetailActivity.PutExtra("wbsName", contact.Wbsname);
-            contactDetailActivity.PutExtra("professionalProfile", contact.ProfessionalProfile);
-            contactDetailActivity.PutExtra("locationName", contact.LocationName);
-            contactDetailActivity.PutExtra("latitude", contact.Latitude.ToString());
-            contactDetailActivity.PutExtra("longitude", contact.Longitude.ToString());
-            contactDetailActivity.PutExtra("image", "");
-            StartActivity(contactDetailActivity);
+            if (contact != null)
+            {
+                Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
+                contactDetailActivity.PutExtra("firstname", contact.FirstName);
+                contactDetailActivity.PutExtra("lastname", contact.LastName);
+                contactDetailActivity.PutExtra("identification", contact.IdDocument);
+                contactDetailActivity.PutExtra("username", contact.UserAcc);
+                contactDetailActivity.PutExtra("projectName", contact.ProjectName);
+                contactDetailActivity.PutExtra("wbsName", contact.Wbsname);
+                contactDetailActivity.PutExtra("professionalProfile", contact.ProfessionalProfile);
+                contactDetailActivity.PutExtra("locationName", contact.LocationName);
+                contactDetailActivity.PutExtra("latitude", contact.Latitude.ToString());
+                contactDetailActivity.PutExtra("longitude", contact.Longitude.ToString());
+                contactDetailActivity.PutExtra("image", "");
+                StartActivity(contactDetailActivity);
+            } else
+            {
+                Toast.MakeText(this, GetString(Resource.String.validate_contact_detail), ToastLength.Short).Show();
+            }
+            
         }
     }
 }

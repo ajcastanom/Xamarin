@@ -44,7 +44,6 @@
                 android:id="@+id/textViewSignIn" />
             <EditText
                 android:inputType="textEmailAddress"
-                android:text="register.prueba1@accenture.com"
                 android:drawableLeft="@drawable/email"
                 android:drawablePadding="10dp"
                 android:layout_width="match_parent"
@@ -55,7 +54,6 @@
                 android:background="@drawable/border_text_edit" />
             <EditText
                 android:inputType="textPassword"
-                android:text="123456s"
                 android:drawableLeft="@drawable/key"
                 android:drawablePadding="10dp"
                 android:layout_width="match_parent"
@@ -66,7 +64,6 @@
                 android:id="@+id/editTextPassword" />
             <EditText
                 android:inputType="textPassword"
-                android:text="123456s"
                 android:drawableLeft="@drawable/key"
                 android:drawablePadding="10dp"
                 android:layout_width="match_parent"

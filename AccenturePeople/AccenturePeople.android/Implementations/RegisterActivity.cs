@@ -105,6 +105,7 @@ namespace AccenturePeople.android
                         RunOnUiThread(() =>
                         {
                             //Toast.MakeText(this, GetString(Resource.String.save_data), ToastLength.Short).Show();
+                            progress.Dismiss();
                             var registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
                             registerFullActivity.PutExtra("email", contact.Email);
                             registerFullActivity.PutExtra("password", contact.Password);

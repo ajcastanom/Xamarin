@@ -41,4 +41,5 @@
   <string name="wbs">Wbs:</string>
   <string name="profesional_profile">Perfil Profesional:</string>
   <string name="location">Ubicación:</string>
+  <string name="validate_contact_detail">No existen datos asociados a esta cuenta de usuario.</string>
 </resources>
