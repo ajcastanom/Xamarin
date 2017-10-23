@@ -14,11 +14,13 @@ using AccenturePeople.android.DataBase;
 using Android.Gms.Maps;
 using Android.Locations;
 using Android.Gms.Maps.Model;
+using Android.Support.V7.Widget;
+using Android.Support.V7.App;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "AccenturePeople.android", MainLauncher = false)]
-    class ContactDetailActivity : Activity, IOnMapReadyCallback, ILocationListener
+    [Activity(Label = "AccenturePeople.android", MainLauncher = false, Theme = "@style/MyTheme")]
+    class ContactDetailActivity : AppCompatActivity, IOnMapReadyCallback, ILocationListener
     {
         TextView textViewName, textViewUsername, textViewIdentification, textViewProjectName, textViewWbsName, textViewProfessionalProfile;
         ImageView imageViewContact;
@@ -39,6 +41,8 @@ namespace AccenturePeople.android.Implementations
         {
             //this.ownLatitude = location.Latitude;
             //this.ownLongitude = location.Longitude;
+
+            
 
             this.ownLatLng = new LatLng(this.ownLatitude, this.ownLongitude);
 
@@ -98,6 +102,14 @@ namespace AccenturePeople.android.Implementations
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.ContactDetail);
+
+            // Init toolbar
+            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            toolbar.NavigationClick += Toolbar_NavigationClick;
+
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             this.mapFragment = FragmentManager.FindFragmentById<MapFragment>(Resource.Id.fragmentGoogleMap);
 
@@ -160,6 +172,16 @@ namespace AccenturePeople.android.Implementations
             {
                 System.Diagnostics.Debug.WriteLine("No hay posición");
             }
+        }
+
+        private void Toolbar_NavigationClick(object sender, Android.Support.V7.Widget.Toolbar.NavigationClickEventArgs e)
+        {
+            base.OnBackPressed();
+        }
+
+        private void SetActionBar(Android.Support.V7.Widget.Toolbar toolbar)
+        {
+            //throw new NotImplementedException();
         }
 
         private void ButtonReturn_Click(object sender, EventArgs e)
