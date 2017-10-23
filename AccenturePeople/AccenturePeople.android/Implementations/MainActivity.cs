@@ -83,6 +83,9 @@ namespace AccenturePeople.android
 
             switch (e.MenuItem.ItemId)
             {
+                case (Resource.Id.nav_user_view):
+                    ViewContactDetail(userLogged);
+                    break;
                 case (Resource.Id.nav_user_edit):
                     Intent registerFullActivity = new Intent(this, typeof(RegisterFullActivity));
                     registerFullActivity.PutExtra("viewName", "main");
@@ -101,9 +104,7 @@ namespace AccenturePeople.android
                     StartActivity(registerFullActivity);
                     break;
                 case (Resource.Id.nav_home):
-                    var trans = SupportFragmentManager.BeginTransaction();
-                    trans.Add(Resource.Id.ContentFrameLayout, new ContactsFragment(), "Contacts");
-                    trans.Commit();
+                    drawerLayout.CloseDrawers();
                     break;
                 case (Resource.Id.nav_logout):
                     Intent loginActivity = new Intent(this, typeof(LoginActivity));
@@ -124,20 +125,7 @@ namespace AccenturePeople.android
 
         void HandleEventHandler(object sender, AdapterView.ItemClickEventArgs e)
         {
-            ContactService contact = contacts[e.Position];
-            Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
-            contactDetailActivity.PutExtra("firstname", contact.FirstName);
-            contactDetailActivity.PutExtra("lastname", contact.LastName);
-            contactDetailActivity.PutExtra("identification", contact.IdDocument);
-            contactDetailActivity.PutExtra("username", contact.UserAcc);
-            contactDetailActivity.PutExtra("projectName", contact.ProjectName);
-            contactDetailActivity.PutExtra("wbsName", contact.Wbsname);
-            contactDetailActivity.PutExtra("professionalProfile", contact.ProfessionalProfile);
-            contactDetailActivity.PutExtra("locationName", contact.LocationName);
-            contactDetailActivity.PutExtra("latitude", contact.Latitude.ToString());
-            contactDetailActivity.PutExtra("longitude", contact.Longitude.ToString());
-            contactDetailActivity.PutExtra("image", "");
-            StartActivity(contactDetailActivity);
+            ViewContactDetail(contacts[e.Position]);
         }
 
         private List<Contact> LoadContacts()
@@ -224,6 +212,23 @@ namespace AccenturePeople.android
             }
 
             return contacts;
+        }
+
+        private void ViewContactDetail(ContactService contact)
+        {
+            Intent contactDetailActivity = new Intent(this, typeof(ContactDetailActivity));
+            contactDetailActivity.PutExtra("firstname", contact.FirstName);
+            contactDetailActivity.PutExtra("lastname", contact.LastName);
+            contactDetailActivity.PutExtra("identification", contact.IdDocument);
+            contactDetailActivity.PutExtra("username", contact.UserAcc);
+            contactDetailActivity.PutExtra("projectName", contact.ProjectName);
+            contactDetailActivity.PutExtra("wbsName", contact.Wbsname);
+            contactDetailActivity.PutExtra("professionalProfile", contact.ProfessionalProfile);
+            contactDetailActivity.PutExtra("locationName", contact.LocationName);
+            contactDetailActivity.PutExtra("latitude", contact.Latitude.ToString());
+            contactDetailActivity.PutExtra("longitude", contact.Longitude.ToString());
+            contactDetailActivity.PutExtra("image", "");
+            StartActivity(contactDetailActivity);
         }
     }
 }

@@ -19,11 +19,12 @@ using AccenturePeoplePCL.Utils.Validations;
 using AccenturePeoplePCL.Models;
 using System.Threading.Tasks;
 using Android.Views.InputMethods;
+using Android.Support.V7.App;
 
 namespace AccenturePeople.android.Implementations
 {
-    [Activity(Label = "Contactos", MainLauncher = false, Theme = "@style/AppTheme")]
-    class RegisterFullActivity : Activity
+    [Activity(Label = "Contactos", MainLauncher = false, Theme = "@style/MyTheme")]
+    class RegisterFullActivity : AppCompatActivity
     {
         ImageButton imageButtonChooseImage;
         CircleImageView imageViewProfile;
@@ -47,6 +48,14 @@ namespace AccenturePeople.android.Implementations
 
             // Create UI
             SetContentView(Resource.Layout.RegisterFull);
+
+            // Init toolbar
+            var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+            toolbar.NavigationClick += Toolbar_NavigationClick;
+
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            SupportActionBar.SetHomeButtonEnabled(true);
 
             imageButtonChooseImage = FindViewById<ImageButton>(Resource.Id.imageButtonChooseImage);
             imageViewProfile = FindViewById<CircleImageView>(Resource.Id.imageViewProfile);
@@ -286,6 +295,11 @@ namespace AccenturePeople.android.Implementations
             InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
             imm.HideSoftInputFromWindow(editTextIdentification.WindowToken, 0);
             return base.OnTouchEvent(e);
+        }
+
+        private void Toolbar_NavigationClick(object sender, Android.Support.V7.Widget.Toolbar.NavigationClickEventArgs e)
+        {
+            base.OnBackPressed();
         }
     }
 }

@@ -33,3 +33,4 @@ C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\Accen
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csproj.CoreCompileInputs.cache
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.dll
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.pdb
+D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csprojResolveAssemblyReference.cache

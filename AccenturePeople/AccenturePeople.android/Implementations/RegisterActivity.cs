@@ -51,8 +51,9 @@ namespace AccenturePeople.android
             try
             {
                 Contact contact = new Contact(editTextEmail.Text, editTextPassword.Text);
-
-                if (string.IsNullOrEmpty(editTextEmail.Text.ToString()) || string.IsNullOrEmpty(editTextPassword.Text.ToString())
+                String email = editTextEmail.Text.ToString();
+                String password = editTextPassword.Text.ToString();
+                if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password)
                     || string.IsNullOrEmpty(editConfirmPassword.Text.ToString()))
                 {
                     Toast.MakeText(this, GetString(Resource.String.message_resgister_validate), ToastLength.Short).Show();
@@ -60,6 +61,10 @@ namespace AccenturePeople.android
                 else if (!Email.IsValid(editTextEmail.Text.ToString()))
                 {
                     Toast.MakeText(this, GetString(Resource.String.message_credentials_validate), ToastLength.Short).Show();
+                }
+                else if (editTextEmail.Text.Trim().Length < 6)
+                {
+                    Toast.MakeText(this, GetString(Resource.String.message_username_length_validate), ToastLength.Short).Show();
                 }
                 else if (editTextPassword.Text.Length < 6)
                 {

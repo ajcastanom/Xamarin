@@ -28,6 +28,7 @@
   <string name="error">Error</string>
   <string name="open_drawer">Open drawer</string>
   <string name="close_drawer">Close drawer</string>
+  <string name="message_username_length_validate">El nombre de usuario debe tener al menos 6 caracteres.</string>
   <string name="message_password_length_validate">La contraseña debe tener al menos 6 caracteres.</string>
   <string name="message_identification_validate">Ingrese la identificación.</string>
   <string name="message_firstname_validate">Ingrese el nombre.</string>
