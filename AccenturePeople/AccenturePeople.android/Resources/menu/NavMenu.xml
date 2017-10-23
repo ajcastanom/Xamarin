@@ -2,6 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
   <group android:checkableBehavior="single">
     <item
+      android:id="@+id/nav_user_edit"
+      android:icon="@drawable/ic_contacts_grey_900_24dp"
+      android:title="Editar usuario" />
+    <item
       android:id="@+id/nav_home"
       android:icon="@drawable/ic_contacts_grey_900_24dp"
       android:title="Contactos" />

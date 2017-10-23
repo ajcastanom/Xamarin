@@ -9,22 +9,30 @@ namespace AccenturePeoplePCL.Utils
     public class WbsUtil
     {
         private static Dictionary<string, long> WbsId;
+        private static Dictionary<long, int> WbsIndex;
         private static List<Wbs> ListWbs;
 
         public WbsUtil(List<Wbs> _wbs)
         {
             WbsId = new Dictionary<string, long>();
+            WbsIndex = new Dictionary<long, int>();
             ListWbs = _wbs;
-
+            int index = 0;
             foreach (Wbs wbs in _wbs)
             {
                 WbsId.Add(wbs.Name, wbs.Id);
+                WbsIndex.Add(wbs.Id, ++index);
             }
         }
 
         public static long getId(string name)
         {
             return WbsId[name];
+        }
+
+        public static int getIndex(long id)
+        {
+            return WbsIndex[id];
         }
 
         public static List<String> getListNames()

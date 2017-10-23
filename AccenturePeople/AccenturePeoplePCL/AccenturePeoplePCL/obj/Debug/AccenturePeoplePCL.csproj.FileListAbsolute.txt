@@ -24,14 +24,12 @@ D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\Accenture
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csproj.CoreCompileInputs.cache
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.dll
 D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.pdb
-D:\Development\Repositories\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csprojResolveAssemblyReference.cache
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\bin\Debug\AccenturePeoplePCL.dll.config
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\bin\Debug\AccenturePeoplePCL.dll
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\bin\Debug\AccenturePeoplePCL.pdb
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\bin\Debug\Worklight.Core.dll
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csprojResolveAssemblyReference.cache
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.csproj.CoreCompileInputs.cache
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.dll
 C:\Users\Lizet\Documents\GitHub\Xamarin\AccenturePeople\AccenturePeoplePCL\AccenturePeoplePCL\obj\Debug\AccenturePeoplePCL.pdb

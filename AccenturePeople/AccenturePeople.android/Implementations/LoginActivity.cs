@@ -122,7 +122,8 @@ namespace AccenturePeople.android
                             }
                             dbManager.InsertLoginRemember(contact.Email, contact.Password, isRemember);
                         }
-                        
+
+                        mainActivity.PutExtra("email", contact.Email);                        
                         StartActivity(mainActivity);
                     }
                     else
